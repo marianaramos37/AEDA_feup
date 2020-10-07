@@ -1,0 +1,14 @@
+Le Moustache
+Rua de Bartolomeu Velho, Faro, 03
+Italiana
+pratos.txt
+:::::
+Lyi
+Av. do Mal. Gomes da Costa, Loule, 87
+Chinesa
+pratos.txt
+:::::
+Ze da Esquina
+Rua Joao de Lisboa, Sao Bras de Alportel, 567
+Portuguesa
+pratos.txt

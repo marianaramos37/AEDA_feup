@@ -1,0 +1,227 @@
+\hypertarget{class_entregador}{}\doxysection{Referência à classe Entregador}
+\label{class_entregador}\index{Entregador@{Entregador}}
+
+
+Classe \mbox{\hyperlink{class_entregador}{Entregador}} representa um funcionário \mbox{\hyperlink{class_entregador}{Entregador}} através das suas características enquanto Funcionário, mais o seu Veículo, um vetor de encomendas (classe \mbox{\hyperlink{class_encomenda}{Encomenda}}) feitas, e a sua disponibilidade.  
+
+
+
+
+{\ttfamily \#include $<$empresa.\+h$>$}
+
+Diagrama de heranças da classe Entregador\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entregador}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_entregador_a64c1afe3991324f549758f24fca75c7f}{Entregador}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_entregador}{Entregador}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_entregador_afab1f1ed9d1d4b2adf1afdb0562cb877}{$\sim$\+Entregador}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_entregador}{Entregador}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_veiculo}{Veiculo}} \mbox{\hyperlink{class_entregador_a86119b2b51361bba85d96e857db2059d}{get\+Veiculo\+Alocado}} () const
+\item 
+void \mbox{\hyperlink{class_entregador_aca837dc54b7fed828e14fd704401c710}{set\+Veiculo\+Alocado}} (const \mbox{\hyperlink{class_veiculo}{Veiculo}} \&veiculo\+Alocado)
+\item 
+vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \mbox{\hyperlink{class_entregador_afeee107490be7bd835bffc760b59e29d}{get\+Encom\+Feitas}} ()
+\item 
+void \mbox{\hyperlink{class_entregador_a4a5b0b7543c5bf3ccb0be2d63801ff89}{set\+Encom\+Feitas}} (const vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \&encom\+Feitas)
+\item 
+bool \mbox{\hyperlink{class_entregador_a7d389deea7f15a515c9a45eb9cd77912}{is\+Disponivel}} () const
+\item 
+void \mbox{\hyperlink{class_entregador_a01fcf4f03c003d6bc33c68d5c34fc571}{set\+Disponivel}} (bool \mbox{\hyperlink{class_entregador_aa2462d8e690c8fe35872f4c459556070}{disponivel}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_veiculo}{Veiculo}} \mbox{\hyperlink{class_entregador_a008a76e789c498c23e3ca1cdf3720e5d}{veiculo\+\_\+alocado}}
+\begin{DoxyCompactList}\small\item\em O veiculo do entregador. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \mbox{\hyperlink{class_entregador_a65ac61e91a348b1b7f929023a16e93a9}{encom\+\_\+feitas}}
+\begin{DoxyCompactList}\small\item\em O vetor de encomendas (Classe \mbox{\hyperlink{class_encomenda}{Encomenda}}) feitas pelo entregador. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entregador_aa2462d8e690c8fe35872f4c459556070}{disponivel}}
+\begin{DoxyCompactList}\small\item\em A sua disponibilidade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe \mbox{\hyperlink{class_entregador}{Entregador}} representa um funcionário \mbox{\hyperlink{class_entregador}{Entregador}} através das suas características enquanto Funcionário, mais o seu Veículo, um vetor de encomendas (classe \mbox{\hyperlink{class_encomenda}{Encomenda}}) feitas, e a sua disponibilidade. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_entregador_a64c1afe3991324f549758f24fca75c7f}\label{class_entregador_a64c1afe3991324f549758f24fca75c7f}} 
+\index{Entregador@{Entregador}!Entregador@{Entregador}}
+\index{Entregador@{Entregador}!Entregador@{Entregador}}
+\doxysubsubsection{\texorpdfstring{Entregador()}{Entregador()}}
+{\footnotesize\ttfamily Entregador\+::\+Entregador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_entregador}{Entregador}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{146 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_entregador_afab1f1ed9d1d4b2adf1afdb0562cb877}\label{class_entregador_afab1f1ed9d1d4b2adf1afdb0562cb877}} 
+\index{Entregador@{Entregador}!````~Entregador@{$\sim$Entregador}}
+\index{````~Entregador@{$\sim$Entregador}!Entregador@{Entregador}}
+\doxysubsubsection{\texorpdfstring{$\sim$Entregador()}{~Entregador()}}
+{\footnotesize\ttfamily Entregador\+::$\sim$\+Entregador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor da classe \mbox{\hyperlink{class_entregador}{Entregador}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{147                         \{}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_entregador_afeee107490be7bd835bffc760b59e29d}\label{class_entregador_afeee107490be7bd835bffc760b59e29d}} 
+\index{Entregador@{Entregador}!getEncomFeitas@{getEncomFeitas}}
+\index{getEncomFeitas@{getEncomFeitas}!Entregador@{Entregador}}
+\doxysubsubsection{\texorpdfstring{getEncomFeitas()}{getEncomFeitas()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ Entregador\+::get\+Encom\+Feitas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado de \mbox{\hyperlink{class_funcionario_af133c033617f2c39eafbb2de520c7433}{Funcionario}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{156                                             \{}
+\DoxyCodeLine{157     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_entregador_a65ac61e91a348b1b7f929023a16e93a9}{encom\_feitas}};}
+\DoxyCodeLine{158 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_entregador_a86119b2b51361bba85d96e857db2059d}\label{class_entregador_a86119b2b51361bba85d96e857db2059d}} 
+\index{Entregador@{Entregador}!getVeiculoAlocado@{getVeiculoAlocado}}
+\index{getVeiculoAlocado@{getVeiculoAlocado}!Entregador@{Entregador}}
+\doxysubsubsection{\texorpdfstring{getVeiculoAlocado()}{getVeiculoAlocado()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_veiculo}{Veiculo}} Entregador\+::get\+Veiculo\+Alocado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado de \mbox{\hyperlink{class_funcionario_afcc9ff4bb0a8b9a6d75275863bff34a9}{Funcionario}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{150                                                   \{}
+\DoxyCodeLine{151     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_entregador_a008a76e789c498c23e3ca1cdf3720e5d}{veiculo\_alocado}};}
+\DoxyCodeLine{152 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_entregador_a7d389deea7f15a515c9a45eb9cd77912}\label{class_entregador_a7d389deea7f15a515c9a45eb9cd77912}} 
+\index{Entregador@{Entregador}!isDisponivel@{isDisponivel}}
+\index{isDisponivel@{isDisponivel}!Entregador@{Entregador}}
+\doxysubsubsection{\texorpdfstring{isDisponivel()}{isDisponivel()}}
+{\footnotesize\ttfamily bool Entregador\+::is\+Disponivel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado de \mbox{\hyperlink{class_funcionario_a6bc4524588b99830b224f34f460e2fad}{Funcionario}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162                                     \{}
+\DoxyCodeLine{163     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_entregador_aa2462d8e690c8fe35872f4c459556070}{disponivel}};}
+\DoxyCodeLine{164 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_entregador_a01fcf4f03c003d6bc33c68d5c34fc571}\label{class_entregador_a01fcf4f03c003d6bc33c68d5c34fc571}} 
+\index{Entregador@{Entregador}!setDisponivel@{setDisponivel}}
+\index{setDisponivel@{setDisponivel}!Entregador@{Entregador}}
+\doxysubsubsection{\texorpdfstring{setDisponivel()}{setDisponivel()}}
+{\footnotesize\ttfamily void Entregador\+::set\+Disponivel (\begin{DoxyParamCaption}\item[{bool}]{disponivel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado de \mbox{\hyperlink{class_funcionario_a27f39ad986eb9a0da78dd3086e385f67}{Funcionario}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{165                                               \{}
+\DoxyCodeLine{166     \mbox{\hyperlink{class_entregador_aa2462d8e690c8fe35872f4c459556070}{Entregador::disponivel}} = \mbox{\hyperlink{class_entregador_aa2462d8e690c8fe35872f4c459556070}{disponivel}};}
+\DoxyCodeLine{167 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_entregador_a4a5b0b7543c5bf3ccb0be2d63801ff89}\label{class_entregador_a4a5b0b7543c5bf3ccb0be2d63801ff89}} 
+\index{Entregador@{Entregador}!setEncomFeitas@{setEncomFeitas}}
+\index{setEncomFeitas@{setEncomFeitas}!Entregador@{Entregador}}
+\doxysubsubsection{\texorpdfstring{setEncomFeitas()}{setEncomFeitas()}}
+{\footnotesize\ttfamily void Entregador\+::set\+Encom\+Feitas (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \&}]{encom\+Feitas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado de \mbox{\hyperlink{class_funcionario_a94612cd4ed9d9f59e9a3c706cd0d67cb}{Funcionario}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{159                                                                     \{}
+\DoxyCodeLine{160     \mbox{\hyperlink{class_entregador_a65ac61e91a348b1b7f929023a16e93a9}{encom\_feitas}} = encomFeitas;}
+\DoxyCodeLine{161 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_entregador_aca837dc54b7fed828e14fd704401c710}\label{class_entregador_aca837dc54b7fed828e14fd704401c710}} 
+\index{Entregador@{Entregador}!setVeiculoAlocado@{setVeiculoAlocado}}
+\index{setVeiculoAlocado@{setVeiculoAlocado}!Entregador@{Entregador}}
+\doxysubsubsection{\texorpdfstring{setVeiculoAlocado()}{setVeiculoAlocado()}}
+{\footnotesize\ttfamily void Entregador\+::set\+Veiculo\+Alocado (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_veiculo}{Veiculo}} \&}]{veiculo\+Alocado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado de \mbox{\hyperlink{class_funcionario_a7b803cbedf3df9ba0e8cdd3a75a19ce8}{Funcionario}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{153                                                                 \{}
+\DoxyCodeLine{154     \mbox{\hyperlink{class_entregador_a008a76e789c498c23e3ca1cdf3720e5d}{veiculo\_alocado}} = veiculoAlocado;}
+\DoxyCodeLine{155 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_entregador_aa2462d8e690c8fe35872f4c459556070}\label{class_entregador_aa2462d8e690c8fe35872f4c459556070}} 
+\index{Entregador@{Entregador}!disponivel@{disponivel}}
+\index{disponivel@{disponivel}!Entregador@{Entregador}}
+\doxysubsubsection{\texorpdfstring{disponivel}{disponivel}}
+{\footnotesize\ttfamily bool Entregador\+::disponivel\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A sua disponibilidade. 
+
+\mbox{\Hypertarget{class_entregador_a65ac61e91a348b1b7f929023a16e93a9}\label{class_entregador_a65ac61e91a348b1b7f929023a16e93a9}} 
+\index{Entregador@{Entregador}!encom\_feitas@{encom\_feitas}}
+\index{encom\_feitas@{encom\_feitas}!Entregador@{Entregador}}
+\doxysubsubsection{\texorpdfstring{encom\_feitas}{encom\_feitas}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_encomenda}{Encomenda}}$>$ Entregador\+::encom\+\_\+feitas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O vetor de encomendas (Classe \mbox{\hyperlink{class_encomenda}{Encomenda}}) feitas pelo entregador. 
+
+\mbox{\Hypertarget{class_entregador_a008a76e789c498c23e3ca1cdf3720e5d}\label{class_entregador_a008a76e789c498c23e3ca1cdf3720e5d}} 
+\index{Entregador@{Entregador}!veiculo\_alocado@{veiculo\_alocado}}
+\index{veiculo\_alocado@{veiculo\_alocado}!Entregador@{Entregador}}
+\doxysubsubsection{\texorpdfstring{veiculo\_alocado}{veiculo\_alocado}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_veiculo}{Veiculo}} Entregador\+::veiculo\+\_\+alocado\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O veiculo do entregador. 
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{empresa_8h}{empresa.\+h}}\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{empresa_8cpp}{empresa.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['registo_115',['registo',['../main_8cpp.html#aed9c1384debe4ea72586f808d7e9c12e',1,'main.cpp']]],
+  ['removeadmin_116',['removeAdmin',['../class_base.html#a146228c71d8ed3b8916baa86cbfa5116',1,'Base']]],
+  ['removecliente_117',['removeCliente',['../class_base.html#acc6172594c9dff6b4beba3ef26ac4ae4',1,'Base']]],
+  ['removeentreg_118',['removeEntreg',['../class_base.html#a1bc6fb7a86da708a8d21e11bf24a4ba0',1,'Base']]],
+  ['removefunc_119',['removeFunc',['../main_8cpp.html#a58f4970fe4fedc5594df18383884872d',1,'main.cpp']]],
+  ['removefuncionario_120',['removeFuncionario',['../class_base.html#af26bcd33867ddb80452f3aaeac7b1040',1,'Base']]],
+  ['removerest_121',['removeRest',['../main_8cpp.html#a065a45e9a4330f34ba85dd765fe42618',1,'main.cpp']]],
+  ['removerestaurante_122',['removeRestaurante',['../class_base.html#a4ae2252cefffd65f429b9243b58731b3',1,'Base']]],
+  ['restaurante_123',['Restaurante',['../class_restaurante.html',1,'Restaurante'],['../class_restaurante.html#ae96329273fb6568baa886d469a4b82f4',1,'Restaurante::Restaurante()'],['../class_restaurante_inexistente.html#a51727fae69311a9804296521dd7cd457',1,'RestauranteInexistente::restaurante()']]],
+  ['restaurante_2ecpp_124',['restaurante.cpp',['../restaurante_8cpp.html',1,'']]],
+  ['restaurante_2eh_125',['restaurante.h',['../restaurante_8h.html',1,'']]],
+  ['restauranteinexistente_126',['RestauranteInexistente',['../class_restaurante_inexistente.html',1,'RestauranteInexistente'],['../class_restaurante_inexistente.html#af2ca79128c23a15ab312c183cec18196',1,'RestauranteInexistente::RestauranteInexistente()']]],
+  ['restaurantenome_127',['restauranteNome',['../class_encomenda.html#a70aaccc28ed3e84e19a05e9ac0619da7',1,'Encomenda']]],
+  ['restaurantes_128',['restaurantes',['../class_base.html#a1b81f01c593fd5b581991067f6cfc4ea',1,'Base']]],
+  ['restaurantes_5ffilename_129',['restaurantes_filename',['../class_base.html#aaf43a3482c9ffbd3a0b60714b94e9478',1,'Base']]],
+  ['restaurantes_5freadfile_130',['restaurantes_readfile',['../class_base.html#a4becd0991c08c6c13c6e18fe983e7743',1,'Base']]],
+  ['rua_131',['rua',['../class_morada.html#af48005a99f47c7041e4e31fa0a9a7a03',1,'Morada']]]
+];

@@ -1,0 +1,207 @@
+\hypertarget{class_empresa}{}\doxysection{Referência à classe Empresa}
+\label{class_empresa}\index{Empresa@{Empresa}}
+
+
+Classe \mbox{\hyperlink{class_empresa}{Empresa}} representa a \mbox{\hyperlink{class_empresa}{Empresa}} através do conjunto de Bases (classe \mbox{\hyperlink{class_base}{Base}}) que tem e um conjunto de encomendas feitas à empresa desde sempre.  
+
+
+
+
+{\ttfamily \#include $<$empresa.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_empresa_aff124b958356c479ab50ddf4cf302193}{Empresa}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_empresa}{Empresa}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_empresa_a3c03ed7fbfdaa5c8db9b8587451f1326}{$\sim$\+Empresa}} ()
+\begin{DoxyCompactList}\small\item\em Donstrutor da classe \mbox{\hyperlink{class_empresa}{Empresa}}. \end{DoxyCompactList}\item 
+const vector$<$ \mbox{\hyperlink{class_base}{Base}} $>$ \& \mbox{\hyperlink{class_empresa_af259dcf31c96fbff2ebcbe8185beb89e}{get\+Bases}} () const
+\item 
+void \mbox{\hyperlink{class_empresa_a99fd18760963cc95d57763ce1c4f265b}{set\+Bases}} (const vector$<$ \mbox{\hyperlink{class_base}{Base}} $>$ \&\mbox{\hyperlink{class_empresa_a55bc9f3802b54e1995c37fefa10b1c9f}{bases}})
+\item 
+vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \mbox{\hyperlink{class_empresa_a2ba85f473f6c11402151aa4d73291056}{get\+Encomendas}} ()
+\item 
+void \mbox{\hyperlink{class_empresa_a709049001c7236adada8fc8d679e13ef}{set\+Encomendas}} (vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$)
+\item 
+void \mbox{\hyperlink{class_empresa_a765b6be95ec0c553c459083497a094de}{encomendas\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro encomendas.\+txt, que contém a informação ordenada de um conjunto de encomendas (Classe \mbox{\hyperlink{class_encomenda}{Encomenda}}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_base}{Base}} $>$ \mbox{\hyperlink{class_empresa_a55bc9f3802b54e1995c37fefa10b1c9f}{bases}}
+\begin{DoxyCompactList}\small\item\em O conjunto de bases (Classe \mbox{\hyperlink{class_base}{Base}}) da \mbox{\hyperlink{class_empresa}{Empresa}}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \mbox{\hyperlink{class_empresa_a2730ca401a304847eccdaa83b3f4f6e1}{encomendas}}
+\begin{DoxyCompactList}\small\item\em O conjuntor de encomendas (Classe \mbox{\hyperlink{class_encomenda}{Encomenda}}) da \mbox{\hyperlink{class_empresa}{Empresa}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe \mbox{\hyperlink{class_empresa}{Empresa}} representa a \mbox{\hyperlink{class_empresa}{Empresa}} através do conjunto de Bases (classe \mbox{\hyperlink{class_base}{Base}}) que tem e um conjunto de encomendas feitas à empresa desde sempre. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_empresa_aff124b958356c479ab50ddf4cf302193}\label{class_empresa_aff124b958356c479ab50ddf4cf302193}} 
+\index{Empresa@{Empresa}!Empresa@{Empresa}}
+\index{Empresa@{Empresa}!Empresa@{Empresa}}
+\doxysubsubsection{\texorpdfstring{Empresa()}{Empresa()}}
+{\footnotesize\ttfamily Empresa\+::\+Empresa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_empresa}{Empresa}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1095 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_empresa_a3c03ed7fbfdaa5c8db9b8587451f1326}\label{class_empresa_a3c03ed7fbfdaa5c8db9b8587451f1326}} 
+\index{Empresa@{Empresa}!````~Empresa@{$\sim$Empresa}}
+\index{````~Empresa@{$\sim$Empresa}!Empresa@{Empresa}}
+\doxysubsubsection{\texorpdfstring{$\sim$Empresa()}{~Empresa()}}
+{\footnotesize\ttfamily Empresa\+::$\sim$\+Empresa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Donstrutor da classe \mbox{\hyperlink{class_empresa}{Empresa}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1097                   \{}
+\DoxyCodeLine{1098 }
+\DoxyCodeLine{1099 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_empresa_a765b6be95ec0c553c459083497a094de}\label{class_empresa_a765b6be95ec0c553c459083497a094de}} 
+\index{Empresa@{Empresa}!encomendas\_readfile@{encomendas\_readfile}}
+\index{encomendas\_readfile@{encomendas\_readfile}!Empresa@{Empresa}}
+\doxysubsubsection{\texorpdfstring{encomendas\_readfile()}{encomendas\_readfile()}}
+{\footnotesize\ttfamily void Empresa\+::encomendas\+\_\+readfile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lê o ficheiro encomendas.\+txt, que contém a informação ordenada de um conjunto de encomendas (Classe \mbox{\hyperlink{class_encomenda}{Encomenda}}). 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1114                                  \{}
+\DoxyCodeLine{1115     \mbox{\hyperlink{class_encomenda}{Encomenda}} e;}
+\DoxyCodeLine{1116     vector<string> encomenda\_info;}
+\DoxyCodeLine{1117     ifstream infile;}
+\DoxyCodeLine{1118     \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{1119     infile.open(\textcolor{stringliteral}{"entregas.txt"});}
+\DoxyCodeLine{1120     \textcolor{keywordflow}{while}(getline(infile,line))\{}
+\DoxyCodeLine{1121         \textcolor{keywordflow}{if}(line==\textcolor{stringliteral}{":::::"})\{}
+\DoxyCodeLine{1122             e.\mbox{\hyperlink{class_encomenda_a839faad4df09b891db498a5cf0bfcb5b}{setRestauranteNome}}(encomenda\_info[0]);}
+\DoxyCodeLine{1123             e.\mbox{\hyperlink{class_encomenda_a5968e6f937adf04e4f671459c77890a0}{setData}}(\mbox{\hyperlink{class_data}{Data}}(encomenda\_info[1]));}
+\DoxyCodeLine{1124             e.\mbox{\hyperlink{class_encomenda_a39fa08b892a57216508abb73664d6eed}{setEntregadorNome}}(encomenda\_info[2]);}
+\DoxyCodeLine{1125             e.\mbox{\hyperlink{class_encomenda_a9db83acb0c775265201043cb6c6da083}{setHora}}(encomenda\_info[3]);}
+\DoxyCodeLine{1126             e.\mbox{\hyperlink{class_encomenda_aece38c6124ae2825a3cdd1ff8253299f}{setPratosNome}}(encomenda\_info[4]);}
+\DoxyCodeLine{1127             e.\mbox{\hyperlink{class_encomenda_a08b3460b2fc4935173f5e47dc5533d26}{setEntrega}}(stoi(encomenda\_info[5]));}
+\DoxyCodeLine{1128             e.\mbox{\hyperlink{class_encomenda_a2bb6f818b2b4aff5a181216880337f76}{setSucesso}}(stoi(encomenda\_info[6]));}
+\DoxyCodeLine{1129             e.\mbox{\hyperlink{class_encomenda_a848055d679b66d9286f984504be67abb}{setClienteNome}}(encomenda\_info[7]);}
+\DoxyCodeLine{1130             e.\mbox{\hyperlink{class_encomenda_a7e21df8d24aba3de6932325f8662b795}{setPreco}}(stod(encomenda\_info[8]));}
+\DoxyCodeLine{1131             \mbox{\hyperlink{class_empresa_a2730ca401a304847eccdaa83b3f4f6e1}{encomendas}}.push\_back(e);}
+\DoxyCodeLine{1132             encomenda\_info.clear();}
+\DoxyCodeLine{1133         \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{1134             encomenda\_info.push\_back(line);}
+\DoxyCodeLine{1135         \}}
+\DoxyCodeLine{1136     \}}
+\DoxyCodeLine{1137     e.\mbox{\hyperlink{class_encomenda_a839faad4df09b891db498a5cf0bfcb5b}{setRestauranteNome}}(encomenda\_info[0]);}
+\DoxyCodeLine{1138     e.\mbox{\hyperlink{class_encomenda_a5968e6f937adf04e4f671459c77890a0}{setData}}(\mbox{\hyperlink{class_data}{Data}}(encomenda\_info[1]));}
+\DoxyCodeLine{1139     e.\mbox{\hyperlink{class_encomenda_a39fa08b892a57216508abb73664d6eed}{setEntregadorNome}}(encomenda\_info[2]);}
+\DoxyCodeLine{1140     e.\mbox{\hyperlink{class_encomenda_a9db83acb0c775265201043cb6c6da083}{setHora}}(encomenda\_info[3]);}
+\DoxyCodeLine{1141     e.\mbox{\hyperlink{class_encomenda_aece38c6124ae2825a3cdd1ff8253299f}{setPratosNome}}(encomenda\_info[4]);}
+\DoxyCodeLine{1142     e.\mbox{\hyperlink{class_encomenda_a08b3460b2fc4935173f5e47dc5533d26}{setEntrega}}(stoi(encomenda\_info[5]));}
+\DoxyCodeLine{1143     e.\mbox{\hyperlink{class_encomenda_a2bb6f818b2b4aff5a181216880337f76}{setSucesso}}(stoi(encomenda\_info[6]));}
+\DoxyCodeLine{1144     e.\mbox{\hyperlink{class_encomenda_a848055d679b66d9286f984504be67abb}{setClienteNome}}(encomenda\_info[7]);}
+\DoxyCodeLine{1145     e.\mbox{\hyperlink{class_encomenda_a7e21df8d24aba3de6932325f8662b795}{setPreco}}(stod(encomenda\_info[8]));}
+\DoxyCodeLine{1146     \mbox{\hyperlink{class_empresa_a2730ca401a304847eccdaa83b3f4f6e1}{encomendas}}.push\_back(e);}
+\DoxyCodeLine{1147     encomenda\_info.clear();}
+\DoxyCodeLine{1148     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1149 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_empresa_af259dcf31c96fbff2ebcbe8185beb89e}\label{class_empresa_af259dcf31c96fbff2ebcbe8185beb89e}} 
+\index{Empresa@{Empresa}!getBases@{getBases}}
+\index{getBases@{getBases}!Empresa@{Empresa}}
+\doxysubsubsection{\texorpdfstring{getBases()}{getBases()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_base}{Base}} $>$ \& Empresa\+::get\+Bases (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1101                                             \{}
+\DoxyCodeLine{1102     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_empresa_a55bc9f3802b54e1995c37fefa10b1c9f}{bases}};}
+\DoxyCodeLine{1103 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_empresa_a2ba85f473f6c11402151aa4d73291056}\label{class_empresa_a2ba85f473f6c11402151aa4d73291056}} 
+\index{Empresa@{Empresa}!getEncomendas@{getEncomendas}}
+\index{getEncomendas@{getEncomendas}!Empresa@{Empresa}}
+\doxysubsubsection{\texorpdfstring{getEncomendas()}{getEncomendas()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ Empresa\+::get\+Encomendas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1108                                          \{}
+\DoxyCodeLine{1109     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_empresa_a2730ca401a304847eccdaa83b3f4f6e1}{encomendas}};}
+\DoxyCodeLine{1110 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_empresa_a99fd18760963cc95d57763ce1c4f265b}\label{class_empresa_a99fd18760963cc95d57763ce1c4f265b}} 
+\index{Empresa@{Empresa}!setBases@{setBases}}
+\index{setBases@{setBases}!Empresa@{Empresa}}
+\doxysubsubsection{\texorpdfstring{setBases()}{setBases()}}
+{\footnotesize\ttfamily void Empresa\+::set\+Bases (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_base}{Base}} $>$ \&}]{bases }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1105                                                 \{}
+\DoxyCodeLine{1106     \mbox{\hyperlink{class_empresa_a55bc9f3802b54e1995c37fefa10b1c9f}{Empresa::bases}} = \mbox{\hyperlink{class_empresa_a55bc9f3802b54e1995c37fefa10b1c9f}{bases}};}
+\DoxyCodeLine{1107 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_empresa_a709049001c7236adada8fc8d679e13ef}\label{class_empresa_a709049001c7236adada8fc8d679e13ef}} 
+\index{Empresa@{Empresa}!setEncomendas@{setEncomendas}}
+\index{setEncomendas@{setEncomendas}!Empresa@{Empresa}}
+\doxysubsubsection{\texorpdfstring{setEncomendas()}{setEncomendas()}}
+{\footnotesize\ttfamily void Empresa\+::set\+Encomendas (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$}]{e }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1111                                               \{}
+\DoxyCodeLine{1112     \mbox{\hyperlink{class_empresa_a2730ca401a304847eccdaa83b3f4f6e1}{encomendas}}=e;}
+\DoxyCodeLine{1113 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_empresa_a55bc9f3802b54e1995c37fefa10b1c9f}\label{class_empresa_a55bc9f3802b54e1995c37fefa10b1c9f}} 
+\index{Empresa@{Empresa}!bases@{bases}}
+\index{bases@{bases}!Empresa@{Empresa}}
+\doxysubsubsection{\texorpdfstring{bases}{bases}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_base}{Base}}$>$ Empresa\+::bases\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O conjunto de bases (Classe \mbox{\hyperlink{class_base}{Base}}) da \mbox{\hyperlink{class_empresa}{Empresa}}. 
+
+\mbox{\Hypertarget{class_empresa_a2730ca401a304847eccdaa83b3f4f6e1}\label{class_empresa_a2730ca401a304847eccdaa83b3f4f6e1}} 
+\index{Empresa@{Empresa}!encomendas@{encomendas}}
+\index{encomendas@{encomendas}!Empresa@{Empresa}}
+\doxysubsubsection{\texorpdfstring{encomendas}{encomendas}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_encomenda}{Encomenda}}$>$ Empresa\+::encomendas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O conjuntor de encomendas (Classe \mbox{\hyperlink{class_encomenda}{Encomenda}}) da \mbox{\hyperlink{class_empresa}{Empresa}}. 
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{empresa_8h}{empresa.\+h}}\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{empresa_8cpp}{empresa.\+cpp}}\end{DoxyCompactItemize}

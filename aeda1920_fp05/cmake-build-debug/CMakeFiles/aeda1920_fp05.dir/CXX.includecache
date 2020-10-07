@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/aeda1920_fp05/Tests/Crianca.h
+string
+-
+sstream
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/aeda1920_fp05/Tests/jogo.cpp
+jogo.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/aeda1920_fp05/Tests/jogo.h
+cstdlib
+-
+ctime
+-
+iostream
+-
+vector
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/aeda1920_fp05/Tests/jogo.h
+Crianca.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/aeda1920_fp05/Tests/Crianca.h
+list
+-
+string
+-
+

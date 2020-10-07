@@ -1,0 +1,66 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/auxiliares.h
+string
+-
+vector
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/cliente.h
+auxiliares.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/auxiliares.h
+empresa.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/empresa.h
+string
+-
+vector
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/empresa.h
+restaurante.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/restaurante.h
+tabHFuncionario.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/tabHFuncionario.h
+iostream
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/main.cpp
+iostream
+-
+restaurante.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/restaurante.h
+cliente.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/cliente.h
+auxiliares.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/auxiliares.h
+empresa.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/empresa.h
+fstream
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/fstream
+algorithm
+-
+ctime
+-
+chrono
+-
+iomanip
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/restaurante.h
+auxiliares.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/auxiliares.h
+string
+-
+vector
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh01/tabHFuncionario.h
+unordered_set
+-
+

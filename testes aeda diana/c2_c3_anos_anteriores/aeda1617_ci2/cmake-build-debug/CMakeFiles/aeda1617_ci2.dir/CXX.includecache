@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Asus/Desktop/fac/2ano/aeda/c2_anos_anteriores/aeda1617_ci2/Tests/Article.cpp
+Article.h
+C:/Users/Asus/Desktop/fac/2ano/aeda/c2_anos_anteriores/aeda1617_ci2/Tests/Article.h
+cmath
+-
+
+C:/Users/Asus/Desktop/fac/2ano/aeda/c2_anos_anteriores/aeda1617_ci2/Tests/Article.h
+

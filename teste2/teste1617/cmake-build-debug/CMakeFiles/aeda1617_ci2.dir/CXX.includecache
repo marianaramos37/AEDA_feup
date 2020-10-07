@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste2/teste1617/Tests/Article.h
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste2/teste1617/Tests/Purchase.cpp
+Purchase.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste2/teste1617/Tests/Purchase.h
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste2/teste1617/Tests/Purchase.h
+stack
+-
+list
+-
+vector
+-
+Article.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste2/teste1617/Tests/Article.h
+

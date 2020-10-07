@@ -1,0 +1,58 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/auxiliares.h
+string
+-
+vector
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/cliente.h
+auxiliares.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/auxiliares.h
+empresa.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/empresa.h
+string
+-
+vector
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/empresa.h
+restaurante.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/restaurante.h
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/main.cpp
+iostream
+-
+restaurante.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/restaurante.h
+cliente.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/cliente.h
+auxiliares.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/auxiliares.h
+empresa.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/empresa.h
+fstream
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/fstream
+algorithm
+-
+ctime
+-
+chrono
+-
+iomanip
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/restaurante.h
+auxiliares.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDelivery/auxiliares.h
+string
+-
+vector
+-
+

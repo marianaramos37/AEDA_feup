@@ -1,0 +1,237 @@
+\hypertarget{class_data}{}\doxysection{Referência à classe Data}
+\label{class_data}\index{Data@{Data}}
+
+
+Class \mbox{\hyperlink{class_data}{Data}} representa uma data atraves do dia, mes e ano.  
+
+
+
+
+{\ttfamily \#include $<$auxiliares.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_af11f741cb7f587e2e495452a8905a22a}{Data}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da Classe \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data_aebec784a98dfb305e38edb04d7dfc61c}{Data}} (string d)
+\begin{DoxyCompactList}\small\item\em Constroi uma instância de \mbox{\hyperlink{class_data}{Data}} recebendo uma string estruturada com o seu conteudo. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_data_aab31956423290f0d62dcca47ab4d16dd}{$\sim$\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da Classe \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_data_aa9b7bdc683d9c493d903184e85f1e6b3}{get\+Dia}} () const
+\item 
+void \mbox{\hyperlink{class_data_a5ded987b9aea91ca497ecc1376e3ec28}{set\+Dia}} (int \mbox{\hyperlink{class_data_ad76270db677fc394a4a7ded1c58de6d5}{dia}})
+\item 
+int \mbox{\hyperlink{class_data_a1df6f5e1695c7cae56b9ee752a6895e8}{get\+Mes}} () const
+\item 
+void \mbox{\hyperlink{class_data_ac95a854d0ce9c336d4fb2831ee569354}{set\+Mes}} (int \mbox{\hyperlink{class_data_a8f77c5b515144e08b4fe26a8604f30ad}{mes}})
+\item 
+int \mbox{\hyperlink{class_data_a986bec10cbca338f08c9096d8e51efb5}{get\+Ano}} () const
+\item 
+void \mbox{\hyperlink{class_data_a73cc858b0c78d41f3d8c4b131940ddd0}{set\+Ano}} (int \mbox{\hyperlink{class_data_a80d76fe2225d187fe8a20414478a2cb5}{ano}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_data_ad76270db677fc394a4a7ded1c58de6d5}{dia}}
+\begin{DoxyCompactList}\small\item\em O dia da \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_data_a8f77c5b515144e08b4fe26a8604f30ad}{mes}}
+\begin{DoxyCompactList}\small\item\em O mês da \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_data_a80d76fe2225d187fe8a20414478a2cb5}{ano}}
+\begin{DoxyCompactList}\small\item\em O ano da \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Class \mbox{\hyperlink{class_data}{Data}} representa uma data atraves do dia, mes e ano. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_data_af11f741cb7f587e2e495452a8905a22a}\label{class_data_af11f741cb7f587e2e495452a8905a22a}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da Classe \mbox{\hyperlink{class_data}{Data}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{133 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_data_aebec784a98dfb305e38edb04d7dfc61c}\label{class_data_aebec784a98dfb305e38edb04d7dfc61c}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}\item[{string}]{d }\end{DoxyParamCaption})}
+
+
+
+Constroi uma instância de \mbox{\hyperlink{class_data}{Data}} recebendo uma string estruturada com o seu conteudo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em d} & A string estruturada com o conteudo da morada. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{134                    \{}
+\DoxyCodeLine{135     \textcolor{keywordtype}{string} temp = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{136     vector<int> data\_info;}
+\DoxyCodeLine{137     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < d.length(); i++)}
+\DoxyCodeLine{138     \{}
+\DoxyCodeLine{139         \textcolor{keywordflow}{if} (d[i] == \textcolor{charliteral}{'/'})}
+\DoxyCodeLine{140         \{}
+\DoxyCodeLine{141             data\_info.push\_back(stoi(temp));}
+\DoxyCodeLine{142             temp = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{143         \}}
+\DoxyCodeLine{144         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{145             temp += d[i];}
+\DoxyCodeLine{146     \}}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148     data\_info.push\_back(stoi(temp));}
+\DoxyCodeLine{149     this-\/>\mbox{\hyperlink{class_data_ad76270db677fc394a4a7ded1c58de6d5}{dia}} = data\_info[0];}
+\DoxyCodeLine{150     this-\/>\mbox{\hyperlink{class_data_a8f77c5b515144e08b4fe26a8604f30ad}{mes}} = data\_info[1];}
+\DoxyCodeLine{151     this-\/>\mbox{\hyperlink{class_data_a80d76fe2225d187fe8a20414478a2cb5}{ano}} = data\_info[2];}
+\DoxyCodeLine{152 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_data_aab31956423290f0d62dcca47ab4d16dd}\label{class_data_aab31956423290f0d62dcca47ab4d16dd}} 
+\index{Data@{Data}!````~Data@{$\sim$Data}}
+\index{````~Data@{$\sim$Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{$\sim$Data()}{~Data()}}
+{\footnotesize\ttfamily Data\+::$\sim$\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor da Classe \mbox{\hyperlink{class_data}{Data}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{154             \{}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_data_a986bec10cbca338f08c9096d8e51efb5}\label{class_data_a986bec10cbca338f08c9096d8e51efb5}} 
+\index{Data@{Data}!getAno@{getAno}}
+\index{getAno@{getAno}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getAno()}{getAno()}}
+{\footnotesize\ttfamily int Data\+::get\+Ano (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{174                        \{}
+\DoxyCodeLine{175     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_data_a80d76fe2225d187fe8a20414478a2cb5}{ano}};}
+\DoxyCodeLine{176 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_data_aa9b7bdc683d9c493d903184e85f1e6b3}\label{class_data_aa9b7bdc683d9c493d903184e85f1e6b3}} 
+\index{Data@{Data}!getDia@{getDia}}
+\index{getDia@{getDia}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getDia()}{getDia()}}
+{\footnotesize\ttfamily int Data\+::get\+Dia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{158                        \{}
+\DoxyCodeLine{159     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_data_ad76270db677fc394a4a7ded1c58de6d5}{dia}};}
+\DoxyCodeLine{160 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_data_a1df6f5e1695c7cae56b9ee752a6895e8}\label{class_data_a1df6f5e1695c7cae56b9ee752a6895e8}} 
+\index{Data@{Data}!getMes@{getMes}}
+\index{getMes@{getMes}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getMes()}{getMes()}}
+{\footnotesize\ttfamily int Data\+::get\+Mes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{166                        \{}
+\DoxyCodeLine{167     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_data_a8f77c5b515144e08b4fe26a8604f30ad}{mes}};}
+\DoxyCodeLine{168 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_data_a73cc858b0c78d41f3d8c4b131940ddd0}\label{class_data_a73cc858b0c78d41f3d8c4b131940ddd0}} 
+\index{Data@{Data}!setAno@{setAno}}
+\index{setAno@{setAno}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setAno()}{setAno()}}
+{\footnotesize\ttfamily void Data\+::set\+Ano (\begin{DoxyParamCaption}\item[{int}]{ano }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{178                          \{}
+\DoxyCodeLine{179     \mbox{\hyperlink{class_data_a80d76fe2225d187fe8a20414478a2cb5}{Data::ano}} = \mbox{\hyperlink{class_data_a80d76fe2225d187fe8a20414478a2cb5}{ano}};}
+\DoxyCodeLine{180 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_data_a5ded987b9aea91ca497ecc1376e3ec28}\label{class_data_a5ded987b9aea91ca497ecc1376e3ec28}} 
+\index{Data@{Data}!setDia@{setDia}}
+\index{setDia@{setDia}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setDia()}{setDia()}}
+{\footnotesize\ttfamily void Data\+::set\+Dia (\begin{DoxyParamCaption}\item[{int}]{dia }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162                          \{}
+\DoxyCodeLine{163     \mbox{\hyperlink{class_data_ad76270db677fc394a4a7ded1c58de6d5}{Data::dia}} = \mbox{\hyperlink{class_data_ad76270db677fc394a4a7ded1c58de6d5}{dia}};}
+\DoxyCodeLine{164 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_data_ac95a854d0ce9c336d4fb2831ee569354}\label{class_data_ac95a854d0ce9c336d4fb2831ee569354}} 
+\index{Data@{Data}!setMes@{setMes}}
+\index{setMes@{setMes}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setMes()}{setMes()}}
+{\footnotesize\ttfamily void Data\+::set\+Mes (\begin{DoxyParamCaption}\item[{int}]{mes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{170                          \{}
+\DoxyCodeLine{171     \mbox{\hyperlink{class_data_a8f77c5b515144e08b4fe26a8604f30ad}{Data::mes}} = \mbox{\hyperlink{class_data_a8f77c5b515144e08b4fe26a8604f30ad}{mes}};}
+\DoxyCodeLine{172 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_data_a80d76fe2225d187fe8a20414478a2cb5}\label{class_data_a80d76fe2225d187fe8a20414478a2cb5}} 
+\index{Data@{Data}!ano@{ano}}
+\index{ano@{ano}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{ano}{ano}}
+{\footnotesize\ttfamily int Data\+::ano\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O ano da \mbox{\hyperlink{class_data}{Data}}. 
+
+\mbox{\Hypertarget{class_data_ad76270db677fc394a4a7ded1c58de6d5}\label{class_data_ad76270db677fc394a4a7ded1c58de6d5}} 
+\index{Data@{Data}!dia@{dia}}
+\index{dia@{dia}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{dia}{dia}}
+{\footnotesize\ttfamily int Data\+::dia\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O dia da \mbox{\hyperlink{class_data}{Data}}. 
+
+\mbox{\Hypertarget{class_data_a8f77c5b515144e08b4fe26a8604f30ad}\label{class_data_a8f77c5b515144e08b4fe26a8604f30ad}} 
+\index{Data@{Data}!mes@{mes}}
+\index{mes@{mes}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{mes}{mes}}
+{\footnotesize\ttfamily int Data\+::mes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O mês da \mbox{\hyperlink{class_data}{Data}}. 
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{auxiliares_8h}{auxiliares.\+h}}\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{auxiliares_8cpp}{auxiliares.\+cpp}}\end{DoxyCompactItemize}

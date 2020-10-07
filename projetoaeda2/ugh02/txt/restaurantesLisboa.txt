@@ -1,0 +1,44 @@
+Il Faro
+Praca do Imperio, Loures, 32
+Italiana
+pratos.txt
+:::::
+Rigor
+Rua Dr. Nunes da Ponte, Lisboa, 156
+Portuguesa
+pratos.txt
+:::::
+Ming Yuan
+Rua de Diogo Botelho, Amadora, 823
+Chinesa
+pratos.txt
+:::::
+Arpenaz
+Rua Dr. Bata, Oeiras, 44
+Portuguesa
+pratos.txt
+:::::
+Coruja
+Av. do Brasil, Odivelas, 56
+Japonesa
+pratos.txt
+:::::
+Infinito
+Rua do Mais Alem, Lisboa, 31
+Chinesa
+pratos.txt
+:::::
+Tesouros
+Rua do Meio, Loures, 53
+Italiana
+pratos.txt
+:::::
+OuricoPlace
+Rua do Fim, Amadora, 11
+Japonesa
+pratos.txt
+:::::
+Helder Restaurante
+Rua do Helder, Oeiras, 12
+Italiana
+pratos.txt

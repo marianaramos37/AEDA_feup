@@ -1,0 +1,449 @@
+\hypertarget{class_encomenda}{}\doxysection{Referência à classe Encomenda}
+\label{class_encomenda}\index{Encomenda@{Encomenda}}
+
+
+Classe \mbox{\hyperlink{class_encomenda}{Encomenda}} representa uma encomenda através do nome do Restauranre, \mbox{\hyperlink{class_data}{Data}} e hora da encomenda, nome do \mbox{\hyperlink{class_entregador}{Entregador}} e \mbox{\hyperlink{class_cliente}{Cliente}}, lista de pratos do menu encomendados, se a encomenda foi realizada com sucesso e se foi realizada dentro ou num concelho vizinho, e o preço total da encomenda.  
+
+
+
+
+{\ttfamily \#include $<$empresa.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_encomenda_a0287b590766f9ced8adb5d4e25a58db1}{Encomenda}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_encomenda}{Encomenda}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_encomenda_a2139d9174c2888a59f871e63266398f1}{$\sim$\+Encomenda}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_encomenda}{Encomenda}}. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{class_encomenda_a46911b5ba795b159289da878f1042fbf}{get\+Restaurante\+Nome}} () const
+\item 
+void \mbox{\hyperlink{class_encomenda_a839faad4df09b891db498a5cf0bfcb5b}{set\+Restaurante\+Nome}} (const string \&restaurante)
+\item 
+const \mbox{\hyperlink{class_data}{Data}} \& \mbox{\hyperlink{class_encomenda_a5b12b5b2c581b311693a67f894f521ab}{get\+Data}} () const
+\item 
+void \mbox{\hyperlink{class_encomenda_a5968e6f937adf04e4f671459c77890a0}{set\+Data}} (const \mbox{\hyperlink{class_data}{Data}} \&\mbox{\hyperlink{class_encomenda_a42a84b723169abbac9cab855f39c31c7}{data}})
+\item 
+string \& \mbox{\hyperlink{class_encomenda_a6848d3879076ddd64a67e9a83744e796}{get\+Entregador\+Nome}} ()
+\item 
+void \mbox{\hyperlink{class_encomenda_a39fa08b892a57216508abb73664d6eed}{set\+Entregador\+Nome}} (const string entregador)
+\item 
+const string \& \mbox{\hyperlink{class_encomenda_a29b00ae28bd50c28842c5ac6ca19d8b2}{get\+Hora}} () const
+\item 
+void \mbox{\hyperlink{class_encomenda_a9db83acb0c775265201043cb6c6da083}{set\+Hora}} (const string \&\mbox{\hyperlink{class_encomenda_a620b412d34ba74176273677bf9fdd3e3}{hora}})
+\item 
+string \& \mbox{\hyperlink{class_encomenda_aa666e42fe6317de4e24c32ccaac5a0b7}{get\+Pratos\+Nome}} ()
+\item 
+void \mbox{\hyperlink{class_encomenda_aece38c6124ae2825a3cdd1ff8253299f}{set\+Pratos\+Nome}} (string \&pratos)
+\item 
+bool \mbox{\hyperlink{class_encomenda_a4b5aba5c09e3503ab09763e4996bd15f}{is\+Entrega}} () const
+\item 
+void \mbox{\hyperlink{class_encomenda_a08b3460b2fc4935173f5e47dc5533d26}{set\+Entrega}} (bool \mbox{\hyperlink{class_encomenda_a68cfbd03f5ecccdf4fcf45e96d4e92b2}{entrega}})
+\item 
+bool \mbox{\hyperlink{class_encomenda_a725bb4c7c9c206dcdc88e3a37f8baa06}{is\+Sucesso}} () const
+\item 
+void \mbox{\hyperlink{class_encomenda_a2bb6f818b2b4aff5a181216880337f76}{set\+Sucesso}} (bool \mbox{\hyperlink{class_encomenda_acd6c399ecc73477e73b06737a31e9520}{sucesso}})
+\item 
+string \mbox{\hyperlink{class_encomenda_a62fe9d1010ecabad9301e45441f3aa58}{get\+Cliente\+Nome}} ()
+\item 
+void \mbox{\hyperlink{class_encomenda_a848055d679b66d9286f984504be67abb}{set\+Cliente\+Nome}} (string c)
+\item 
+double \mbox{\hyperlink{class_encomenda_a7df8fb9b0e079f1348c8c35a727ba6eb}{get\+Preco}} ()
+\item 
+void \mbox{\hyperlink{class_encomenda_a7e21df8d24aba3de6932325f8662b795}{set\+Preco}} (double p)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_encomenda_a70aaccc28ed3e84e19a05e9ac0619da7}{restaurante\+Nome}}
+\begin{DoxyCompactList}\small\item\em O nome do \mbox{\hyperlink{class_restaurante}{Restaurante}} da encomenda. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data}{Data}} \mbox{\hyperlink{class_encomenda_a42a84b723169abbac9cab855f39c31c7}{data}}
+\begin{DoxyCompactList}\small\item\em A data da encomenda. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_encomenda_aecf7a50f211f40bbfa254da15db1f703}{entregador\+Nome}}
+\begin{DoxyCompactList}\small\item\em O nome do entregador da encomenda. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_encomenda_a620b412d34ba74176273677bf9fdd3e3}{hora}}
+\begin{DoxyCompactList}\small\item\em A hora da encomenda. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_encomenda_ada5b8ae70579980f2b625fb7c78ce8db}{pratos\+Nome}}
+\begin{DoxyCompactList}\small\item\em Os pratos encomendados. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_encomenda_a68cfbd03f5ecccdf4fcf45e96d4e92b2}{entrega}}
+\begin{DoxyCompactList}\small\item\em Booleano que representa se a encomenda foi realizada dentro ou fora. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_encomenda_acd6c399ecc73477e73b06737a31e9520}{sucesso}}
+\begin{DoxyCompactList}\small\item\em Booleano que representa se a encomenda foi realizada com sucesso. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_encomenda_a3c96cf5aac62bea09ec916287d381ade}{cliente\+Nome}}
+\begin{DoxyCompactList}\small\item\em O nome do \mbox{\hyperlink{class_cliente}{Cliente}} que realizou a encomenda. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_encomenda_a60b87b760914a9981c7e39ae32e30329}{preco}}
+\begin{DoxyCompactList}\small\item\em O preço da encomenda. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe \mbox{\hyperlink{class_encomenda}{Encomenda}} representa uma encomenda através do nome do Restauranre, \mbox{\hyperlink{class_data}{Data}} e hora da encomenda, nome do \mbox{\hyperlink{class_entregador}{Entregador}} e \mbox{\hyperlink{class_cliente}{Cliente}}, lista de pratos do menu encomendados, se a encomenda foi realizada com sucesso e se foi realizada dentro ou num concelho vizinho, e o preço total da encomenda. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_encomenda_a0287b590766f9ced8adb5d4e25a58db1}\label{class_encomenda_a0287b590766f9ced8adb5d4e25a58db1}} 
+\index{Encomenda@{Encomenda}!Encomenda@{Encomenda}}
+\index{Encomenda@{Encomenda}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{Encomenda()}{Encomenda()}}
+{\footnotesize\ttfamily Encomenda\+::\+Encomenda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_encomenda}{Encomenda}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a2139d9174c2888a59f871e63266398f1}\label{class_encomenda_a2139d9174c2888a59f871e63266398f1}} 
+\index{Encomenda@{Encomenda}!````~Encomenda@{$\sim$Encomenda}}
+\index{````~Encomenda@{$\sim$Encomenda}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{$\sim$Encomenda()}{~Encomenda()}}
+{\footnotesize\ttfamily Encomenda\+::$\sim$\+Encomenda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor da classe \mbox{\hyperlink{class_encomenda}{Encomenda}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                       \{}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_encomenda_a62fe9d1010ecabad9301e45441f3aa58}\label{class_encomenda_a62fe9d1010ecabad9301e45441f3aa58}} 
+\index{Encomenda@{Encomenda}!getClienteNome@{getClienteNome}}
+\index{getClienteNome@{getClienteNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{getClienteNome()}{getClienteNome()}}
+{\footnotesize\ttfamily string Encomenda\+::get\+Cliente\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71                                  \{}
+\DoxyCodeLine{72     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_encomenda_a3c96cf5aac62bea09ec916287d381ade}{clienteNome}};}
+\DoxyCodeLine{73 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a5b12b5b2c581b311693a67f894f521ab}\label{class_encomenda_a5b12b5b2c581b311693a67f894f521ab}} 
+\index{Encomenda@{Encomenda}!getData@{getData}}
+\index{getData@{getData}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_data}{Data}} \& Encomenda\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                      \{}
+\DoxyCodeLine{24     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_encomenda_a42a84b723169abbac9cab855f39c31c7}{data}};}
+\DoxyCodeLine{25 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a6848d3879076ddd64a67e9a83744e796}\label{class_encomenda_a6848d3879076ddd64a67e9a83744e796}} 
+\index{Encomenda@{Encomenda}!getEntregadorNome@{getEntregadorNome}}
+\index{getEntregadorNome@{getEntregadorNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{getEntregadorNome()}{getEntregadorNome()}}
+{\footnotesize\ttfamily string \& Encomenda\+::get\+Entregador\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31                                     \{}
+\DoxyCodeLine{32     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_encomenda_aecf7a50f211f40bbfa254da15db1f703}{entregadorNome}};}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a29b00ae28bd50c28842c5ac6ca19d8b2}\label{class_encomenda_a29b00ae28bd50c28842c5ac6ca19d8b2}} 
+\index{Encomenda@{Encomenda}!getHora@{getHora}}
+\index{getHora@{getHora}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{getHora()}{getHora()}}
+{\footnotesize\ttfamily const string \& Encomenda\+::get\+Hora (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                        \{}
+\DoxyCodeLine{41     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_encomenda_a620b412d34ba74176273677bf9fdd3e3}{hora}};}
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_aa666e42fe6317de4e24c32ccaac5a0b7}\label{class_encomenda_aa666e42fe6317de4e24c32ccaac5a0b7}} 
+\index{Encomenda@{Encomenda}!getPratosNome@{getPratosNome}}
+\index{getPratosNome@{getPratosNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{getPratosNome()}{getPratosNome()}}
+{\footnotesize\ttfamily string \& Encomenda\+::get\+Pratos\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                  \{}
+\DoxyCodeLine{49     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_encomenda_ada5b8ae70579980f2b625fb7c78ce8db}{pratosNome}};}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a7df8fb9b0e079f1348c8c35a727ba6eb}\label{class_encomenda_a7df8fb9b0e079f1348c8c35a727ba6eb}} 
+\index{Encomenda@{Encomenda}!getPreco@{getPreco}}
+\index{getPreco@{getPreco}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{getPreco()}{getPreco()}}
+{\footnotesize\ttfamily double Encomenda\+::get\+Preco (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                           \{}
+\DoxyCodeLine{78     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_encomenda_a60b87b760914a9981c7e39ae32e30329}{preco}};}
+\DoxyCodeLine{79 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a46911b5ba795b159289da878f1042fbf}\label{class_encomenda_a46911b5ba795b159289da878f1042fbf}} 
+\index{Encomenda@{Encomenda}!getRestauranteNome@{getRestauranteNome}}
+\index{getRestauranteNome@{getRestauranteNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{getRestauranteNome()}{getRestauranteNome()}}
+{\footnotesize\ttfamily const string \& Encomenda\+::get\+Restaurante\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                                                   \{}
+\DoxyCodeLine{16     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_encomenda_a70aaccc28ed3e84e19a05e9ac0619da7}{restauranteNome}};}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a4b5aba5c09e3503ab09763e4996bd15f}\label{class_encomenda_a4b5aba5c09e3503ab09763e4996bd15f}} 
+\index{Encomenda@{Encomenda}!isEntrega@{isEntrega}}
+\index{isEntrega@{isEntrega}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{isEntrega()}{isEntrega()}}
+{\footnotesize\ttfamily bool Encomenda\+::is\+Entrega (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                 \{}
+\DoxyCodeLine{57     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_encomenda_a68cfbd03f5ecccdf4fcf45e96d4e92b2}{entrega}};}
+\DoxyCodeLine{58 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a725bb4c7c9c206dcdc88e3a37f8baa06}\label{class_encomenda_a725bb4c7c9c206dcdc88e3a37f8baa06}} 
+\index{Encomenda@{Encomenda}!isSucesso@{isSucesso}}
+\index{isSucesso@{isSucesso}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{isSucesso()}{isSucesso()}}
+{\footnotesize\ttfamily bool Encomenda\+::is\+Sucesso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                 \{}
+\DoxyCodeLine{65     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_encomenda_acd6c399ecc73477e73b06737a31e9520}{sucesso}};}
+\DoxyCodeLine{66 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a848055d679b66d9286f984504be67abb}\label{class_encomenda_a848055d679b66d9286f984504be67abb}} 
+\index{Encomenda@{Encomenda}!setClienteNome@{setClienteNome}}
+\index{setClienteNome@{setClienteNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{setClienteNome()}{setClienteNome()}}
+{\footnotesize\ttfamily void Encomenda\+::set\+Cliente\+Nome (\begin{DoxyParamCaption}\item[{string}]{c }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                                       \{}
+\DoxyCodeLine{75     \mbox{\hyperlink{class_encomenda_a3c96cf5aac62bea09ec916287d381ade}{clienteNome}}=c;}
+\DoxyCodeLine{76 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a5968e6f937adf04e4f671459c77890a0}\label{class_encomenda_a5968e6f937adf04e4f671459c77890a0}} 
+\index{Encomenda@{Encomenda}!setData@{setData}}
+\index{setData@{setData}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily void Encomenda\+::set\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_data}{Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                                         \{}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_encomenda_a42a84b723169abbac9cab855f39c31c7}{Encomenda::data}} = \mbox{\hyperlink{class_encomenda_a42a84b723169abbac9cab855f39c31c7}{data}};}
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a08b3460b2fc4935173f5e47dc5533d26}\label{class_encomenda_a08b3460b2fc4935173f5e47dc5533d26}} 
+\index{Encomenda@{Encomenda}!setEntrega@{setEntrega}}
+\index{setEntrega@{setEntrega}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{setEntrega()}{setEntrega()}}
+{\footnotesize\ttfamily void Encomenda\+::set\+Entrega (\begin{DoxyParamCaption}\item[{bool}]{entrega }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                        \{}
+\DoxyCodeLine{61     \mbox{\hyperlink{class_encomenda_a68cfbd03f5ecccdf4fcf45e96d4e92b2}{Encomenda::entrega}} = \mbox{\hyperlink{class_encomenda_a68cfbd03f5ecccdf4fcf45e96d4e92b2}{entrega}};}
+\DoxyCodeLine{62 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a39fa08b892a57216508abb73664d6eed}\label{class_encomenda_a39fa08b892a57216508abb73664d6eed}} 
+\index{Encomenda@{Encomenda}!setEntregadorNome@{setEntregadorNome}}
+\index{setEntregadorNome@{setEntregadorNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{setEntregadorNome()}{setEntregadorNome()}}
+{\footnotesize\ttfamily void Encomenda\+::set\+Entregador\+Nome (\begin{DoxyParamCaption}\item[{const string}]{entregador }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                                  \{}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_encomenda_aecf7a50f211f40bbfa254da15db1f703}{Encomenda::entregadorNome}} = e;}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a9db83acb0c775265201043cb6c6da083}\label{class_encomenda_a9db83acb0c775265201043cb6c6da083}} 
+\index{Encomenda@{Encomenda}!setHora@{setHora}}
+\index{setHora@{setHora}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{setHora()}{setHora()}}
+{\footnotesize\ttfamily void Encomenda\+::set\+Hora (\begin{DoxyParamCaption}\item[{const string \&}]{hora }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                           \{}
+\DoxyCodeLine{45     \mbox{\hyperlink{class_encomenda_a620b412d34ba74176273677bf9fdd3e3}{Encomenda::hora}} = \mbox{\hyperlink{class_encomenda_a620b412d34ba74176273677bf9fdd3e3}{hora}};}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_aece38c6124ae2825a3cdd1ff8253299f}\label{class_encomenda_aece38c6124ae2825a3cdd1ff8253299f}} 
+\index{Encomenda@{Encomenda}!setPratosNome@{setPratosNome}}
+\index{setPratosNome@{setPratosNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{setPratosNome()}{setPratosNome()}}
+{\footnotesize\ttfamily void Encomenda\+::set\+Pratos\+Nome (\begin{DoxyParamCaption}\item[{string \&}]{pratos }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52                                             \{}
+\DoxyCodeLine{53     \mbox{\hyperlink{class_encomenda_ada5b8ae70579980f2b625fb7c78ce8db}{Encomenda::pratosNome}} = pratos;}
+\DoxyCodeLine{54 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a7e21df8d24aba3de6932325f8662b795}\label{class_encomenda_a7e21df8d24aba3de6932325f8662b795}} 
+\index{Encomenda@{Encomenda}!setPreco@{setPreco}}
+\index{setPreco@{setPreco}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{setPreco()}{setPreco()}}
+{\footnotesize\ttfamily void Encomenda\+::set\+Preco (\begin{DoxyParamCaption}\item[{double}]{p }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80                                 \{}
+\DoxyCodeLine{81     \mbox{\hyperlink{class_encomenda_a60b87b760914a9981c7e39ae32e30329}{preco}}=p;}
+\DoxyCodeLine{82 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a839faad4df09b891db498a5cf0bfcb5b}\label{class_encomenda_a839faad4df09b891db498a5cf0bfcb5b}} 
+\index{Encomenda@{Encomenda}!setRestauranteNome@{setRestauranteNome}}
+\index{setRestauranteNome@{setRestauranteNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{setRestauranteNome()}{setRestauranteNome()}}
+{\footnotesize\ttfamily void Encomenda\+::set\+Restaurante\+Nome (\begin{DoxyParamCaption}\item[{const string \&}]{restaurante }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                                                             \{}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_encomenda_a70aaccc28ed3e84e19a05e9ac0619da7}{Encomenda::restauranteNome}} = restaurante;}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_encomenda_a2bb6f818b2b4aff5a181216880337f76}\label{class_encomenda_a2bb6f818b2b4aff5a181216880337f76}} 
+\index{Encomenda@{Encomenda}!setSucesso@{setSucesso}}
+\index{setSucesso@{setSucesso}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{setSucesso()}{setSucesso()}}
+{\footnotesize\ttfamily void Encomenda\+::set\+Sucesso (\begin{DoxyParamCaption}\item[{bool}]{sucesso }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                                        \{}
+\DoxyCodeLine{69     \mbox{\hyperlink{class_encomenda_acd6c399ecc73477e73b06737a31e9520}{Encomenda::sucesso}} = \mbox{\hyperlink{class_encomenda_acd6c399ecc73477e73b06737a31e9520}{sucesso}};}
+\DoxyCodeLine{70 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_encomenda_a3c96cf5aac62bea09ec916287d381ade}\label{class_encomenda_a3c96cf5aac62bea09ec916287d381ade}} 
+\index{Encomenda@{Encomenda}!clienteNome@{clienteNome}}
+\index{clienteNome@{clienteNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{clienteNome}{clienteNome}}
+{\footnotesize\ttfamily string Encomenda\+::cliente\+Nome\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O nome do \mbox{\hyperlink{class_cliente}{Cliente}} que realizou a encomenda. 
+
+\mbox{\Hypertarget{class_encomenda_a42a84b723169abbac9cab855f39c31c7}\label{class_encomenda_a42a84b723169abbac9cab855f39c31c7}} 
+\index{Encomenda@{Encomenda}!data@{data}}
+\index{data@{data}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data}{Data}} Encomenda\+::data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A data da encomenda. 
+
+\mbox{\Hypertarget{class_encomenda_a68cfbd03f5ecccdf4fcf45e96d4e92b2}\label{class_encomenda_a68cfbd03f5ecccdf4fcf45e96d4e92b2}} 
+\index{Encomenda@{Encomenda}!entrega@{entrega}}
+\index{entrega@{entrega}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{entrega}{entrega}}
+{\footnotesize\ttfamily bool Encomenda\+::entrega\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Booleano que representa se a encomenda foi realizada dentro ou fora. 
+
+\mbox{\Hypertarget{class_encomenda_aecf7a50f211f40bbfa254da15db1f703}\label{class_encomenda_aecf7a50f211f40bbfa254da15db1f703}} 
+\index{Encomenda@{Encomenda}!entregadorNome@{entregadorNome}}
+\index{entregadorNome@{entregadorNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{entregadorNome}{entregadorNome}}
+{\footnotesize\ttfamily string Encomenda\+::entregador\+Nome\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O nome do entregador da encomenda. 
+
+\mbox{\Hypertarget{class_encomenda_a620b412d34ba74176273677bf9fdd3e3}\label{class_encomenda_a620b412d34ba74176273677bf9fdd3e3}} 
+\index{Encomenda@{Encomenda}!hora@{hora}}
+\index{hora@{hora}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{hora}{hora}}
+{\footnotesize\ttfamily string Encomenda\+::hora\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A hora da encomenda. 
+
+\mbox{\Hypertarget{class_encomenda_ada5b8ae70579980f2b625fb7c78ce8db}\label{class_encomenda_ada5b8ae70579980f2b625fb7c78ce8db}} 
+\index{Encomenda@{Encomenda}!pratosNome@{pratosNome}}
+\index{pratosNome@{pratosNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{pratosNome}{pratosNome}}
+{\footnotesize\ttfamily string Encomenda\+::pratos\+Nome\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Os pratos encomendados. 
+
+\mbox{\Hypertarget{class_encomenda_a60b87b760914a9981c7e39ae32e30329}\label{class_encomenda_a60b87b760914a9981c7e39ae32e30329}} 
+\index{Encomenda@{Encomenda}!preco@{preco}}
+\index{preco@{preco}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{preco}{preco}}
+{\footnotesize\ttfamily double Encomenda\+::preco\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O preço da encomenda. 
+
+\mbox{\Hypertarget{class_encomenda_a70aaccc28ed3e84e19a05e9ac0619da7}\label{class_encomenda_a70aaccc28ed3e84e19a05e9ac0619da7}} 
+\index{Encomenda@{Encomenda}!restauranteNome@{restauranteNome}}
+\index{restauranteNome@{restauranteNome}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{restauranteNome}{restauranteNome}}
+{\footnotesize\ttfamily string Encomenda\+::restaurante\+Nome\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O nome do \mbox{\hyperlink{class_restaurante}{Restaurante}} da encomenda. 
+
+\mbox{\Hypertarget{class_encomenda_acd6c399ecc73477e73b06737a31e9520}\label{class_encomenda_acd6c399ecc73477e73b06737a31e9520}} 
+\index{Encomenda@{Encomenda}!sucesso@{sucesso}}
+\index{sucesso@{sucesso}!Encomenda@{Encomenda}}
+\doxysubsubsection{\texorpdfstring{sucesso}{sucesso}}
+{\footnotesize\ttfamily bool Encomenda\+::sucesso\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Booleano que representa se a encomenda foi realizada com sucesso. 
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{empresa_8h}{empresa.\+h}}\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{empresa_8cpp}{empresa.\+cpp}}\end{DoxyCompactItemize}

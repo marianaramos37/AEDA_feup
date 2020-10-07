@@ -1,0 +1,122 @@
+\hypertarget{class_funcionario}{}\doxysection{Funcionario Class Reference}
+\label{class_funcionario}\index{Funcionario@{Funcionario}}
+
+
+Classe \mbox{\hyperlink{class_funcionario}{Funcionario}} representa um funcionário através do seu nome e nif, da sua \mbox{\hyperlink{class_data}{Data}} de nascimento, do seu Salario e do seu tipo(Entregador/\+Administrador).  
+
+
+
+
+{\ttfamily \#include $<$empresa.\+h$>$}
+
+Inheritance diagram for Funcionario\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_funcionario}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_funcionario_a7cd39b2c6cd2449162481a8c0e7a2429}\label{class_funcionario_a7cd39b2c6cd2449162481a8c0e7a2429}} 
+\mbox{\hyperlink{class_funcionario_a7cd39b2c6cd2449162481a8c0e7a2429}{Funcionario}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe Funcionário. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_funcionario_a800273bd909dc88f821a414abebc442c}\label{class_funcionario_a800273bd909dc88f821a414abebc442c}} 
+virtual \mbox{\hyperlink{class_funcionario_a800273bd909dc88f821a414abebc442c}{$\sim$\+Funcionario}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe Funcionário. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_funcionario_a3c4f155a4a074417e9362072b83f1487}\label{class_funcionario_a3c4f155a4a074417e9362072b83f1487}} 
+virtual const string \& {\bfseries get\+Nome} () const
+\item 
+\mbox{\Hypertarget{class_funcionario_a3507c9da874d671d461e34bc2724e19b}\label{class_funcionario_a3507c9da874d671d461e34bc2724e19b}} 
+virtual void {\bfseries set\+Nome} (const string \&\mbox{\hyperlink{class_funcionario_a9415993338314799ac6ec08f4441578e}{nome}})
+\item 
+\mbox{\Hypertarget{class_funcionario_aff12ce703084dc6efcd645f5b3ed715d}\label{class_funcionario_aff12ce703084dc6efcd645f5b3ed715d}} 
+virtual const \mbox{\hyperlink{class_data}{Data}} \& {\bfseries get\+Data} () const
+\item 
+\mbox{\Hypertarget{class_funcionario_accd5c9ad5294a228c90f294475dac683}\label{class_funcionario_accd5c9ad5294a228c90f294475dac683}} 
+virtual void {\bfseries set\+Data} (const \mbox{\hyperlink{class_data}{Data}} \&\mbox{\hyperlink{class_funcionario_ab71f8641ef5217ca6229e5f5836141be}{data}})
+\item 
+\mbox{\Hypertarget{class_funcionario_a56ac1aeeee003826beb8913808b45624}\label{class_funcionario_a56ac1aeeee003826beb8913808b45624}} 
+virtual string {\bfseries get\+Nif} () const
+\item 
+\mbox{\Hypertarget{class_funcionario_acafc61d9f2db940792f0b42cb08ed15b}\label{class_funcionario_acafc61d9f2db940792f0b42cb08ed15b}} 
+virtual void {\bfseries set\+Nif} (string \mbox{\hyperlink{class_funcionario_a9bdd9ddf9a0e407871d9ba6b535ef02e}{nif}})
+\item 
+\mbox{\Hypertarget{class_funcionario_ace5307d75c27070b19dd107dde24cf92}\label{class_funcionario_ace5307d75c27070b19dd107dde24cf92}} 
+virtual int {\bfseries get\+Salario} () const
+\item 
+\mbox{\Hypertarget{class_funcionario_a6baaa4380cf279e221b190391108bfd2}\label{class_funcionario_a6baaa4380cf279e221b190391108bfd2}} 
+virtual void {\bfseries set\+Salario} (int \mbox{\hyperlink{class_funcionario_ad305ae6211b99d73461cccc647abb62c}{salario}})
+\item 
+\mbox{\Hypertarget{class_funcionario_a7a70c985f52d7a8bd414d5f0c1c02b76}\label{class_funcionario_a7a70c985f52d7a8bd414d5f0c1c02b76}} 
+virtual const string {\bfseries get\+Funcao} () const
+\item 
+\mbox{\Hypertarget{class_funcionario_ac6c9da74cbc4b785241e4de79ac86c81}\label{class_funcionario_ac6c9da74cbc4b785241e4de79ac86c81}} 
+virtual void {\bfseries set\+Funcao} (const string \&funcao)
+\item 
+\mbox{\Hypertarget{class_funcionario_afcc9ff4bb0a8b9a6d75275863bff34a9}\label{class_funcionario_afcc9ff4bb0a8b9a6d75275863bff34a9}} 
+virtual const \mbox{\hyperlink{class_veiculo}{Veiculo}} {\bfseries get\+Veiculo\+Alocado} () const
+\item 
+\mbox{\Hypertarget{class_funcionario_a7b803cbedf3df9ba0e8cdd3a75a19ce8}\label{class_funcionario_a7b803cbedf3df9ba0e8cdd3a75a19ce8}} 
+virtual void {\bfseries set\+Veiculo\+Alocado} (const \mbox{\hyperlink{class_veiculo}{Veiculo}} \&veiculo\+Alocado)
+\item 
+\mbox{\Hypertarget{class_funcionario_af133c033617f2c39eafbb2de520c7433}\label{class_funcionario_af133c033617f2c39eafbb2de520c7433}} 
+virtual vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ {\bfseries get\+Encom\+Feitas} ()
+\item 
+\mbox{\Hypertarget{class_funcionario_a94612cd4ed9d9f59e9a3c706cd0d67cb}\label{class_funcionario_a94612cd4ed9d9f59e9a3c706cd0d67cb}} 
+virtual void {\bfseries set\+Encom\+Feitas} (const vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \&encom\+Feitas)
+\item 
+\mbox{\Hypertarget{class_funcionario_a6bc4524588b99830b224f34f460e2fad}\label{class_funcionario_a6bc4524588b99830b224f34f460e2fad}} 
+virtual bool {\bfseries is\+Disponivel} () const
+\item 
+\mbox{\Hypertarget{class_funcionario_a27f39ad986eb9a0da78dd3086e385f67}\label{class_funcionario_a27f39ad986eb9a0da78dd3086e385f67}} 
+virtual void {\bfseries set\+Disponivel} (bool disponivel)
+\item 
+\mbox{\Hypertarget{class_funcionario_a294d48836cf3b2668b5ac6f12b71d099}\label{class_funcionario_a294d48836cf3b2668b5ac6f12b71d099}} 
+void {\bfseries set\+Tipo\+De\+Funcionario} (string t)
+\item 
+\mbox{\Hypertarget{class_funcionario_a52b832c7dc49da70bfdf1f709a69f228}\label{class_funcionario_a52b832c7dc49da70bfdf1f709a69f228}} 
+string {\bfseries get\+Tipo\+De\+Funcionario} ()
+\item 
+\mbox{\Hypertarget{class_funcionario_a5a5c1f98edf46112969f09457bcc5c2d}\label{class_funcionario_a5a5c1f98edf46112969f09457bcc5c2d}} 
+virtual int {\bfseries get\+Disponibilidade} () const
+\item 
+\mbox{\Hypertarget{class_funcionario_ad78c9474c51b765342723825764b841a}\label{class_funcionario_ad78c9474c51b765342723825764b841a}} 
+virtual void {\bfseries set\+Disponibilidade} (int disponibilidade)
+\item 
+\mbox{\Hypertarget{class_funcionario_a93d78dbfbf4b35cda6873799c0e14fb0}\label{class_funcionario_a93d78dbfbf4b35cda6873799c0e14fb0}} 
+virtual int {\bfseries get\+Manutencoes} () const
+\item 
+\mbox{\Hypertarget{class_funcionario_a1f1e4d9c3e77baa8ae5684d90c9e2112}\label{class_funcionario_a1f1e4d9c3e77baa8ae5684d90c9e2112}} 
+virtual void {\bfseries set\+Manutencoes} (int manutencoes)
+\item 
+\mbox{\Hypertarget{class_funcionario_ac5dc044fd65f7a7188c9be78625a64b2}\label{class_funcionario_ac5dc044fd65f7a7188c9be78625a64b2}} 
+virtual bool {\bfseries operator$>$} (\mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$t)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_funcionario_a9415993338314799ac6ec08f4441578e}\label{class_funcionario_a9415993338314799ac6ec08f4441578e}} 
+string \mbox{\hyperlink{class_funcionario_a9415993338314799ac6ec08f4441578e}{nome}}
+\begin{DoxyCompactList}\small\item\em O nome do Funcionário. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_funcionario_a9bdd9ddf9a0e407871d9ba6b535ef02e}\label{class_funcionario_a9bdd9ddf9a0e407871d9ba6b535ef02e}} 
+string \mbox{\hyperlink{class_funcionario_a9bdd9ddf9a0e407871d9ba6b535ef02e}{nif}}
+\begin{DoxyCompactList}\small\item\em O nif do Funcionário. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_funcionario_ab71f8641ef5217ca6229e5f5836141be}\label{class_funcionario_ab71f8641ef5217ca6229e5f5836141be}} 
+\mbox{\hyperlink{class_data}{Data}} \mbox{\hyperlink{class_funcionario_ab71f8641ef5217ca6229e5f5836141be}{data}}
+\begin{DoxyCompactList}\small\item\em A data de nascimento do Funcionário. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_funcionario_ad305ae6211b99d73461cccc647abb62c}\label{class_funcionario_ad305ae6211b99d73461cccc647abb62c}} 
+int \mbox{\hyperlink{class_funcionario_ad305ae6211b99d73461cccc647abb62c}{salario}}
+\begin{DoxyCompactList}\small\item\em O salário do Funcionário. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_funcionario_a52b2b2ce6ff9876dd332a8cbfa950752}\label{class_funcionario_a52b2b2ce6ff9876dd332a8cbfa950752}} 
+string \mbox{\hyperlink{class_funcionario_a52b2b2ce6ff9876dd332a8cbfa950752}{tipo\+De\+Funcionario}}
+\begin{DoxyCompactList}\small\item\em O tipo de Funcionário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_funcionario}{Funcionario}} representa um funcionário através do seu nome e nif, da sua \mbox{\hyperlink{class_data}{Data}} de nascimento, do seu Salario e do seu tipo(Entregador/\+Administrador). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Mariana Ramos/\+Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.\+h\item 
+C\+:/\+Users/\+Mariana Ramos/\+Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.\+cpp\end{DoxyCompactItemize}

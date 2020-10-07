@@ -1,0 +1,51 @@
+Entregador
+Fernando Gonsalves
+263748297
+15/03/1978
+600
+Suzuki, Katana, 09/10/2019
+1
+:::::
+Entregador
+Sandra Silva
+116273893
+18/09/1982
+600
+Yamaha, MT125, 08/03/2016
+1
+:::::
+Entregador
+Augusto Lima
+126472892
+21/07/1990
+600
+Vespa, GTS300, 30/06/2013
+1
+:::::
+Administrador
+Carina Pinho
+162738493
+10/01/1973
+1200
+CFO
+:::::
+Administrador
+Jose Teixeira
+162748938
+08/11/1975
+1000
+Recursos Humanos
+:::::
+Administrador
+Rafaela Brito
+132435648
+14/04/1966
+2000
+CEO
+:::::
+Administrador
+Rute Babo
+152637895
+13/06/1976
+1500
+Gerente

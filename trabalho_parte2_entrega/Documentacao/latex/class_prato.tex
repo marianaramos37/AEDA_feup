@@ -1,0 +1,241 @@
+\hypertarget{class_prato}{}\doxysection{Referência à classe Prato}
+\label{class_prato}\index{Prato@{Prato}}
+
+
+Class \mbox{\hyperlink{class_prato}{Prato}} representa um prato atraves do seu nome, tipo de culinária e o respetivo preço.  
+
+
+
+
+{\ttfamily \#include $<$auxiliares.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prato_a82c5745f6dbbca3e71af14ae0f187927}{Prato}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_prato}{Prato}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_prato_a3c17941e0d768523c109a2d01406aece}{$\sim$\+Prato}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_prato}{Prato}}. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{class_prato_a9261667f351749e8cd287af239400151}{get\+Nome}} () const
+\item 
+void \mbox{\hyperlink{class_prato_a94a5029932a4b6892fb65976ab05c31c}{set\+Nome}} (const string \&\mbox{\hyperlink{class_prato_a044bfe52b405e42cb5730924211b5520}{nome}})
+\item 
+const string \& \mbox{\hyperlink{class_prato_aed347ed8951e8f956795c70c7e5413ba}{get\+Tipo\+De\+Culinaria}} () const
+\item 
+void \mbox{\hyperlink{class_prato_abcf0190e4d754b4d60618fe43e645f9e}{set\+Tipo\+De\+Culinaria}} (const string \&tipo\+De\+Culinaria)
+\item 
+double \mbox{\hyperlink{class_prato_a916b0f95e8fcf24d5f47d755f0e6129c}{get\+Preco}} () const
+\item 
+void \mbox{\hyperlink{class_prato_a2e2990a82705d89829de5b878595d606}{set\+Preco}} (double \mbox{\hyperlink{class_prato_a84e9828656de94a811766c909f29391b}{preco}})
+\item 
+vector$<$ \mbox{\hyperlink{class_prato}{Prato}} $>$ \mbox{\hyperlink{class_prato_a3c4d975703c7eab8ed65cd977f5f237d}{pratos\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro dos pratos.\+txt, guardando-\/os num vetor com objetos \char`\"{}\+Prato\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_prato_a044bfe52b405e42cb5730924211b5520}{nome}}
+\begin{DoxyCompactList}\small\item\em O nome do prato. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_prato_ab93d6b40de2f156544fb482f2ec2cb12}{tipo\+\_\+de\+\_\+culinaria}}
+\begin{DoxyCompactList}\small\item\em O tipo de culinaria do prato. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_prato_a84e9828656de94a811766c909f29391b}{preco}}
+\begin{DoxyCompactList}\small\item\em O preço do prato. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Class \mbox{\hyperlink{class_prato}{Prato}} representa um prato atraves do seu nome, tipo de culinária e o respetivo preço. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_prato_a82c5745f6dbbca3e71af14ae0f187927}\label{class_prato_a82c5745f6dbbca3e71af14ae0f187927}} 
+\index{Prato@{Prato}!Prato@{Prato}}
+\index{Prato@{Prato}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{Prato()}{Prato()}}
+{\footnotesize\ttfamily Prato\+::\+Prato (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_prato}{Prato}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_prato_a3c17941e0d768523c109a2d01406aece}\label{class_prato_a3c17941e0d768523c109a2d01406aece}} 
+\index{Prato@{Prato}!````~Prato@{$\sim$Prato}}
+\index{````~Prato@{$\sim$Prato}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{$\sim$Prato()}{~Prato()}}
+{\footnotesize\ttfamily Prato\+::$\sim$\+Prato (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor da classe \mbox{\hyperlink{class_prato}{Prato}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78               \{}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_prato_a9261667f351749e8cd287af239400151}\label{class_prato_a9261667f351749e8cd287af239400151}} 
+\index{Prato@{Prato}!getNome@{getNome}}
+\index{getNome@{getNome}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily const string \& Prato\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82                                    \{}
+\DoxyCodeLine{83     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_prato_a044bfe52b405e42cb5730924211b5520}{nome}};}
+\DoxyCodeLine{84 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_prato_a916b0f95e8fcf24d5f47d755f0e6129c}\label{class_prato_a916b0f95e8fcf24d5f47d755f0e6129c}} 
+\index{Prato@{Prato}!getPreco@{getPreco}}
+\index{getPreco@{getPreco}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{getPreco()}{getPreco()}}
+{\footnotesize\ttfamily double Prato\+::get\+Preco (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{98                              \{}
+\DoxyCodeLine{99     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_prato_a84e9828656de94a811766c909f29391b}{preco}};}
+\DoxyCodeLine{100 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_prato_aed347ed8951e8f956795c70c7e5413ba}\label{class_prato_aed347ed8951e8f956795c70c7e5413ba}} 
+\index{Prato@{Prato}!getTipoDeCulinaria@{getTipoDeCulinaria}}
+\index{getTipoDeCulinaria@{getTipoDeCulinaria}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{getTipoDeCulinaria()}{getTipoDeCulinaria()}}
+{\footnotesize\ttfamily const string \& Prato\+::get\+Tipo\+De\+Culinaria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{90                                               \{}
+\DoxyCodeLine{91     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_prato_ab93d6b40de2f156544fb482f2ec2cb12}{tipo\_de\_culinaria}};}
+\DoxyCodeLine{92 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_prato_a3c4d975703c7eab8ed65cd977f5f237d}\label{class_prato_a3c4d975703c7eab8ed65cd977f5f237d}} 
+\index{Prato@{Prato}!pratos\_readfile@{pratos\_readfile}}
+\index{pratos\_readfile@{pratos\_readfile}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{pratos\_readfile()}{pratos\_readfile()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_prato}{Prato}} $>$ Prato\+::pratos\+\_\+readfile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lê o ficheiro dos pratos.\+txt, guardando-\/os num vetor com objetos \char`\"{}\+Prato\char`\"{}. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna um vetor com objetos da classe \mbox{\hyperlink{class_prato}{Prato}}. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{106                                      \{}
+\DoxyCodeLine{107     \mbox{\hyperlink{class_prato}{Prato}} p;}
+\DoxyCodeLine{108     vector<Prato> pratos;}
+\DoxyCodeLine{109     vector<string> prato\_info;}
+\DoxyCodeLine{110     ifstream infile;}
+\DoxyCodeLine{111     \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{112     infile.open(\textcolor{stringliteral}{"pratos.txt"});}
+\DoxyCodeLine{113     \textcolor{keywordflow}{while}(getline(infile,line))\{}
+\DoxyCodeLine{114         \textcolor{keywordflow}{if}(line==\textcolor{stringliteral}{":::::"})\{}
+\DoxyCodeLine{115             p.\mbox{\hyperlink{class_prato_a94a5029932a4b6892fb65976ab05c31c}{setNome}}(prato\_info[0]);}
+\DoxyCodeLine{116             p.\mbox{\hyperlink{class_prato_abcf0190e4d754b4d60618fe43e645f9e}{setTipoDeCulinaria}}(prato\_info[1]);}
+\DoxyCodeLine{117             p.\mbox{\hyperlink{class_prato_a2e2990a82705d89829de5b878595d606}{setPreco}}(stod(prato\_info[2]));}
+\DoxyCodeLine{118             pratos.push\_back(p);}
+\DoxyCodeLine{119             prato\_info.clear();}
+\DoxyCodeLine{120         \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{121             prato\_info.push\_back(line);}
+\DoxyCodeLine{122         \}}
+\DoxyCodeLine{123     \}}
+\DoxyCodeLine{124     p.\mbox{\hyperlink{class_prato_a94a5029932a4b6892fb65976ab05c31c}{setNome}}(prato\_info[0]);}
+\DoxyCodeLine{125     p.\mbox{\hyperlink{class_prato_abcf0190e4d754b4d60618fe43e645f9e}{setTipoDeCulinaria}}(prato\_info[1]);}
+\DoxyCodeLine{126     p.\mbox{\hyperlink{class_prato_a2e2990a82705d89829de5b878595d606}{setPreco}}(stod(prato\_info[2]));}
+\DoxyCodeLine{127     pratos.push\_back(p);}
+\DoxyCodeLine{128     prato\_info.clear();}
+\DoxyCodeLine{129     \textcolor{keywordflow}{return} pratos;}
+\DoxyCodeLine{130 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_prato_a94a5029932a4b6892fb65976ab05c31c}\label{class_prato_a94a5029932a4b6892fb65976ab05c31c}} 
+\index{Prato@{Prato}!setNome@{setNome}}
+\index{setNome@{setNome}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Prato\+::set\+Nome (\begin{DoxyParamCaption}\item[{const string \&}]{nome }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{86                                       \{}
+\DoxyCodeLine{87     \mbox{\hyperlink{class_prato_a044bfe52b405e42cb5730924211b5520}{Prato::nome}} = \mbox{\hyperlink{class_prato_a044bfe52b405e42cb5730924211b5520}{nome}};}
+\DoxyCodeLine{88 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_prato_a2e2990a82705d89829de5b878595d606}\label{class_prato_a2e2990a82705d89829de5b878595d606}} 
+\index{Prato@{Prato}!setPreco@{setPreco}}
+\index{setPreco@{setPreco}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{setPreco()}{setPreco()}}
+{\footnotesize\ttfamily void Prato\+::set\+Preco (\begin{DoxyParamCaption}\item[{double}]{preco }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{102                                  \{}
+\DoxyCodeLine{103     \mbox{\hyperlink{class_prato_a84e9828656de94a811766c909f29391b}{Prato::preco}} = \mbox{\hyperlink{class_prato_a84e9828656de94a811766c909f29391b}{preco}};}
+\DoxyCodeLine{104 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_prato_abcf0190e4d754b4d60618fe43e645f9e}\label{class_prato_abcf0190e4d754b4d60618fe43e645f9e}} 
+\index{Prato@{Prato}!setTipoDeCulinaria@{setTipoDeCulinaria}}
+\index{setTipoDeCulinaria@{setTipoDeCulinaria}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{setTipoDeCulinaria()}{setTipoDeCulinaria()}}
+{\footnotesize\ttfamily void Prato\+::set\+Tipo\+De\+Culinaria (\begin{DoxyParamCaption}\item[{const string \&}]{tipo\+De\+Culinaria }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94                                                             \{}
+\DoxyCodeLine{95     \mbox{\hyperlink{class_prato_ab93d6b40de2f156544fb482f2ec2cb12}{tipo\_de\_culinaria}} = tipoDeCulinaria;}
+\DoxyCodeLine{96 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_prato_a044bfe52b405e42cb5730924211b5520}\label{class_prato_a044bfe52b405e42cb5730924211b5520}} 
+\index{Prato@{Prato}!nome@{nome}}
+\index{nome@{nome}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily string Prato\+::nome\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O nome do prato. 
+
+\mbox{\Hypertarget{class_prato_a84e9828656de94a811766c909f29391b}\label{class_prato_a84e9828656de94a811766c909f29391b}} 
+\index{Prato@{Prato}!preco@{preco}}
+\index{preco@{preco}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{preco}{preco}}
+{\footnotesize\ttfamily double Prato\+::preco\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O preço do prato. 
+
+\mbox{\Hypertarget{class_prato_ab93d6b40de2f156544fb482f2ec2cb12}\label{class_prato_ab93d6b40de2f156544fb482f2ec2cb12}} 
+\index{Prato@{Prato}!tipo\_de\_culinaria@{tipo\_de\_culinaria}}
+\index{tipo\_de\_culinaria@{tipo\_de\_culinaria}!Prato@{Prato}}
+\doxysubsubsection{\texorpdfstring{tipo\_de\_culinaria}{tipo\_de\_culinaria}}
+{\footnotesize\ttfamily string Prato\+::tipo\+\_\+de\+\_\+culinaria\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O tipo de culinaria do prato. 
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{auxiliares_8h}{auxiliares.\+h}}\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{auxiliares_8cpp}{auxiliares.\+cpp}}\end{DoxyCompactItemize}

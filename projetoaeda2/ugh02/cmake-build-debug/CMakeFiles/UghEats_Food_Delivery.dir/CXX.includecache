@@ -1,0 +1,80 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/BST.h
+iostream
+-
+stack
+-
+queue
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/auxiliares.h
+string
+-
+vector
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/cliente.h
+auxiliares.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/auxiliares.h
+empresa.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.h
+string
+-
+vector
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.h
+restaurante.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/restaurante.h
+iostream
+-
+BST.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/BST.h
+tabHFuncionario.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/tabHFuncionario.h
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/main.cpp
+iostream
+-
+restaurante.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/restaurante.h
+cliente.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/cliente.h
+auxiliares.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/auxiliares.h
+empresa.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.h
+BST.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/BST.h
+fstream
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/fstream
+algorithm
+-
+ctime
+-
+chrono
+-
+iomanip
+-
+queue
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/restaurante.h
+auxiliares.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/auxiliares.h
+string
+-
+vector
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/tabHFuncionario.h
+unordered_set
+-
+

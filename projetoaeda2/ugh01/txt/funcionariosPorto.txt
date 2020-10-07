@@ -1,0 +1,38 @@
+Administrador
+Mariana Ramos
+777777777
+17/10/176
+600
+Suzuki, atana, 9/10/2019
+:::::
+Entregador
+Armando Rocha
+3574936538
+17/10/176
+600
+Opel, Astra, 6/12/2000
+1
+:::::
+Entregador
+Rita Silva
+262144077
+19/2/2000
+900
+Mercedes, rrr, 17/23/2012
+1
+:::::
+Entregador
+Fernanda Vaz
+229933012
+19/5/1985
+800
+Audi, A8, 5/12/2000
+1
+:::::
+Entregador
+Augusto Lima
+126472892
+21/7/1990
+600
+  , ,
+1

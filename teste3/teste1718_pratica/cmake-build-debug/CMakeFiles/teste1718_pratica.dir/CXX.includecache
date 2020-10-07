@@ -1,0 +1,64 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/BST.h
+iostream
+-
+stack
+-
+queue
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/Expertize.h
+string
+-
+Student.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/Student.h
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/FEUPConsulting.h
+BST.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/BST.h
+vector
+-
+unordered_set
+-
+queue
+-
+Expertize.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/Expertize.h
+Student.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/Student.h
+Project.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/Project.h
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/Project.h
+string
+-
+Student.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/Student.h
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/Student.h
+string
+-
+vector
+-
+utility
+-
+
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/Test.cpp
+Project.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/Project.h
+Student.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/Student.h
+FEUPConsulting.h
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/teste3/teste1718_pratica/FEUPConsulting.h
+vector
+-
+iostream
+-
+

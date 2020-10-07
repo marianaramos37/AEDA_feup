@@ -1,0 +1,3 @@
+porto.txt
+lisboa.txt
+faro.txt

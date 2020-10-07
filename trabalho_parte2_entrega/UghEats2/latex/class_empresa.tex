@@ -1,0 +1,62 @@
+\hypertarget{class_empresa}{}\doxysection{Empresa Class Reference}
+\label{class_empresa}\index{Empresa@{Empresa}}
+
+
+Classe \mbox{\hyperlink{class_empresa}{Empresa}} representa a \mbox{\hyperlink{class_empresa}{Empresa}} através do conjunto de Bases (classe \mbox{\hyperlink{class_base}{Base}}) que tem e um conjunto de encomendas feitas à empresa desde sempre.  
+
+
+
+
+{\ttfamily \#include $<$empresa.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_empresa_aff124b958356c479ab50ddf4cf302193}\label{class_empresa_aff124b958356c479ab50ddf4cf302193}} 
+\mbox{\hyperlink{class_empresa_aff124b958356c479ab50ddf4cf302193}{Empresa}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_empresa}{Empresa}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_empresa_a3c03ed7fbfdaa5c8db9b8587451f1326}\label{class_empresa_a3c03ed7fbfdaa5c8db9b8587451f1326}} 
+virtual \mbox{\hyperlink{class_empresa_a3c03ed7fbfdaa5c8db9b8587451f1326}{$\sim$\+Empresa}} ()
+\begin{DoxyCompactList}\small\item\em Donstrutor da classe \mbox{\hyperlink{class_empresa}{Empresa}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_empresa_af259dcf31c96fbff2ebcbe8185beb89e}\label{class_empresa_af259dcf31c96fbff2ebcbe8185beb89e}} 
+const vector$<$ \mbox{\hyperlink{class_base}{Base}} $>$ \& {\bfseries get\+Bases} () const
+\item 
+\mbox{\Hypertarget{class_empresa_a99fd18760963cc95d57763ce1c4f265b}\label{class_empresa_a99fd18760963cc95d57763ce1c4f265b}} 
+void {\bfseries set\+Bases} (const vector$<$ \mbox{\hyperlink{class_base}{Base}} $>$ \&\mbox{\hyperlink{class_empresa_a55bc9f3802b54e1995c37fefa10b1c9f}{bases}})
+\item 
+\mbox{\Hypertarget{class_empresa_a2ba85f473f6c11402151aa4d73291056}\label{class_empresa_a2ba85f473f6c11402151aa4d73291056}} 
+vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ {\bfseries get\+Encomendas} ()
+\item 
+\mbox{\Hypertarget{class_empresa_a709049001c7236adada8fc8d679e13ef}\label{class_empresa_a709049001c7236adada8fc8d679e13ef}} 
+void {\bfseries set\+Encomendas} (vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$)
+\item 
+\mbox{\Hypertarget{class_empresa_a765b6be95ec0c553c459083497a094de}\label{class_empresa_a765b6be95ec0c553c459083497a094de}} 
+void \mbox{\hyperlink{class_empresa_a765b6be95ec0c553c459083497a094de}{encomendas\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro encomendas.\+txt, que contém a informação ordenada de um conjunto de encomendas (Classe \mbox{\hyperlink{class_encomenda}{Encomenda}}). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_empresa_aef1acb3ea71227736b876fccf2235f6b}\label{class_empresa_aef1acb3ea71227736b876fccf2235f6b}} 
+void {\bfseries add\+Veiculo} (const \mbox{\hyperlink{class_veiculo}{Veiculo}} \&v)
+\item 
+\mbox{\Hypertarget{class_empresa_a6a161648986f905a40862c666c0e347d}\label{class_empresa_a6a161648986f905a40862c666c0e347d}} 
+vector$<$ \mbox{\hyperlink{class_veiculo}{Veiculo}} $>$ {\bfseries ver\+Veiculo} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_empresa_a55bc9f3802b54e1995c37fefa10b1c9f}\label{class_empresa_a55bc9f3802b54e1995c37fefa10b1c9f}} 
+vector$<$ \mbox{\hyperlink{class_base}{Base}} $>$ \mbox{\hyperlink{class_empresa_a55bc9f3802b54e1995c37fefa10b1c9f}{bases}}
+\begin{DoxyCompactList}\small\item\em O conjunto de bases (Classe \mbox{\hyperlink{class_base}{Base}}) da \mbox{\hyperlink{class_empresa}{Empresa}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_empresa_a2730ca401a304847eccdaa83b3f4f6e1}\label{class_empresa_a2730ca401a304847eccdaa83b3f4f6e1}} 
+vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \mbox{\hyperlink{class_empresa_a2730ca401a304847eccdaa83b3f4f6e1}{encomendas}}
+\begin{DoxyCompactList}\small\item\em O conjuntor de encomendas (Classe \mbox{\hyperlink{class_encomenda}{Encomenda}}) da \mbox{\hyperlink{class_empresa}{Empresa}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_empresa_aa34f912f05a2d8d9330eea0de8b86236}\label{class_empresa_aa34f912f05a2d8d9330eea0de8b86236}} 
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ \mbox{\hyperlink{class_veiculo}{Veiculo}} $>$ {\bfseries veiculos}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_empresa}{Empresa}} representa a \mbox{\hyperlink{class_empresa}{Empresa}} através do conjunto de Bases (classe \mbox{\hyperlink{class_base}{Base}}) que tem e um conjunto de encomendas feitas à empresa desde sempre. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Mariana Ramos/\+Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.\+h\item 
+C\+:/\+Users/\+Mariana Ramos/\+Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+Entregador
+Sandra Silva
+116273893
+18/9/1982
+600
+Yamaha, MT125, 08/03/2016, YD-76-VF, 423422, 99, 0
+1
+:::::
+Entregador
+Augusto Lima
+126472892
+21/7/1990
+600
+Vespa, GTS300, 30/06/2013, KL-22-XB, 120093, 73, 1
+1
+:::::
+Administrador
+Carina Pinho
+162738493
+10/1/1973
+1200
+CFO
+:::::
+Administrador
+Jose Teixeira
+162748938
+8/11/1975
+1000
+Recursos Humanos
+:::::
+Administrador
+Rafaela Brito
+132435648
+14/4/1966
+2000
+CEO
+:::::
+Administrador
+Rute Babo
+152637895
+13/6/1976
+1500
+Gerente
+:::::
+Entregador
+Rafael BomPastor
+477992002
+13/12/1998
+500
+BMW, GS1200, 04/06/2014, GB-23-AQ, 213408, 209, 0
+1
+:::::
+Entregador
+Ana Ribeiro
+112233889
+15/2/1984
+550
+Honda, VFR800, 28/06/2013, FR-62-LP, 88975, 22, 1
+1
+:::::
+Tecnico
+Joana Dinis
+120934876
+12/12/1991
+750
+9
+1

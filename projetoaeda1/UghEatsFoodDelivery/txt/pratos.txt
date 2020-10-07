@@ -1,0 +1,31 @@
+Massa a bolonhesa
+Italiana
+8
+:::::
+Ramen
+Japonesa
+8
+:::::
+Pizza
+Italiana
+6
+:::::
+Bacalhau a Bras
+Portuguesa
+5.50
+:::::
+Francesinha
+Portuguesa
+6.39
+:::::
+Sushi
+Japonesa
+11.99
+:::::
+Bao
+Japonesa
+3.80
+:::::
+Arroz Xau Xau
+Chinesa
+4

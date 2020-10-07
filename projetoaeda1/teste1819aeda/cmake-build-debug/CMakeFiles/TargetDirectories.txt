@@ -1,0 +1,3 @@
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/teste1819aeda/cmake-build-debug/CMakeFiles/teste1819aeda.dir
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/teste1819aeda/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/teste1819aeda/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,262 @@
+\hypertarget{class_morada}{}\doxysection{Referência à classe Morada}
+\label{class_morada}\index{Morada@{Morada}}
+
+
+Class \mbox{\hyperlink{class_morada}{Morada}} representa uma morada atraves da sua rua, localidade e numero.  
+
+
+
+
+{\ttfamily \#include $<$auxiliares.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_morada_adb403b7ac363ced0324d5563592b737b}{Morada}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_morada}{Morada}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_morada_a3c7ff452e053da417d2385b537f7b3c5}{Morada}} (string morada)
+\begin{DoxyCompactList}\small\item\em Constroi uma instância de \mbox{\hyperlink{class_morada}{Morada}} recebendo uma string estruturada com o seu conteúdo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_morada_a0adecb61d475d50d860bf8c8f84d7b5d}{Morada}} (string \mbox{\hyperlink{class_morada_af48005a99f47c7041e4e31fa0a9a7a03}{rua}}, string \mbox{\hyperlink{class_morada_a40bab883273b83933ab1963b9014b33b}{numero}}, string \mbox{\hyperlink{class_morada_a905952ce6f49c5fb9cc397b07bd1aef0}{localidade}})
+\begin{DoxyCompactList}\small\item\em Constroi uma instância de \mbox{\hyperlink{class_morada}{Morada}} recebendo uma a rua, o numero e a localidade. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_morada_a4502523e15ce7da129d8bdf4b32359db}{$\sim$\+Morada}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe morada. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{class_morada_a8b99dff00ae23a1bcee4b426e284be07}{get\+Rua}} () const
+\item 
+void \mbox{\hyperlink{class_morada_acf4eabc2880474f9088c88bf93b95e3e}{set\+Rua}} (const string \&\mbox{\hyperlink{class_morada_af48005a99f47c7041e4e31fa0a9a7a03}{rua}})
+\item 
+const string \& \mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{get\+Localidade}} () const
+\item 
+void \mbox{\hyperlink{class_morada_a0c9eef5fbdd679f11ed0a157a07f9cf1}{set\+Localidade}} (const string \&\mbox{\hyperlink{class_morada_a905952ce6f49c5fb9cc397b07bd1aef0}{localidade}})
+\item 
+string \mbox{\hyperlink{class_morada_a61b7f4118398e6e33e7bedf35385d266}{get\+Numero}} () const
+\item 
+void \mbox{\hyperlink{class_morada_a799c17077d59927324383c62b1a6851d}{set\+Numero}} (string \mbox{\hyperlink{class_morada_a40bab883273b83933ab1963b9014b33b}{numero}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_morada_af48005a99f47c7041e4e31fa0a9a7a03}{rua}}
+\begin{DoxyCompactList}\small\item\em A rua da morada;. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_morada_a905952ce6f49c5fb9cc397b07bd1aef0}{localidade}}
+\begin{DoxyCompactList}\small\item\em A localidade da morada;. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_morada_a40bab883273b83933ab1963b9014b33b}{numero}}
+\begin{DoxyCompactList}\small\item\em O numero da porta da morada;. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Class \mbox{\hyperlink{class_morada}{Morada}} representa uma morada atraves da sua rua, localidade e numero. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_morada_adb403b7ac363ced0324d5563592b737b}\label{class_morada_adb403b7ac363ced0324d5563592b737b}} 
+\index{Morada@{Morada}!Morada@{Morada}}
+\index{Morada@{Morada}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{Morada()}{Morada()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Morada\+::\+Morada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_morada}{Morada}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_morada_a3c7ff452e053da417d2385b537f7b3c5}\label{class_morada_a3c7ff452e053da417d2385b537f7b3c5}} 
+\index{Morada@{Morada}!Morada@{Morada}}
+\index{Morada@{Morada}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{Morada()}{Morada()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Morada\+::\+Morada (\begin{DoxyParamCaption}\item[{string}]{morada }\end{DoxyParamCaption})}
+
+
+
+Constroi uma instância de \mbox{\hyperlink{class_morada}{Morada}} recebendo uma string estruturada com o seu conteúdo. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                             \{}
+\DoxyCodeLine{20     \textcolor{keywordtype}{string} temp = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{21     vector<string> morada\_temp;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i <= morada.length(); i++)}
+\DoxyCodeLine{24     \{}
+\DoxyCodeLine{25         \textcolor{keywordflow}{if} (morada[i] == \textcolor{charliteral}{','} )}
+\DoxyCodeLine{26         \{}
+\DoxyCodeLine{27             i += 1;}
+\DoxyCodeLine{28             morada\_temp.push\_back(temp);}
+\DoxyCodeLine{29             temp = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{30         \}}
+\DoxyCodeLine{31         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{32             temp += morada[i];}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34     morada\_temp.push\_back(temp);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     this-\/>\mbox{\hyperlink{class_morada_af48005a99f47c7041e4e31fa0a9a7a03}{rua}} = morada\_temp[0];}
+\DoxyCodeLine{37     this-\/>\mbox{\hyperlink{class_morada_a905952ce6f49c5fb9cc397b07bd1aef0}{localidade}}= morada\_temp[1];}
+\DoxyCodeLine{38     this-\/>\mbox{\hyperlink{class_morada_a40bab883273b83933ab1963b9014b33b}{numero}} = morada\_temp[2];}
+\DoxyCodeLine{39 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_morada_a0adecb61d475d50d860bf8c8f84d7b5d}\label{class_morada_a0adecb61d475d50d860bf8c8f84d7b5d}} 
+\index{Morada@{Morada}!Morada@{Morada}}
+\index{Morada@{Morada}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{Morada()}{Morada()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Morada\+::\+Morada (\begin{DoxyParamCaption}\item[{string}]{rua,  }\item[{string}]{numero,  }\item[{string}]{localidade }\end{DoxyParamCaption})}
+
+
+
+Constroi uma instância de \mbox{\hyperlink{class_morada}{Morada}} recebendo uma a rua, o numero e a localidade. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em rua} & A rua da morada; \\
+\hline
+{\em numero} & O número da porta da morada; \\
+\hline
+{\em rua} & A localidade da morada; \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                                                \{}
+\DoxyCodeLine{42     this-\/>\mbox{\hyperlink{class_morada_af48005a99f47c7041e4e31fa0a9a7a03}{rua}} = r;}
+\DoxyCodeLine{43     this-\/>\mbox{\hyperlink{class_morada_a40bab883273b83933ab1963b9014b33b}{numero}} = num;}
+\DoxyCodeLine{44     this-\/>\mbox{\hyperlink{class_morada_a905952ce6f49c5fb9cc397b07bd1aef0}{localidade}} = loc;}
+\DoxyCodeLine{45 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_morada_a4502523e15ce7da129d8bdf4b32359db}\label{class_morada_a4502523e15ce7da129d8bdf4b32359db}} 
+\index{Morada@{Morada}!````~Morada@{$\sim$Morada}}
+\index{````~Morada@{$\sim$Morada}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{$\sim$Morada()}{~Morada()}}
+{\footnotesize\ttfamily Morada\+::$\sim$\+Morada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor da classe morada. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_morada_ab60cfc456793d9ea81bf5355ee67d309}\label{class_morada_ab60cfc456793d9ea81bf5355ee67d309}} 
+\index{Morada@{Morada}!getLocalidade@{getLocalidade}}
+\index{getLocalidade@{getLocalidade}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{getLocalidade()}{getLocalidade()}}
+{\footnotesize\ttfamily const string \& Morada\+::get\+Localidade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57                                           \{}
+\DoxyCodeLine{58     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_morada_a905952ce6f49c5fb9cc397b07bd1aef0}{localidade}};}
+\DoxyCodeLine{59 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_morada_a61b7f4118398e6e33e7bedf35385d266}\label{class_morada_a61b7f4118398e6e33e7bedf35385d266}} 
+\index{Morada@{Morada}!getNumero@{getNumero}}
+\index{getNumero@{getNumero}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{getNumero()}{getNumero()}}
+{\footnotesize\ttfamily string Morada\+::get\+Numero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                \{}
+\DoxyCodeLine{66     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_morada_a40bab883273b83933ab1963b9014b33b}{numero}};}
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_morada_a8b99dff00ae23a1bcee4b426e284be07}\label{class_morada_a8b99dff00ae23a1bcee4b426e284be07}} 
+\index{Morada@{Morada}!getRua@{getRua}}
+\index{getRua@{getRua}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{getRua()}{getRua()}}
+{\footnotesize\ttfamily const string \& Morada\+::get\+Rua (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                                    \{}
+\DoxyCodeLine{50     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_morada_af48005a99f47c7041e4e31fa0a9a7a03}{rua}};}
+\DoxyCodeLine{51 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_morada_a0c9eef5fbdd679f11ed0a157a07f9cf1}\label{class_morada_a0c9eef5fbdd679f11ed0a157a07f9cf1}} 
+\index{Morada@{Morada}!setLocalidade@{setLocalidade}}
+\index{setLocalidade@{setLocalidade}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{setLocalidade()}{setLocalidade()}}
+{\footnotesize\ttfamily void Morada\+::set\+Localidade (\begin{DoxyParamCaption}\item[{const string \&}]{localidade }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                                             \{}
+\DoxyCodeLine{62     \mbox{\hyperlink{class_morada_a905952ce6f49c5fb9cc397b07bd1aef0}{localidade}} = loc;}
+\DoxyCodeLine{63 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_morada_a799c17077d59927324383c62b1a6851d}\label{class_morada_a799c17077d59927324383c62b1a6851d}} 
+\index{Morada@{Morada}!setNumero@{setNumero}}
+\index{setNumero@{setNumero}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{setNumero()}{setNumero()}}
+{\footnotesize\ttfamily void Morada\+::set\+Numero (\begin{DoxyParamCaption}\item[{string}]{numero }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                                  \{}
+\DoxyCodeLine{70     \mbox{\hyperlink{class_morada_a40bab883273b83933ab1963b9014b33b}{numero}} = num;}
+\DoxyCodeLine{71 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_morada_acf4eabc2880474f9088c88bf93b95e3e}\label{class_morada_acf4eabc2880474f9088c88bf93b95e3e}} 
+\index{Morada@{Morada}!setRua@{setRua}}
+\index{setRua@{setRua}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{setRua()}{setRua()}}
+{\footnotesize\ttfamily void Morada\+::set\+Rua (\begin{DoxyParamCaption}\item[{const string \&}]{rua }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                    \{}
+\DoxyCodeLine{54     \mbox{\hyperlink{class_morada_af48005a99f47c7041e4e31fa0a9a7a03}{rua}} = r;}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_morada_a905952ce6f49c5fb9cc397b07bd1aef0}\label{class_morada_a905952ce6f49c5fb9cc397b07bd1aef0}} 
+\index{Morada@{Morada}!localidade@{localidade}}
+\index{localidade@{localidade}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{localidade}{localidade}}
+{\footnotesize\ttfamily string Morada\+::localidade\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A localidade da morada;. 
+
+\mbox{\Hypertarget{class_morada_a40bab883273b83933ab1963b9014b33b}\label{class_morada_a40bab883273b83933ab1963b9014b33b}} 
+\index{Morada@{Morada}!numero@{numero}}
+\index{numero@{numero}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{numero}{numero}}
+{\footnotesize\ttfamily string Morada\+::numero\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O numero da porta da morada;. 
+
+\mbox{\Hypertarget{class_morada_af48005a99f47c7041e4e31fa0a9a7a03}\label{class_morada_af48005a99f47c7041e4e31fa0a9a7a03}} 
+\index{Morada@{Morada}!rua@{rua}}
+\index{rua@{rua}!Morada@{Morada}}
+\doxysubsubsection{\texorpdfstring{rua}{rua}}
+{\footnotesize\ttfamily string Morada\+::rua\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A rua da morada;. 
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{auxiliares_8h}{auxiliares.\+h}}\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{auxiliares_8cpp}{auxiliares.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,423 @@
+\hypertarget{class_funcionario}{}\doxysection{Referência à classe Funcionario}
+\label{class_funcionario}\index{Funcionario@{Funcionario}}
+
+
+Classe \mbox{\hyperlink{class_funcionario}{Funcionario}} representa um funcionário através do seu nome e nif, da sua \mbox{\hyperlink{class_data}{Data}} de nascimento, do seu Salario e do seu tipo(Entregador/\+Administrador).  
+
+
+
+
+{\ttfamily \#include $<$empresa.\+h$>$}
+
+Diagrama de heranças da classe Funcionario\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_funcionario}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_funcionario_a7cd39b2c6cd2449162481a8c0e7a2429}{Funcionario}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe Funcionário. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_funcionario_a800273bd909dc88f821a414abebc442c}{$\sim$\+Funcionario}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe Funcionário. \end{DoxyCompactList}\item 
+virtual const string \& \mbox{\hyperlink{class_funcionario_a3c4f155a4a074417e9362072b83f1487}{get\+Nome}} () const
+\item 
+virtual void \mbox{\hyperlink{class_funcionario_a3507c9da874d671d461e34bc2724e19b}{set\+Nome}} (const string \&\mbox{\hyperlink{class_funcionario_a9415993338314799ac6ec08f4441578e}{nome}})
+\item 
+virtual const \mbox{\hyperlink{class_data}{Data}} \& \mbox{\hyperlink{class_funcionario_aff12ce703084dc6efcd645f5b3ed715d}{get\+Data}} () const
+\item 
+virtual void \mbox{\hyperlink{class_funcionario_accd5c9ad5294a228c90f294475dac683}{set\+Data}} (const \mbox{\hyperlink{class_data}{Data}} \&\mbox{\hyperlink{class_funcionario_ab71f8641ef5217ca6229e5f5836141be}{data}})
+\item 
+virtual string \mbox{\hyperlink{class_funcionario_a56ac1aeeee003826beb8913808b45624}{get\+Nif}} () const
+\item 
+virtual void \mbox{\hyperlink{class_funcionario_acafc61d9f2db940792f0b42cb08ed15b}{set\+Nif}} (string \mbox{\hyperlink{class_funcionario_a9bdd9ddf9a0e407871d9ba6b535ef02e}{nif}})
+\item 
+virtual int \mbox{\hyperlink{class_funcionario_ace5307d75c27070b19dd107dde24cf92}{get\+Salario}} () const
+\item 
+virtual void \mbox{\hyperlink{class_funcionario_a6baaa4380cf279e221b190391108bfd2}{set\+Salario}} (int \mbox{\hyperlink{class_funcionario_ad305ae6211b99d73461cccc647abb62c}{salario}})
+\item 
+virtual const string \mbox{\hyperlink{class_funcionario_a7a70c985f52d7a8bd414d5f0c1c02b76}{get\+Funcao}} () const
+\item 
+virtual void \mbox{\hyperlink{class_funcionario_ac6c9da74cbc4b785241e4de79ac86c81}{set\+Funcao}} (const string \&funcao)
+\item 
+virtual const \mbox{\hyperlink{class_veiculo}{Veiculo}} \mbox{\hyperlink{class_funcionario_afcc9ff4bb0a8b9a6d75275863bff34a9}{get\+Veiculo\+Alocado}} () const
+\item 
+virtual void \mbox{\hyperlink{class_funcionario_a7b803cbedf3df9ba0e8cdd3a75a19ce8}{set\+Veiculo\+Alocado}} (const \mbox{\hyperlink{class_veiculo}{Veiculo}} \&veiculo\+Alocado)
+\item 
+virtual vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \mbox{\hyperlink{class_funcionario_af133c033617f2c39eafbb2de520c7433}{get\+Encom\+Feitas}} ()
+\item 
+virtual void \mbox{\hyperlink{class_funcionario_a94612cd4ed9d9f59e9a3c706cd0d67cb}{set\+Encom\+Feitas}} (const vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \&encom\+Feitas)
+\item 
+virtual bool \mbox{\hyperlink{class_funcionario_a6bc4524588b99830b224f34f460e2fad}{is\+Disponivel}} () const
+\item 
+virtual void \mbox{\hyperlink{class_funcionario_a27f39ad986eb9a0da78dd3086e385f67}{set\+Disponivel}} (bool disponivel)
+\item 
+void \mbox{\hyperlink{class_funcionario_a294d48836cf3b2668b5ac6f12b71d099}{set\+Tipo\+De\+Funcionario}} (string t)
+\item 
+string \mbox{\hyperlink{class_funcionario_a52b832c7dc49da70bfdf1f709a69f228}{get\+Tipo\+De\+Funcionario}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_funcionario_a9415993338314799ac6ec08f4441578e}{nome}}
+\begin{DoxyCompactList}\small\item\em O nome do Funcionário. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_funcionario_a9bdd9ddf9a0e407871d9ba6b535ef02e}{nif}}
+\begin{DoxyCompactList}\small\item\em O nif do Funcionário. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data}{Data}} \mbox{\hyperlink{class_funcionario_ab71f8641ef5217ca6229e5f5836141be}{data}}
+\begin{DoxyCompactList}\small\item\em A data de nascimento do Funcionário. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_funcionario_ad305ae6211b99d73461cccc647abb62c}{salario}}
+\begin{DoxyCompactList}\small\item\em O salário do Funcionário. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_funcionario_a52b2b2ce6ff9876dd332a8cbfa950752}{tipo\+De\+Funcionario}}
+\begin{DoxyCompactList}\small\item\em O tipo de Funcionário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe \mbox{\hyperlink{class_funcionario}{Funcionario}} representa um funcionário através do seu nome e nif, da sua \mbox{\hyperlink{class_data}{Data}} de nascimento, do seu Salario e do seu tipo(Entregador/\+Administrador). 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_funcionario_a7cd39b2c6cd2449162481a8c0e7a2429}\label{class_funcionario_a7cd39b2c6cd2449162481a8c0e7a2429}} 
+\index{Funcionario@{Funcionario}!Funcionario@{Funcionario}}
+\index{Funcionario@{Funcionario}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{Funcionario()}{Funcionario()}}
+{\footnotesize\ttfamily Funcionario\+::\+Funcionario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe Funcionário. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a800273bd909dc88f821a414abebc442c}\label{class_funcionario_a800273bd909dc88f821a414abebc442c}} 
+\index{Funcionario@{Funcionario}!````~Funcionario@{$\sim$Funcionario}}
+\index{````~Funcionario@{$\sim$Funcionario}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{$\sim$Funcionario()}{~Funcionario()}}
+{\footnotesize\ttfamily Funcionario\+::$\sim$\+Funcionario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Construtor da classe Funcionário. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{88                           \{}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_funcionario_aff12ce703084dc6efcd645f5b3ed715d}\label{class_funcionario_aff12ce703084dc6efcd645f5b3ed715d}} 
+\index{Funcionario@{Funcionario}!getData@{getData}}
+\index{getData@{getData}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_data}{Data}} \& Funcionario\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97                                        \{}
+\DoxyCodeLine{98     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_funcionario_ab71f8641ef5217ca6229e5f5836141be}{data}};}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_af133c033617f2c39eafbb2de520c7433}\label{class_funcionario_af133c033617f2c39eafbb2de520c7433}} 
+\index{Funcionario@{Funcionario}!getEncomFeitas@{getEncomFeitas}}
+\index{getEncomFeitas@{getEncomFeitas}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{getEncomFeitas()}{getEncomFeitas()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ Funcionario\+::get\+Encom\+Feitas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado em \mbox{\hyperlink{class_entregador_afeee107490be7bd835bffc760b59e29d}{Entregador}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{119 \{vector<Encomenda> v; \textcolor{keywordflow}{return} v;\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a7a70c985f52d7a8bd414d5f0c1c02b76}\label{class_funcionario_a7a70c985f52d7a8bd414d5f0c1c02b76}} 
+\index{Funcionario@{Funcionario}!getFuncao@{getFuncao}}
+\index{getFuncao@{getFuncao}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{getFuncao()}{getFuncao()}}
+{\footnotesize\ttfamily const string Funcionario\+::get\+Funcao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado em \mbox{\hyperlink{class_administrador_af9273a2b760c45fe625246f3cd50a76f}{Administrador}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{115 \{\textcolor{keywordtype}{string} a; \textcolor{keywordflow}{return} a;\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a56ac1aeeee003826beb8913808b45624}\label{class_funcionario_a56ac1aeeee003826beb8913808b45624}} 
+\index{Funcionario@{Funcionario}!getNif@{getNif}}
+\index{getNif@{getNif}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{getNif()}{getNif()}}
+{\footnotesize\ttfamily string Funcionario\+::get\+Nif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103                                  \{}
+\DoxyCodeLine{104     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_funcionario_a9bdd9ddf9a0e407871d9ba6b535ef02e}{nif}};}
+\DoxyCodeLine{105 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a3c4f155a4a074417e9362072b83f1487}\label{class_funcionario_a3c4f155a4a074417e9362072b83f1487}} 
+\index{Funcionario@{Funcionario}!getNome@{getNome}}
+\index{getNome@{getNome}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily const string \& Funcionario\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                                          \{}
+\DoxyCodeLine{92     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_funcionario_a9415993338314799ac6ec08f4441578e}{nome}};}
+\DoxyCodeLine{93 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_ace5307d75c27070b19dd107dde24cf92}\label{class_funcionario_ace5307d75c27070b19dd107dde24cf92}} 
+\index{Funcionario@{Funcionario}!getSalario@{getSalario}}
+\index{getSalario@{getSalario}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{getSalario()}{getSalario()}}
+{\footnotesize\ttfamily int Funcionario\+::get\+Salario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{109                                   \{}
+\DoxyCodeLine{110     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_funcionario_ad305ae6211b99d73461cccc647abb62c}{salario}};}
+\DoxyCodeLine{111 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a52b832c7dc49da70bfdf1f709a69f228}\label{class_funcionario_a52b832c7dc49da70bfdf1f709a69f228}} 
+\index{Funcionario@{Funcionario}!getTipoDeFuncionario@{getTipoDeFuncionario}}
+\index{getTipoDeFuncionario@{getTipoDeFuncionario}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{getTipoDeFuncionario()}{getTipoDeFuncionario()}}
+{\footnotesize\ttfamily string Funcionario\+::get\+Tipo\+De\+Funcionario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126                                         \{}
+\DoxyCodeLine{127     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_funcionario_a52b2b2ce6ff9876dd332a8cbfa950752}{tipoDeFuncionario}};}
+\DoxyCodeLine{128 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_afcc9ff4bb0a8b9a6d75275863bff34a9}\label{class_funcionario_afcc9ff4bb0a8b9a6d75275863bff34a9}} 
+\index{Funcionario@{Funcionario}!getVeiculoAlocado@{getVeiculoAlocado}}
+\index{getVeiculoAlocado@{getVeiculoAlocado}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{getVeiculoAlocado()}{getVeiculoAlocado()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_veiculo}{Veiculo}} Funcionario\+::get\+Veiculo\+Alocado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado em \mbox{\hyperlink{class_entregador_a86119b2b51361bba85d96e857db2059d}{Entregador}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{117 \{\mbox{\hyperlink{class_veiculo}{Veiculo}} v; \textcolor{keywordflow}{return} v;\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a6bc4524588b99830b224f34f460e2fad}\label{class_funcionario_a6bc4524588b99830b224f34f460e2fad}} 
+\index{Funcionario@{Funcionario}!isDisponivel@{isDisponivel}}
+\index{isDisponivel@{isDisponivel}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{isDisponivel()}{isDisponivel()}}
+{\footnotesize\ttfamily bool Funcionario\+::is\+Disponivel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado em \mbox{\hyperlink{class_entregador_a7d389deea7f15a515c9a45eb9cd77912}{Entregador}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121 \{\textcolor{keywordflow}{return} \textcolor{keyword}{true};\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_accd5c9ad5294a228c90f294475dac683}\label{class_funcionario_accd5c9ad5294a228c90f294475dac683}} 
+\index{Funcionario@{Funcionario}!setData@{setData}}
+\index{setData@{setData}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily void Funcionario\+::set\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_data}{Data}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100                                           \{}
+\DoxyCodeLine{101     \mbox{\hyperlink{class_funcionario_ab71f8641ef5217ca6229e5f5836141be}{Funcionario::data}} = \mbox{\hyperlink{class_funcionario_ab71f8641ef5217ca6229e5f5836141be}{data}};}
+\DoxyCodeLine{102 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a27f39ad986eb9a0da78dd3086e385f67}\label{class_funcionario_a27f39ad986eb9a0da78dd3086e385f67}} 
+\index{Funcionario@{Funcionario}!setDisponivel@{setDisponivel}}
+\index{setDisponivel@{setDisponivel}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{setDisponivel()}{setDisponivel()}}
+{\footnotesize\ttfamily void Funcionario\+::set\+Disponivel (\begin{DoxyParamCaption}\item[{bool}]{disponivel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado em \mbox{\hyperlink{class_entregador_a01fcf4f03c003d6bc33c68d5c34fc571}{Entregador}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{122 \{\textcolor{keywordflow}{return};\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a94612cd4ed9d9f59e9a3c706cd0d67cb}\label{class_funcionario_a94612cd4ed9d9f59e9a3c706cd0d67cb}} 
+\index{Funcionario@{Funcionario}!setEncomFeitas@{setEncomFeitas}}
+\index{setEncomFeitas@{setEncomFeitas}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{setEncomFeitas()}{setEncomFeitas()}}
+{\footnotesize\ttfamily void Funcionario\+::set\+Encom\+Feitas (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \&}]{encom\+Feitas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado em \mbox{\hyperlink{class_entregador_a4a5b0b7543c5bf3ccb0be2d63801ff89}{Entregador}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{120 \{\textcolor{keywordflow}{return};\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_ac6c9da74cbc4b785241e4de79ac86c81}\label{class_funcionario_ac6c9da74cbc4b785241e4de79ac86c81}} 
+\index{Funcionario@{Funcionario}!setFuncao@{setFuncao}}
+\index{setFuncao@{setFuncao}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{setFuncao()}{setFuncao()}}
+{\footnotesize\ttfamily void Funcionario\+::set\+Funcao (\begin{DoxyParamCaption}\item[{const string \&}]{funcao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado em \mbox{\hyperlink{class_administrador_a89261675e876438dcc029d6a85420039}{Administrador}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{116 \{\textcolor{keywordflow}{return};\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_acafc61d9f2db940792f0b42cb08ed15b}\label{class_funcionario_acafc61d9f2db940792f0b42cb08ed15b}} 
+\index{Funcionario@{Funcionario}!setNif@{setNif}}
+\index{setNif@{setNif}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{setNif()}{setNif()}}
+{\footnotesize\ttfamily void Funcionario\+::set\+Nif (\begin{DoxyParamCaption}\item[{string}]{nif }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{106                                  \{}
+\DoxyCodeLine{107     \mbox{\hyperlink{class_funcionario_a9bdd9ddf9a0e407871d9ba6b535ef02e}{nif}} = n;}
+\DoxyCodeLine{108 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a3507c9da874d671d461e34bc2724e19b}\label{class_funcionario_a3507c9da874d671d461e34bc2724e19b}} 
+\index{Funcionario@{Funcionario}!setNome@{setNome}}
+\index{setNome@{setNome}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Funcionario\+::set\+Nome (\begin{DoxyParamCaption}\item[{const string \&}]{nome }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94                                             \{}
+\DoxyCodeLine{95     \mbox{\hyperlink{class_funcionario_a9415993338314799ac6ec08f4441578e}{Funcionario::nome}} = \mbox{\hyperlink{class_funcionario_a9415993338314799ac6ec08f4441578e}{nome}};}
+\DoxyCodeLine{96 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a6baaa4380cf279e221b190391108bfd2}\label{class_funcionario_a6baaa4380cf279e221b190391108bfd2}} 
+\index{Funcionario@{Funcionario}!setSalario@{setSalario}}
+\index{setSalario@{setSalario}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{setSalario()}{setSalario()}}
+{\footnotesize\ttfamily void Funcionario\+::set\+Salario (\begin{DoxyParamCaption}\item[{int}]{salario }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112                                         \{}
+\DoxyCodeLine{113     \mbox{\hyperlink{class_funcionario_ad305ae6211b99d73461cccc647abb62c}{Funcionario::salario}} = \mbox{\hyperlink{class_funcionario_ad305ae6211b99d73461cccc647abb62c}{salario}};}
+\DoxyCodeLine{114 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a294d48836cf3b2668b5ac6f12b71d099}\label{class_funcionario_a294d48836cf3b2668b5ac6f12b71d099}} 
+\index{Funcionario@{Funcionario}!setTipoDeFuncionario@{setTipoDeFuncionario}}
+\index{setTipoDeFuncionario@{setTipoDeFuncionario}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{setTipoDeFuncionario()}{setTipoDeFuncionario()}}
+{\footnotesize\ttfamily void Funcionario\+::set\+Tipo\+De\+Funcionario (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123                                               \{}
+\DoxyCodeLine{124     \mbox{\hyperlink{class_funcionario_a52b2b2ce6ff9876dd332a8cbfa950752}{tipoDeFuncionario}}=t;}
+\DoxyCodeLine{125 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_funcionario_a7b803cbedf3df9ba0e8cdd3a75a19ce8}\label{class_funcionario_a7b803cbedf3df9ba0e8cdd3a75a19ce8}} 
+\index{Funcionario@{Funcionario}!setVeiculoAlocado@{setVeiculoAlocado}}
+\index{setVeiculoAlocado@{setVeiculoAlocado}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{setVeiculoAlocado()}{setVeiculoAlocado()}}
+{\footnotesize\ttfamily void Funcionario\+::set\+Veiculo\+Alocado (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_veiculo}{Veiculo}} \&}]{veiculo\+Alocado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementado em \mbox{\hyperlink{class_entregador_aca837dc54b7fed828e14fd704401c710}{Entregador}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118 \{\textcolor{keywordflow}{return};\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_funcionario_ab71f8641ef5217ca6229e5f5836141be}\label{class_funcionario_ab71f8641ef5217ca6229e5f5836141be}} 
+\index{Funcionario@{Funcionario}!data@{data}}
+\index{data@{data}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data}{Data}} Funcionario\+::data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A data de nascimento do Funcionário. 
+
+\mbox{\Hypertarget{class_funcionario_a9bdd9ddf9a0e407871d9ba6b535ef02e}\label{class_funcionario_a9bdd9ddf9a0e407871d9ba6b535ef02e}} 
+\index{Funcionario@{Funcionario}!nif@{nif}}
+\index{nif@{nif}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{nif}{nif}}
+{\footnotesize\ttfamily string Funcionario\+::nif\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O nif do Funcionário. 
+
+\mbox{\Hypertarget{class_funcionario_a9415993338314799ac6ec08f4441578e}\label{class_funcionario_a9415993338314799ac6ec08f4441578e}} 
+\index{Funcionario@{Funcionario}!nome@{nome}}
+\index{nome@{nome}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily string Funcionario\+::nome\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O nome do Funcionário. 
+
+\mbox{\Hypertarget{class_funcionario_ad305ae6211b99d73461cccc647abb62c}\label{class_funcionario_ad305ae6211b99d73461cccc647abb62c}} 
+\index{Funcionario@{Funcionario}!salario@{salario}}
+\index{salario@{salario}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{salario}{salario}}
+{\footnotesize\ttfamily int Funcionario\+::salario\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O salário do Funcionário. 
+
+\mbox{\Hypertarget{class_funcionario_a52b2b2ce6ff9876dd332a8cbfa950752}\label{class_funcionario_a52b2b2ce6ff9876dd332a8cbfa950752}} 
+\index{Funcionario@{Funcionario}!tipoDeFuncionario@{tipoDeFuncionario}}
+\index{tipoDeFuncionario@{tipoDeFuncionario}!Funcionario@{Funcionario}}
+\doxysubsubsection{\texorpdfstring{tipoDeFuncionario}{tipoDeFuncionario}}
+{\footnotesize\ttfamily string Funcionario\+::tipo\+De\+Funcionario\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O tipo de Funcionário. 
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{empresa_8h}{empresa.\+h}}\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{empresa_8cpp}{empresa.\+cpp}}\end{DoxyCompactItemize}

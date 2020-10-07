@@ -1,0 +1,1536 @@
+\hypertarget{class_base}{}\doxysection{Referência à classe Base}
+\label{class_base}\index{Base@{Base}}
+
+
+Classe \mbox{\hyperlink{class_base}{Base}} representa uma \mbox{\hyperlink{class_base}{Base}} da \mbox{\hyperlink{class_empresa}{Empresa}} através da sua \mbox{\hyperlink{class_morada}{Morada}}, conselho, coordenadas G\+PS, gerente, conjunto de Clientes, conjunto de Restaurantes e o conjunto de funcionários dessa \mbox{\hyperlink{class_base}{Base}}.  
+
+
+
+
+{\ttfamily \#include $<$empresa.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_base_a5ffe0568374d8b9b4c4ec32953fd6453}{Base}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_base_aab2cd6a6d3797cfe53311018db92d688}{Base}} (string base)
+\begin{DoxyCompactList}\small\item\em Constroi uma instância de \mbox{\hyperlink{class_base}{Base}} recebendo uma string estruturada com o seu conteudo. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_base_a722da881b6c70cfcbde9243abcfbf334}{$\sim$\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_morada}{Morada}} \& \mbox{\hyperlink{class_base_af0803226d0758c1854ae5b1c8251a822}{get\+Morada}} () const
+\item 
+void \mbox{\hyperlink{class_base_a7efca7c2fbc1261a0dfe522e4d6fa0c3}{set\+Morada}} (const \mbox{\hyperlink{class_morada}{Morada}} \&\mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}})
+\item 
+const string \& \mbox{\hyperlink{class_base_a1d2229edda57db240910fc564b4bf5c1}{get\+Conselho}} () const
+\item 
+void \mbox{\hyperlink{class_base_a9812f8612b2f12110f44918d702325be}{set\+Conselho}} (const string \&\mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}})
+\item 
+const string \& \mbox{\hyperlink{class_base_a1ef52933775089723fbaf141479e734d}{get\+Coordenada\+Gps}} () const
+\item 
+void \mbox{\hyperlink{class_base_a24596e046da1a5b4b3ca44d38393932d}{set\+Coordenada\+Gps}} (const string \&coordenada\+Gps)
+\item 
+const string \& \mbox{\hyperlink{class_base_abf70147231730026a41c9a01cc5f5e94}{get\+Gerente}} () const
+\item 
+void \mbox{\hyperlink{class_base_abacceeb837dc6ac23007442ec20001cc}{set\+Gerente}} (const string \&\mbox{\hyperlink{class_base_a05eccb6433822707e846a7ff70e1a946}{gerente}})
+\item 
+vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ \mbox{\hyperlink{class_base_a6ab5c212469482d54d2a7e76e6add089}{get\+Clientes}} ()
+\item 
+void \mbox{\hyperlink{class_base_a7c4979bdcd1c7c046b33260a14cda887}{set\+Clientes}} (vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ \&\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}})
+\item 
+vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ \mbox{\hyperlink{class_base_a79bcb2da71dbf10bfef957dd03a4a6bd}{get\+Restaurantes}} ()
+\item 
+void \mbox{\hyperlink{class_base_a5624dca4fae15dd630e5c040cec0fe0a}{set\+Restaurantes}} (vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ \&\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}})
+\item 
+vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$ $>$ \mbox{\hyperlink{class_base_a0e1ca05c36fcee861625baebe3756a02}{get\+Funcionarios}} ()
+\item 
+void \mbox{\hyperlink{class_base_a58fc2377ca9aeb7ac6b2f4355a5f0973}{set\+Funcionarios}} (const vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$ $>$ \&\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}})
+\item 
+string \mbox{\hyperlink{class_base_ac937972e968000f2a270c48dc1b655cc}{get\+Funcionarios\+File\+Name}} ()
+\item 
+string \mbox{\hyperlink{class_base_a7c50d9bdd6ed356cafe0dca4311dda00}{get\+Clientes\+File\+Name}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ \mbox{\hyperlink{class_base_ac98d0e6346feb951fa2672a1400309cd}{get\+Lista\+Negra}} ()
+\item 
+void \mbox{\hyperlink{class_base_a72ed0353793544e4ce14fe7925186374}{get\+Lista\+Negra}} (vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ l)
+\item 
+void \mbox{\hyperlink{class_base_af932bf79ff8b2a19ebfde91765b89531}{clientes\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro clientes.\+txt, que contém a informacao ordenada de um conjunto de clientes (Classe \mbox{\hyperlink{class_cliente}{Cliente}}). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_a4bcdcc88c06b0d36fed35f5b80ed7cc5}{funcionarios\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro funcionarios$<$\+Base$>$.\+txt, que contém a informacão ordenada de um conjunto de funcionários (Classe Funcionário). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_a4becd0991c08c6c13c6e18fe983e7743}{restaurantes\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro restaurante$<$\+Base$>$.\+txt, que contém a informacao ordenada de um conjunto de restaurantes (Classe \mbox{\hyperlink{class_restaurante}{Restaurante}}). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_a714900778cfda0a00088fd36f541d99d}{lista\+Negra\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro listanegra.\+txt, que contém a informacao ordenada de um conjunto de clientes (Classe \mbox{\hyperlink{class_cliente}{Cliente}}). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_a28850bfd675544d375db86c56c0195f1}{add\+Cliente}} ()
+\begin{DoxyCompactList}\small\item\em Adinciona um \mbox{\hyperlink{class_cliente}{Cliente}} à \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_a592b29d7d5e6ff3ecd7a16d9f61abc99}{add\+Restaurante}} ()
+\begin{DoxyCompactList}\small\item\em Adinciona um \mbox{\hyperlink{class_restaurante}{Restaurante}} à \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_adaed88857f9eebdc428546799d4763c9}{add\+Admin}} ()
+\begin{DoxyCompactList}\small\item\em Adinciona um funcionário \mbox{\hyperlink{class_administrador}{Administrador}} à \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_a2c299968679e35c06344ff1da05472cb}{add\+Entreg}} ()
+\begin{DoxyCompactList}\small\item\em Adinciona um funcionario \mbox{\hyperlink{class_entregador}{Entregador}} à \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_acc6172594c9dff6b4beba3ef26ac4ae4}{remove\+Cliente}} (\mbox{\hyperlink{class_cliente}{Cliente}} c)
+\begin{DoxyCompactList}\small\item\em Remove um \mbox{\hyperlink{class_cliente}{Cliente}} da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_a4ae2252cefffd65f429b9243b58731b3}{remove\+Restaurante}} (\mbox{\hyperlink{class_restaurante}{Restaurante}} r)
+\begin{DoxyCompactList}\small\item\em Remove um \mbox{\hyperlink{class_restaurante}{Restaurante}} da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_af26bcd33867ddb80452f3aaeac7b1040}{remove\+Funcionario}} (\mbox{\hyperlink{class_funcionario}{Funcionario}} f)
+\begin{DoxyCompactList}\small\item\em Remove um Funcionário da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_a146228c71d8ed3b8916baa86cbfa5116}{remove\+Admin}} (\mbox{\hyperlink{class_funcionario}{Funcionario}} f)
+\begin{DoxyCompactList}\small\item\em Remove um funcionário do tipo \mbox{\hyperlink{class_administrador}{Administrador}} da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_base_a1bc6fb7a86da708a8d21e11bf24a4ba0}{remove\+Entreg}} (\mbox{\hyperlink{class_funcionario}{Funcionario}} f)
+\begin{DoxyCompactList}\small\item\em Remove um funcionário do tipo \mbox{\hyperlink{class_entregador}{Entregador}} da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_morada}{Morada}} \mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}}
+\begin{DoxyCompactList}\small\item\em A morada da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}}
+\begin{DoxyCompactList}\small\item\em O conselho da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_base_a894edf506603a4d46a06aee221b45692}{coordenada\+G\+PS}}
+\begin{DoxyCompactList}\small\item\em As coordenadas G\+PS da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_base_a05eccb6433822707e846a7ff70e1a946}{gerente}}
+\begin{DoxyCompactList}\small\item\em O gerente da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_base_a5fa6abe0029f4fc564295c003863f683}{clientes\+\_\+filename}}
+\begin{DoxyCompactList}\small\item\em O nome do ficheiro que contem todos os clientes da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_base_aaf43a3482c9ffbd3a0b60714b94e9478}{restaurantes\+\_\+filename}}
+\begin{DoxyCompactList}\small\item\em O nome do ficheiro que contem todos os restaurantes da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_base_a0f9f9455cb0402ffc15be773e39f9956}{funcionarios\+\_\+filename}}
+\begin{DoxyCompactList}\small\item\em O nome do ficheiro que contem todos os funcionários da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}
+\begin{DoxyCompactList}\small\item\em O conjunto dos clientes da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ \mbox{\hyperlink{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}{lista\+Negra}}
+\begin{DoxyCompactList}\small\item\em O conjunto dos clientes pertencentes à Lista Negra da \mbox{\hyperlink{class_empresa}{Empresa}}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}
+\begin{DoxyCompactList}\small\item\em O conjunto dos restaurantes da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$ $>$ \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}
+\begin{DoxyCompactList}\small\item\em O conjunto dos funcionários da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe \mbox{\hyperlink{class_base}{Base}} representa uma \mbox{\hyperlink{class_base}{Base}} da \mbox{\hyperlink{class_empresa}{Empresa}} através da sua \mbox{\hyperlink{class_morada}{Morada}}, conselho, coordenadas G\+PS, gerente, conjunto de Clientes, conjunto de Restaurantes e o conjunto de funcionários dessa \mbox{\hyperlink{class_base}{Base}}. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_base_a5ffe0568374d8b9b4c4ec32953fd6453}\label{class_base_a5ffe0568374d8b9b4c4ec32953fd6453}} 
+\index{Base@{Base}!Base@{Base}}
+\index{Base@{Base}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{Base()}{Base()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Base\+::\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_base}{Base}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{171 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_aab2cd6a6d3797cfe53311018db92d688}\label{class_base_aab2cd6a6d3797cfe53311018db92d688}} 
+\index{Base@{Base}!Base@{Base}}
+\index{Base@{Base}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{Base()}{Base()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Base\+::\+Base (\begin{DoxyParamCaption}\item[{string}]{base }\end{DoxyParamCaption})}
+
+
+
+Constroi uma instância de \mbox{\hyperlink{class_base}{Base}} recebendo uma string estruturada com o seu conteudo. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{173                                \{}
+\DoxyCodeLine{174     ifstream infile;}
+\DoxyCodeLine{175     infile.open(base\_filename);}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{177     \textcolor{keywordtype}{string} r;}
+\DoxyCodeLine{178     getline(infile, r);}
+\DoxyCodeLine{179     this-\/>\mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}}.\mbox{\hyperlink{class_morada_acf4eabc2880474f9088c88bf93b95e3e}{setRua}}(r);}
+\DoxyCodeLine{180     \textcolor{keywordtype}{string} l;}
+\DoxyCodeLine{181     getline(infile, l);}
+\DoxyCodeLine{182     this-\/>\mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}}.\mbox{\hyperlink{class_morada_a0c9eef5fbdd679f11ed0a157a07f9cf1}{setLocalidade}}(l);}
+\DoxyCodeLine{183     \textcolor{keywordtype}{string} n;}
+\DoxyCodeLine{184     getline(infile, n);}
+\DoxyCodeLine{185     this-\/>\mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}}.\mbox{\hyperlink{class_morada_a799c17077d59927324383c62b1a6851d}{setNumero}}(n);}
+\DoxyCodeLine{186     getline(infile, this-\/>\mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}});}
+\DoxyCodeLine{187     getline(infile, this-\/>\mbox{\hyperlink{class_base_a894edf506603a4d46a06aee221b45692}{coordenadaGPS}});}
+\DoxyCodeLine{188     getline(infile, this-\/>\mbox{\hyperlink{class_base_a05eccb6433822707e846a7ff70e1a946}{gerente}});}
+\DoxyCodeLine{189     getline(infile,\mbox{\hyperlink{class_base_a5fa6abe0029f4fc564295c003863f683}{clientes\_filename}});}
+\DoxyCodeLine{190     getline(infile, \mbox{\hyperlink{class_base_aaf43a3482c9ffbd3a0b60714b94e9478}{restaurantes\_filename}});}
+\DoxyCodeLine{191     getline(infile, \mbox{\hyperlink{class_base_a0f9f9455cb0402ffc15be773e39f9956}{funcionarios\_filename}} );}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193     infile.close();}
+\DoxyCodeLine{194 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a722da881b6c70cfcbde9243abcfbf334}\label{class_base_a722da881b6c70cfcbde9243abcfbf334}} 
+\index{Base@{Base}!````~Base@{$\sim$Base}}
+\index{````~Base@{$\sim$Base}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{$\sim$Base()}{~Base()}}
+{\footnotesize\ttfamily Base\+::$\sim$\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor da classe \mbox{\hyperlink{class_base}{Base}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{196             \{}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_base_adaed88857f9eebdc428546799d4763c9}\label{class_base_adaed88857f9eebdc428546799d4763c9}} 
+\index{Base@{Base}!addAdmin@{addAdmin}}
+\index{addAdmin@{addAdmin}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{addAdmin()}{addAdmin()}}
+{\footnotesize\ttfamily void Base\+::add\+Admin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adinciona um funcionário \mbox{\hyperlink{class_administrador}{Administrador}} à \mbox{\hyperlink{class_base}{Base}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{770                    \{}
+\DoxyCodeLine{771     \mbox{\hyperlink{class_administrador}{Administrador}} a;}
+\DoxyCodeLine{772     \mbox{\hyperlink{class_data}{Data}} d;}
+\DoxyCodeLine{773     ofstream file;}
+\DoxyCodeLine{774     \textcolor{keywordtype}{string} nome,nif,dia,mes,ano,salario,funcao, data;}
+\DoxyCodeLine{775     \textcolor{keywordtype}{int} b;}
+\DoxyCodeLine{776     cin.ignore();}
+\DoxyCodeLine{777     cout<<\textcolor{stringliteral}{"Nome:"}<<endl;}
+\DoxyCodeLine{778     getline(cin,nome);}
+\DoxyCodeLine{779     a.\mbox{\hyperlink{class_funcionario_a3507c9da874d671d461e34bc2724e19b}{setNome}}(nome);}
+\DoxyCodeLine{780     cout<<\textcolor{stringliteral}{"Nif:"}<<endl;}
+\DoxyCodeLine{781     cin>>nif;}
+\DoxyCodeLine{782     \textcolor{comment}{//cin.ignore();}}
+\DoxyCodeLine{783     \textcolor{keywordflow}{while}(nif.size()>9 || nif.size()<9)\{}
+\DoxyCodeLine{784         cout<<\textcolor{stringliteral}{"Nif invalido. Volte a inserir:"}<<endl;}
+\DoxyCodeLine{785         cin>>nif;}
+\DoxyCodeLine{786     \}}
+\DoxyCodeLine{787     \textcolor{keywordtype}{bool} existe=\textcolor{keyword}{false};}
+\DoxyCodeLine{788     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size();i++)\{}
+\DoxyCodeLine{789         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNif()==nif)\{}
+\DoxyCodeLine{790             existe=\textcolor{keyword}{true};}
+\DoxyCodeLine{791         \}}
+\DoxyCodeLine{792     \}}
+\DoxyCodeLine{793     \textcolor{keywordflow}{while}(existe==\textcolor{keyword}{true})\{}
+\DoxyCodeLine{794         cout<<\textcolor{stringliteral}{"Ja temos um funcionario registado com este nif"} <<endl;}
+\DoxyCodeLine{795         cout<< \textcolor{stringliteral}{"Tente Novamente!"}<<endl;}
+\DoxyCodeLine{796         cout<<\textcolor{stringliteral}{"Nif:"}<<endl;}
+\DoxyCodeLine{797         cin>>nif;}
+\DoxyCodeLine{798         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size();i++)\{}
+\DoxyCodeLine{799             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNif()==nif)\{}
+\DoxyCodeLine{800                 existe=\textcolor{keyword}{true};}
+\DoxyCodeLine{801                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{802             \}\textcolor{keywordflow}{else} existe=\textcolor{keyword}{false};}
+\DoxyCodeLine{803 }
+\DoxyCodeLine{804         \}}
+\DoxyCodeLine{805     \}}
+\DoxyCodeLine{806     a.\mbox{\hyperlink{class_funcionario_acafc61d9f2db940792f0b42cb08ed15b}{setNif}}(nif);}
+\DoxyCodeLine{807     \textcolor{comment}{//cin.ignore();}}
+\DoxyCodeLine{808     cout<<\textcolor{stringliteral}{"Data de nascimento:"}<<endl;}
+\DoxyCodeLine{809     cout<<\textcolor{stringliteral}{"Dia:"}<<endl;}
+\DoxyCodeLine{810     cin>>dia;}
+\DoxyCodeLine{811     cout<<\textcolor{stringliteral}{"Mes:"}<<endl;}
+\DoxyCodeLine{812     cin>>mes;}
+\DoxyCodeLine{813     cout<<\textcolor{stringliteral}{"Ano:"}<<endl;}
+\DoxyCodeLine{814     cin>>ano;}
+\DoxyCodeLine{815     data=dia+\textcolor{stringliteral}{"/"}+mes+\textcolor{stringliteral}{"/"}+ano;}
+\DoxyCodeLine{816     d=\mbox{\hyperlink{class_data}{Data}}(data);}
+\DoxyCodeLine{817     a.\mbox{\hyperlink{class_funcionario_accd5c9ad5294a228c90f294475dac683}{setData}}(d);}
+\DoxyCodeLine{818     cout<<\textcolor{stringliteral}{"Salario:"}<<endl;}
+\DoxyCodeLine{819     cin>>salario;}
+\DoxyCodeLine{820     a.\mbox{\hyperlink{class_funcionario_a6baaa4380cf279e221b190391108bfd2}{setSalario}}(stoi(salario));}
+\DoxyCodeLine{821     cout<<\textcolor{stringliteral}{"Cargo:"}<<endl;}
+\DoxyCodeLine{822     cin>>funcao;}
+\DoxyCodeLine{823     a.\mbox{\hyperlink{class_administrador_a89261675e876438dcc029d6a85420039}{setFuncao}}(funcao);}
+\DoxyCodeLine{824     \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.push\_back(\&a);}
+\DoxyCodeLine{825     cout << \textcolor{stringliteral}{"O administrador "}<<a.\mbox{\hyperlink{class_funcionario_a3c4f155a4a074417e9362072b83f1487}{getNome}}()<<\textcolor{stringliteral}{" foi adicionado com sucesso! "} << endl;}
+\DoxyCodeLine{826     file.open(\mbox{\hyperlink{class_base_a0f9f9455cb0402ffc15be773e39f9956}{funcionarios\_filename}}, ios::app);}
+\DoxyCodeLine{827     file << \textcolor{stringliteral}{":::::"} << endl;}
+\DoxyCodeLine{828     file<<\textcolor{stringliteral}{"Administrador"}<<endl;}
+\DoxyCodeLine{829     file << a.\mbox{\hyperlink{class_funcionario_a3c4f155a4a074417e9362072b83f1487}{getNome}}() << endl;}
+\DoxyCodeLine{830     file << a.\mbox{\hyperlink{class_funcionario_a56ac1aeeee003826beb8913808b45624}{getNif}}()<<endl;}
+\DoxyCodeLine{831     file << to\_string(a.\mbox{\hyperlink{class_funcionario_aff12ce703084dc6efcd645f5b3ed715d}{getData}}().\mbox{\hyperlink{class_data_aa9b7bdc683d9c493d903184e85f1e6b3}{getDia}}())+\textcolor{stringliteral}{"/"}+to\_string(a.\mbox{\hyperlink{class_funcionario_aff12ce703084dc6efcd645f5b3ed715d}{getData}}().\mbox{\hyperlink{class_data_a1df6f5e1695c7cae56b9ee752a6895e8}{getMes}}())+\textcolor{stringliteral}{"/"}+to\_string(a.\mbox{\hyperlink{class_funcionario_aff12ce703084dc6efcd645f5b3ed715d}{getData}}().\mbox{\hyperlink{class_data_a986bec10cbca338f08c9096d8e51efb5}{getAno}}()) << endl;}
+\DoxyCodeLine{832     file <<to\_string(a.\mbox{\hyperlink{class_funcionario_ace5307d75c27070b19dd107dde24cf92}{getSalario}}())<< endl;}
+\DoxyCodeLine{833     file<<a.\mbox{\hyperlink{class_administrador_af9273a2b760c45fe625246f3cd50a76f}{getFuncao}}()<<endl;}
+\DoxyCodeLine{834 }
+\DoxyCodeLine{835 }
+\DoxyCodeLine{836 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a28850bfd675544d375db86c56c0195f1}\label{class_base_a28850bfd675544d375db86c56c0195f1}} 
+\index{Base@{Base}!addCliente@{addCliente}}
+\index{addCliente@{addCliente}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{addCliente()}{addCliente()}}
+{\footnotesize\ttfamily void Base\+::add\+Cliente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adinciona um \mbox{\hyperlink{class_cliente}{Cliente}} à \mbox{\hyperlink{class_base}{Base}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{416                       \{}
+\DoxyCodeLine{417     \mbox{\hyperlink{class_cliente}{Cliente}} c;}
+\DoxyCodeLine{418     \mbox{\hyperlink{class_morada}{Morada}} m;}
+\DoxyCodeLine{419     ofstream file;}
+\DoxyCodeLine{420     \textcolor{keywordtype}{string} nome,nif,rua,con,num,base, \mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}};}
+\DoxyCodeLine{421     \textcolor{keywordtype}{int} a;}
+\DoxyCodeLine{422     \textcolor{keywordtype}{bool} aceite= \textcolor{keyword}{true};}
+\DoxyCodeLine{423     cin.ignore();}
+\DoxyCodeLine{424     cout<<\textcolor{stringliteral}{"Nome:"}<<endl;}
+\DoxyCodeLine{425     getline(cin,nome);}
+\DoxyCodeLine{426     c.\mbox{\hyperlink{class_cliente_abc57bddb527d6b642a2a612b657812e4}{setName}}(nome);}
+\DoxyCodeLine{427     cout<<\textcolor{stringliteral}{"Nif:"}<<endl;}
+\DoxyCodeLine{428     cin>>nif;}
+\DoxyCodeLine{429     \textcolor{comment}{//cin.ignore();}}
+\DoxyCodeLine{430     \textcolor{keywordflow}{while}(nif.size()>9 || nif.size()<9)\{}
+\DoxyCodeLine{431         cout<<\textcolor{stringliteral}{"Nif invalido. Volte a inserir:"}<<endl;}
+\DoxyCodeLine{432         cin>>nif;}
+\DoxyCodeLine{433     \}}
+\DoxyCodeLine{434     \textcolor{keywordtype}{bool} existe=\textcolor{keyword}{false};}
+\DoxyCodeLine{435     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size();i++)\{}
+\DoxyCodeLine{436         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getNif()==nif)\{}
+\DoxyCodeLine{437             existe=\textcolor{keyword}{true};}
+\DoxyCodeLine{438         \}}
+\DoxyCodeLine{439     \}}
+\DoxyCodeLine{440     \mbox{\hyperlink{class_base_a714900778cfda0a00088fd36f541d99d}{listaNegra\_readfile}}();}
+\DoxyCodeLine{441     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\mbox{\hyperlink{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}{listaNegra}}.size(); i++)\{}
+\DoxyCodeLine{442         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}{listaNegra}}[i].getNif()==nif)\{}
+\DoxyCodeLine{443             \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_cliente_na_lista_negra}{ClienteNaListaNegra}}(\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i]);}
+\DoxyCodeLine{444         \}}
+\DoxyCodeLine{445     \}}
+\DoxyCodeLine{446     \textcolor{keywordflow}{while} (existe == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{447         cout << \textcolor{stringliteral}{"Ja temos um cliente registado com este nif"} << endl;}
+\DoxyCodeLine{448         cout << \textcolor{stringliteral}{"Tente Novamente!"} << endl;}
+\DoxyCodeLine{449         cout << \textcolor{stringliteral}{"Nif:"} << endl;}
+\DoxyCodeLine{450         cin >> nif;}
+\DoxyCodeLine{451         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size(); i++) \{}
+\DoxyCodeLine{452             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getNif() == nif) \{}
+\DoxyCodeLine{453                 existe = \textcolor{keyword}{true};}
+\DoxyCodeLine{454                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{455             \} \textcolor{keywordflow}{else} existe = \textcolor{keyword}{false};}
+\DoxyCodeLine{456         \}}
+\DoxyCodeLine{457     \}}
+\DoxyCodeLine{458     c.\mbox{\hyperlink{class_cliente_a0b415e025af78425295b0d195b877577}{setNif}}(nif);}
+\DoxyCodeLine{459     cin.ignore();}
+\DoxyCodeLine{460     cout << \textcolor{stringliteral}{"Rua:"} << endl;}
+\DoxyCodeLine{461     getline(cin, rua);}
+\DoxyCodeLine{462     \textcolor{comment}{//cin.ignore();}}
+\DoxyCodeLine{463     cout << \textcolor{stringliteral}{"Conselho:"} << endl;}
+\DoxyCodeLine{464 }
+\DoxyCodeLine{465     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}} == \textcolor{stringliteral}{"Porto"}) \{}
+\DoxyCodeLine{466         cout << \textcolor{stringliteral}{"\{1\} -\/ Porto"} << endl;}
+\DoxyCodeLine{467         cout << \textcolor{stringliteral}{"\{2\} -\/ Matosinhos "} << endl;}
+\DoxyCodeLine{468         cout << \textcolor{stringliteral}{"\{3\} -\/ Vila Nova de Gaia"} << endl;}
+\DoxyCodeLine{469         cout << \textcolor{stringliteral}{"\{4\} -\/ Maia"} << endl;}
+\DoxyCodeLine{470         cout << \textcolor{stringliteral}{"\{5\} -\/ Gondomar"} << endl;}
+\DoxyCodeLine{471         cout << \textcolor{stringliteral}{"\{0\} -\/ Outros"} << endl;}
+\DoxyCodeLine{472         cin >> a;}
+\DoxyCodeLine{473         \textcolor{keywordflow}{switch} (a) \{}
+\DoxyCodeLine{474             \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{475                 con = \textcolor{stringliteral}{"0"};}
+\DoxyCodeLine{476                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{477             \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{478                 con = \textcolor{stringliteral}{"Porto"};}
+\DoxyCodeLine{479                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{480             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{481                 con = \textcolor{stringliteral}{"Matosinhos"};}
+\DoxyCodeLine{482                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{483             \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{484                 con = \textcolor{stringliteral}{"Vila Nova de Gaia"};}
+\DoxyCodeLine{485                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{486             \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{487                 con = \textcolor{stringliteral}{"Maia"};}
+\DoxyCodeLine{488                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{489             \textcolor{keywordflow}{case} 5:}
+\DoxyCodeLine{490                 con = \textcolor{stringliteral}{"Gondomar"};}
+\DoxyCodeLine{491                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{492             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{493                 con = \textcolor{stringliteral}{"1"};}
+\DoxyCodeLine{494         \}}
+\DoxyCodeLine{495     \}}
+\DoxyCodeLine{496     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}} == \textcolor{stringliteral}{"Lisboa"}) \{}
+\DoxyCodeLine{497         cout << \textcolor{stringliteral}{"\{1\} -\/ Lisboa"} << endl;}
+\DoxyCodeLine{498         cout << \textcolor{stringliteral}{"\{2\} -\/ Oeiras "} << endl;}
+\DoxyCodeLine{499         cout << \textcolor{stringliteral}{"\{3\} -\/ Amadora"} << endl;}
+\DoxyCodeLine{500         cout << \textcolor{stringliteral}{"\{4\} -\/ Odivelas"} << endl;}
+\DoxyCodeLine{501         cout << \textcolor{stringliteral}{"\{5\} -\/ Loures"} << endl;}
+\DoxyCodeLine{502         cout << \textcolor{stringliteral}{"\{0\} -\/ Outro"} << endl;}
+\DoxyCodeLine{503         cin >> a;}
+\DoxyCodeLine{504 }
+\DoxyCodeLine{505         \textcolor{keywordflow}{switch} (a) \{}
+\DoxyCodeLine{506             \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{507                 con = \textcolor{stringliteral}{"0"};}
+\DoxyCodeLine{508                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{509             \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{510                 con = \textcolor{stringliteral}{"Lisboa"};}
+\DoxyCodeLine{511                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{512             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{513                 con = \textcolor{stringliteral}{"Oeiras"};}
+\DoxyCodeLine{514                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{515             \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{516                 con = \textcolor{stringliteral}{"Amadora"};}
+\DoxyCodeLine{517                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{518             \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{519                 con = \textcolor{stringliteral}{"Odivelas"};}
+\DoxyCodeLine{520                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{521             \textcolor{keywordflow}{case} 5:}
+\DoxyCodeLine{522                 con = \textcolor{stringliteral}{"Loures"};}
+\DoxyCodeLine{523                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{524             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{525                 con = \textcolor{stringliteral}{"1"};}
+\DoxyCodeLine{526         \}}
+\DoxyCodeLine{527     \}}
+\DoxyCodeLine{528     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}} == \textcolor{stringliteral}{"Faro"}) \{}
+\DoxyCodeLine{529         cout << \textcolor{stringliteral}{"\{1\} -\/ Faro"} << endl;}
+\DoxyCodeLine{530         cout << \textcolor{stringliteral}{"\{2\} -\/ Loule"} << endl;}
+\DoxyCodeLine{531         cout << \textcolor{stringliteral}{"\{3\} -\/ Olhao"} << endl;}
+\DoxyCodeLine{532         cout << \textcolor{stringliteral}{"\{4\} -\/ Sao Bras de Alportel"} << endl;}
+\DoxyCodeLine{533         cout << \textcolor{stringliteral}{"\{0\} -\/ Outro"} << endl;}
+\DoxyCodeLine{534         cin >> a;}
+\DoxyCodeLine{535 }
+\DoxyCodeLine{536         \textcolor{keywordflow}{switch} (a) \{}
+\DoxyCodeLine{537             \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{538                 con = \textcolor{stringliteral}{"0"};}
+\DoxyCodeLine{539                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{540             \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{541                 con = \textcolor{stringliteral}{"Faro"};}
+\DoxyCodeLine{542                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{543             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{544                 con = \textcolor{stringliteral}{"Loule"};}
+\DoxyCodeLine{545                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{546             \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{547                 con = \textcolor{stringliteral}{"Olhao"};}
+\DoxyCodeLine{548                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{549             \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{550                 con = \textcolor{stringliteral}{"Sao Bras de Alportel"};}
+\DoxyCodeLine{551                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{552             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{553                 con = \textcolor{stringliteral}{"1"};}
+\DoxyCodeLine{554 }
+\DoxyCodeLine{555         \}}
+\DoxyCodeLine{556     \}}
+\DoxyCodeLine{557     \textcolor{keywordflow}{if} (con != \textcolor{stringliteral}{"0"} \&\& con != \textcolor{stringliteral}{"1"}) \{}
+\DoxyCodeLine{558         cout << \textcolor{stringliteral}{"Numero:"} << endl;}
+\DoxyCodeLine{559         cin >> num;}
+\DoxyCodeLine{560         \mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}} = rua + \textcolor{stringliteral}{", "} + con + \textcolor{stringliteral}{", "} + num;}
+\DoxyCodeLine{561         m = \mbox{\hyperlink{class_morada}{Morada}}(\mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}});}
+\DoxyCodeLine{562         c.\mbox{\hyperlink{class_cliente_a078f39322e25b499a67cae7d21fa56c8}{setMorada}}(m);}
+\DoxyCodeLine{563         \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.push\_back(c);}
+\DoxyCodeLine{564         cout << \textcolor{stringliteral}{"O cliente "} << c.\mbox{\hyperlink{class_cliente_a92c02664983dc94ab56c8a9d829978cc}{getName}}() << \textcolor{stringliteral}{" foi registado com sucesso! "} << endl;}
+\DoxyCodeLine{565         cout << \textcolor{stringliteral}{"Obrigada por escolher Ugh Eats Delivery!"} << endl;}
+\DoxyCodeLine{566         file.open(\mbox{\hyperlink{class_base_a5fa6abe0029f4fc564295c003863f683}{clientes\_filename}});}
+\DoxyCodeLine{567         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size() -\/ 1; i++) \{}
+\DoxyCodeLine{568             file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getName() << endl;}
+\DoxyCodeLine{569             file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getNif() << endl;}
+\DoxyCodeLine{570             file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getMorada().getRua() + \textcolor{stringliteral}{", "} + \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getMorada().getLocalidade() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{571                     \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getMorada().getNumero() << endl;}
+\DoxyCodeLine{572             file << \mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}} << endl;}
+\DoxyCodeLine{573             file << \textcolor{stringliteral}{":::::"} << endl;}
+\DoxyCodeLine{574         \}}
+\DoxyCodeLine{575         file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size() -\/ 1].getName() << endl;}
+\DoxyCodeLine{576         file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size() -\/ 1].getNif() << endl;}
+\DoxyCodeLine{577         file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size() -\/ 1].getMorada().getRua() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{578                 \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size() -\/ 1].getMorada().getLocalidade() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{579                 \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size() -\/ 1].getMorada().getNumero() << endl;}
+\DoxyCodeLine{580         file << \mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}} << endl;}
+\DoxyCodeLine{581     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (con == \textcolor{stringliteral}{"1"}) \{}
+\DoxyCodeLine{582         cout << \textcolor{stringliteral}{"Opcao Invalida"};}
+\DoxyCodeLine{583     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{584         cout << \textcolor{stringliteral}{"Lamentamos, mas a Ugh Eats ainda nao entraga noutros concelhos"} << endl;}
+\DoxyCodeLine{585     \}}
+\DoxyCodeLine{586 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a2c299968679e35c06344ff1da05472cb}\label{class_base_a2c299968679e35c06344ff1da05472cb}} 
+\index{Base@{Base}!addEntreg@{addEntreg}}
+\index{addEntreg@{addEntreg}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{addEntreg()}{addEntreg()}}
+{\footnotesize\ttfamily void Base\+::add\+Entreg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adinciona um funcionario \mbox{\hyperlink{class_entregador}{Entregador}} à \mbox{\hyperlink{class_base}{Base}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{837                      \{}
+\DoxyCodeLine{838     \mbox{\hyperlink{class_entregador}{Entregador}} a;}
+\DoxyCodeLine{839     \mbox{\hyperlink{class_data}{Data}} d;}
+\DoxyCodeLine{840     \mbox{\hyperlink{class_veiculo}{Veiculo}} v;}
+\DoxyCodeLine{841     ofstream file;}
+\DoxyCodeLine{842     \textcolor{keywordtype}{string} nome,nif,dia,mes,ano,salario,marca, tipo, diav, data,mesv, anov,datav, veiculo, disp;}
+\DoxyCodeLine{843     \textcolor{keywordtype}{int} b;}
+\DoxyCodeLine{844     cin.ignore();}
+\DoxyCodeLine{845     cout<<\textcolor{stringliteral}{"Nome:"}<<endl;}
+\DoxyCodeLine{846     getline(cin,nome);}
+\DoxyCodeLine{847     a.\mbox{\hyperlink{class_funcionario_a3507c9da874d671d461e34bc2724e19b}{setNome}}(nome);}
+\DoxyCodeLine{848     cout<<\textcolor{stringliteral}{"Nif:"}<<endl;}
+\DoxyCodeLine{849     cin>>nif;}
+\DoxyCodeLine{850     \textcolor{comment}{//cin.ignore();}}
+\DoxyCodeLine{851     \textcolor{keywordflow}{while}(nif.size()>9 || nif.size()<9)\{}
+\DoxyCodeLine{852         cout<<\textcolor{stringliteral}{"Nif invalido. Volte a inserir:"}<<endl;}
+\DoxyCodeLine{853         cin>>nif;}
+\DoxyCodeLine{854     \}}
+\DoxyCodeLine{855     \textcolor{keywordtype}{bool} existe=\textcolor{keyword}{false};}
+\DoxyCodeLine{856     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size();i++)\{}
+\DoxyCodeLine{857         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNif()==nif)\{}
+\DoxyCodeLine{858             existe=\textcolor{keyword}{true};}
+\DoxyCodeLine{859         \}}
+\DoxyCodeLine{860     \}}
+\DoxyCodeLine{861     \textcolor{keywordflow}{while}(existe==\textcolor{keyword}{true})\{}
+\DoxyCodeLine{862         cout<<\textcolor{stringliteral}{"Ja temos um funcionario registado com este nif"} <<endl;}
+\DoxyCodeLine{863         cout<< \textcolor{stringliteral}{"Tente Novamente!"}<<endl;}
+\DoxyCodeLine{864         cout<<\textcolor{stringliteral}{"Nif:"}<<endl;}
+\DoxyCodeLine{865         cin>>nif;}
+\DoxyCodeLine{866         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size();i++)\{}
+\DoxyCodeLine{867             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNif()==nif)\{}
+\DoxyCodeLine{868                 existe=\textcolor{keyword}{true};}
+\DoxyCodeLine{869                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{870             \}\textcolor{keywordflow}{else} existe=\textcolor{keyword}{false};}
+\DoxyCodeLine{871 }
+\DoxyCodeLine{872         \}}
+\DoxyCodeLine{873     \}}
+\DoxyCodeLine{874     a.\mbox{\hyperlink{class_funcionario_acafc61d9f2db940792f0b42cb08ed15b}{setNif}}(nif);}
+\DoxyCodeLine{875     \textcolor{comment}{//cin.ignore();}}
+\DoxyCodeLine{876     cout<<\textcolor{stringliteral}{"Data de nascimento:"}<<endl;}
+\DoxyCodeLine{877     cout<<\textcolor{stringliteral}{"Dia:"}<<endl;}
+\DoxyCodeLine{878     cin>>dia;}
+\DoxyCodeLine{879     cout<<\textcolor{stringliteral}{"Mes:"}<<endl;}
+\DoxyCodeLine{880     cin>>mes;}
+\DoxyCodeLine{881     cout<<\textcolor{stringliteral}{"Ano:"}<<endl;}
+\DoxyCodeLine{882     cin>>ano;}
+\DoxyCodeLine{883     data=dia+\textcolor{stringliteral}{"/"}+mes+\textcolor{stringliteral}{"/"}+ano;}
+\DoxyCodeLine{884     d=\mbox{\hyperlink{class_data}{Data}}(data);}
+\DoxyCodeLine{885     a.\mbox{\hyperlink{class_funcionario_accd5c9ad5294a228c90f294475dac683}{setData}}(d);}
+\DoxyCodeLine{886     cout<<\textcolor{stringliteral}{"Salario:"}<<endl;}
+\DoxyCodeLine{887     cin>>salario;}
+\DoxyCodeLine{888     a.\mbox{\hyperlink{class_funcionario_a6baaa4380cf279e221b190391108bfd2}{setSalario}}(stoi(salario));}
+\DoxyCodeLine{889     cout<<\textcolor{stringliteral}{"Marca do veiculo alocado:"}<<endl;}
+\DoxyCodeLine{890     cin.ignore();}
+\DoxyCodeLine{891     getline(cin,marca);}
+\DoxyCodeLine{892     v.\mbox{\hyperlink{class_veiculo_a7f75f8432e86a680d5110f6a5ce2e672}{setMarca}}(marca);}
+\DoxyCodeLine{893     cout<<\textcolor{stringliteral}{"Modelo do veiculo:"}<<endl;}
+\DoxyCodeLine{894     getline(cin,tipo);}
+\DoxyCodeLine{895     v.\mbox{\hyperlink{class_veiculo_a3a6de0c719e5f4a9c638ca75cfcf1308}{setTipo}}(tipo);}
+\DoxyCodeLine{896     cout<<\textcolor{stringliteral}{"Dia de aquisicao :"}<<endl;}
+\DoxyCodeLine{897     cin>>dia;}
+\DoxyCodeLine{898     cout<<\textcolor{stringliteral}{"Mes de aquisicao :"}<<endl;}
+\DoxyCodeLine{899     cin>>mes;}
+\DoxyCodeLine{900     cout<<\textcolor{stringliteral}{"Ano de aquisicao :"}<<endl;}
+\DoxyCodeLine{901     cin>>ano;}
+\DoxyCodeLine{902     datav=dia+\textcolor{stringliteral}{"/"}+mes+\textcolor{stringliteral}{"/"}+ano;}
+\DoxyCodeLine{903     v.\mbox{\hyperlink{class_veiculo_a7a7f85440618c5a879ddd2c76e67370d}{setDataDeAquisicao}}(datav);}
+\DoxyCodeLine{904     a.\mbox{\hyperlink{class_entregador_aca837dc54b7fed828e14fd704401c710}{setVeiculoAlocado}}(v);}
+\DoxyCodeLine{905     a.\mbox{\hyperlink{class_entregador_a01fcf4f03c003d6bc33c68d5c34fc571}{setDisponivel}}(1);}
+\DoxyCodeLine{906     \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.push\_back(\&a);}
+\DoxyCodeLine{907     cout << \textcolor{stringliteral}{"O entregador "}<<a.\mbox{\hyperlink{class_funcionario_a3c4f155a4a074417e9362072b83f1487}{getNome}}()<<\textcolor{stringliteral}{" foi adicionado com sucesso! "} << endl;}
+\DoxyCodeLine{908     file.open(\mbox{\hyperlink{class_base_a0f9f9455cb0402ffc15be773e39f9956}{funcionarios\_filename}}, ios::app);}
+\DoxyCodeLine{909     file << \textcolor{stringliteral}{":::::"} << endl;}
+\DoxyCodeLine{910     file<<\textcolor{stringliteral}{"Entregador"}<<endl;}
+\DoxyCodeLine{911     file << a.\mbox{\hyperlink{class_funcionario_a3c4f155a4a074417e9362072b83f1487}{getNome}}() << endl;}
+\DoxyCodeLine{912     file << a.\mbox{\hyperlink{class_funcionario_a56ac1aeeee003826beb8913808b45624}{getNif}}()<<endl;}
+\DoxyCodeLine{913     file << to\_string(a.\mbox{\hyperlink{class_funcionario_aff12ce703084dc6efcd645f5b3ed715d}{getData}}().\mbox{\hyperlink{class_data_aa9b7bdc683d9c493d903184e85f1e6b3}{getDia}}())+\textcolor{stringliteral}{"/"}+to\_string(a.\mbox{\hyperlink{class_funcionario_aff12ce703084dc6efcd645f5b3ed715d}{getData}}().\mbox{\hyperlink{class_data_a1df6f5e1695c7cae56b9ee752a6895e8}{getMes}}())+\textcolor{stringliteral}{"/"}+to\_string(a.\mbox{\hyperlink{class_funcionario_aff12ce703084dc6efcd645f5b3ed715d}{getData}}().\mbox{\hyperlink{class_data_a986bec10cbca338f08c9096d8e51efb5}{getAno}}()) << endl;}
+\DoxyCodeLine{914     file <<to\_string(a.\mbox{\hyperlink{class_funcionario_ace5307d75c27070b19dd107dde24cf92}{getSalario}}())<< endl;}
+\DoxyCodeLine{915     file<<a.\mbox{\hyperlink{class_entregador_a86119b2b51361bba85d96e857db2059d}{getVeiculoAlocado}}().\mbox{\hyperlink{class_veiculo_adbc8e892bffd97efd7be03a9d2028263}{getMarca}}()+\textcolor{stringliteral}{" ,"}+a.\mbox{\hyperlink{class_entregador_a86119b2b51361bba85d96e857db2059d}{getVeiculoAlocado}}().\mbox{\hyperlink{class_veiculo_a9f5aeb8276b8d935e870b20c8f5fd3e8}{getTipo}}()+\textcolor{stringliteral}{" ,"}+a.\mbox{\hyperlink{class_entregador_a86119b2b51361bba85d96e857db2059d}{getVeiculoAlocado}}().\mbox{\hyperlink{class_veiculo_abb25b90dec08d6ddde6873addfa3ce8f}{getDataDeAquisicao}}()<<endl;}
+\DoxyCodeLine{916     file<<to\_string(a.\mbox{\hyperlink{class_entregador_a7d389deea7f15a515c9a45eb9cd77912}{isDisponivel}}())<<endl;}
+\DoxyCodeLine{917 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a592b29d7d5e6ff3ecd7a16d9f61abc99}\label{class_base_a592b29d7d5e6ff3ecd7a16d9f61abc99}} 
+\index{Base@{Base}!addRestaurante@{addRestaurante}}
+\index{addRestaurante@{addRestaurante}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{addRestaurante()}{addRestaurante()}}
+{\footnotesize\ttfamily void Base\+::add\+Restaurante (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adinciona um \mbox{\hyperlink{class_restaurante}{Restaurante}} à \mbox{\hyperlink{class_base}{Base}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{619                          \{}
+\DoxyCodeLine{620     \mbox{\hyperlink{class_restaurante}{Restaurante}} r;}
+\DoxyCodeLine{621     \mbox{\hyperlink{class_morada}{Morada}} m;}
+\DoxyCodeLine{622     ofstream file;}
+\DoxyCodeLine{623     \textcolor{keywordtype}{string} nome,rua,con,num,base, \mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}}, culi;}
+\DoxyCodeLine{624     \textcolor{keywordtype}{int} a,b;}
+\DoxyCodeLine{625     vector<string> culinaria;}
+\DoxyCodeLine{626     cin.ignore();}
+\DoxyCodeLine{627     cout<<\textcolor{stringliteral}{"Nome:"}<<endl;}
+\DoxyCodeLine{628     getline(cin,nome);}
+\DoxyCodeLine{629     r.\mbox{\hyperlink{class_restaurante_a459ba2b7cdc0490029d82f6a330a5b6f}{setNome}}(nome);}
+\DoxyCodeLine{630     cout<< \textcolor{stringliteral}{"Rua:"}<<endl;}
+\DoxyCodeLine{631     getline(cin,rua);}
+\DoxyCodeLine{632     \textcolor{comment}{//cin.ignore();}}
+\DoxyCodeLine{633     cout<<\textcolor{stringliteral}{"Concelho:"}<<endl;}
+\DoxyCodeLine{634     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}}==\textcolor{stringliteral}{"Porto"}) \{}
+\DoxyCodeLine{635         cout << \textcolor{stringliteral}{"\{1\} -\/ Porto"} << endl;}
+\DoxyCodeLine{636         cout << \textcolor{stringliteral}{"\{2\} -\/ Matosinhos "} << endl;}
+\DoxyCodeLine{637         cout << \textcolor{stringliteral}{"\{3\} -\/ Vila Nova de Gaia"} << endl;}
+\DoxyCodeLine{638         cout << \textcolor{stringliteral}{"\{4\} -\/ Maia"} << endl;}
+\DoxyCodeLine{639         cout << \textcolor{stringliteral}{"\{5\} -\/ Gondomar"} << endl;}
+\DoxyCodeLine{640         cin>>a;}
+\DoxyCodeLine{641 }
+\DoxyCodeLine{642         \textcolor{keywordflow}{switch}(a)\{}
+\DoxyCodeLine{643             \textcolor{keywordflow}{case} 1: con=\textcolor{stringliteral}{"Porto"}; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{644             \textcolor{keywordflow}{case} 2: con=\textcolor{stringliteral}{"Matosinhos"}; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{645             \textcolor{keywordflow}{case} 3: con=\textcolor{stringliteral}{"Vila Nova de Gaia"}; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{646             \textcolor{keywordflow}{case} 4: con=\textcolor{stringliteral}{"Maia"}; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{647             \textcolor{keywordflow}{case} 5:con=\textcolor{stringliteral}{"Gondomar"};\textcolor{keywordflow}{break};}
+\DoxyCodeLine{648             \textcolor{keywordflow}{default}:  con=\textcolor{stringliteral}{"1"};}
+\DoxyCodeLine{649         \}}
+\DoxyCodeLine{650     \}}
+\DoxyCodeLine{651     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}}==\textcolor{stringliteral}{"Lisboa"}) \{}
+\DoxyCodeLine{652         cout << \textcolor{stringliteral}{"\{1\} -\/ Lisboa"} << endl;}
+\DoxyCodeLine{653         cout << \textcolor{stringliteral}{"\{2\} -\/ Oeiras "} << endl;}
+\DoxyCodeLine{654         cout << \textcolor{stringliteral}{"\{3\} -\/ Amadora"} << endl;}
+\DoxyCodeLine{655         cout << \textcolor{stringliteral}{"\{4\} -\/ Odivelas"} << endl;}
+\DoxyCodeLine{656         cout << \textcolor{stringliteral}{"\{5\} -\/ Loures"} << endl;}
+\DoxyCodeLine{657         cin>>a;}
+\DoxyCodeLine{658 }
+\DoxyCodeLine{659         \textcolor{keywordflow}{switch}(a) \{}
+\DoxyCodeLine{660             \textcolor{keywordflow}{case} 1: con = \textcolor{stringliteral}{"Lisboa"};\textcolor{keywordflow}{break};}
+\DoxyCodeLine{661             \textcolor{keywordflow}{case} 2: con = \textcolor{stringliteral}{"Oeiras"};\textcolor{keywordflow}{break};}
+\DoxyCodeLine{662             \textcolor{keywordflow}{case} 3: con = \textcolor{stringliteral}{"Amadora"};\textcolor{keywordflow}{break};}
+\DoxyCodeLine{663             \textcolor{keywordflow}{case} 4: con = \textcolor{stringliteral}{"Odivelas"};\textcolor{keywordflow}{break};}
+\DoxyCodeLine{664             \textcolor{keywordflow}{case} 5: con = \textcolor{stringliteral}{"Loures"};\textcolor{keywordflow}{break};}
+\DoxyCodeLine{665             \textcolor{keywordflow}{default}:  con=\textcolor{stringliteral}{"1"};}
+\DoxyCodeLine{666         \}}
+\DoxyCodeLine{667     \}}
+\DoxyCodeLine{668     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}}==\textcolor{stringliteral}{"Faro"}) \{}
+\DoxyCodeLine{669         cout << \textcolor{stringliteral}{"\{1\} -\/ Faro"} << endl;}
+\DoxyCodeLine{670         cout << \textcolor{stringliteral}{"\{2\} -\/ Loule"} << endl;}
+\DoxyCodeLine{671         cout << \textcolor{stringliteral}{"\{3\} -\/ Olhao"} << endl;}
+\DoxyCodeLine{672         cout << \textcolor{stringliteral}{"\{4\} -\/ Sao Bras de Alportel"} << endl;}
+\DoxyCodeLine{673         cin>>a;}
+\DoxyCodeLine{674 }
+\DoxyCodeLine{675         \textcolor{keywordflow}{switch}(a)\{}
+\DoxyCodeLine{676             \textcolor{keywordflow}{case} 1: con=\textcolor{stringliteral}{"Faro"}; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{677             \textcolor{keywordflow}{case} 2: con=\textcolor{stringliteral}{"Loule"}; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{678             \textcolor{keywordflow}{case} 3: con=\textcolor{stringliteral}{"Olhao"}; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{679             \textcolor{keywordflow}{case} 4: con=\textcolor{stringliteral}{"Sao Bras de Alportel"}; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{680             \textcolor{keywordflow}{default}:  con=\textcolor{stringliteral}{"1"};}
+\DoxyCodeLine{681 }
+\DoxyCodeLine{682         \}}
+\DoxyCodeLine{683     \}}
+\DoxyCodeLine{684     \textcolor{keywordflow}{if}(con!=\textcolor{stringliteral}{"0"} \&\& con!=\textcolor{stringliteral}{"1"}) \{}
+\DoxyCodeLine{685         cout << \textcolor{stringliteral}{"Numero:"} << endl;}
+\DoxyCodeLine{686         cin >> num;}
+\DoxyCodeLine{687         \mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}} = rua + \textcolor{stringliteral}{", "} + con + \textcolor{stringliteral}{", "} + num;}
+\DoxyCodeLine{688         m = \mbox{\hyperlink{class_morada}{Morada}}(\mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}});}
+\DoxyCodeLine{689         r.\mbox{\hyperlink{class_restaurante_ae906f291299f11a7eaf853156d112461}{setMorada}}(m);}
+\DoxyCodeLine{690         cout << \textcolor{stringliteral}{"Culinaria:"} << endl;}
+\DoxyCodeLine{691         cout << \textcolor{stringliteral}{"\{1\} -\/ Portuguesa"}<< endl;}
+\DoxyCodeLine{692         cout << \textcolor{stringliteral}{"\{2\} -\/ Italiana"} << endl;}
+\DoxyCodeLine{693         cout << \textcolor{stringliteral}{"\{3\} -\/ Chinesa"} << endl;}
+\DoxyCodeLine{694         cout << \textcolor{stringliteral}{"\{4\} -\/ Japonesa"} << endl;}
+\DoxyCodeLine{695         cout<< \textcolor{stringliteral}{"\{0\} -\/ Outro"}<<endl;}
+\DoxyCodeLine{696         cin >> b;}
+\DoxyCodeLine{697         \textcolor{keywordflow}{switch}(b) \{}
+\DoxyCodeLine{698             \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{699                 culi=\textcolor{stringliteral}{"0"};}
+\DoxyCodeLine{700                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{701             \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{702                 culi = \textcolor{stringliteral}{"Portuguesa"};}
+\DoxyCodeLine{703                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{704             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{705                 culi = \textcolor{stringliteral}{"Italiana"};}
+\DoxyCodeLine{706                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{707             \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{708                 culi = \textcolor{stringliteral}{"Chinesa"};}
+\DoxyCodeLine{709                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{710             \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{711                 culi = \textcolor{stringliteral}{"Japonesa"};}
+\DoxyCodeLine{712                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{713             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{714                 culi = \textcolor{stringliteral}{"1"};}
+\DoxyCodeLine{715         \}}
+\DoxyCodeLine{716         \textcolor{keywordflow}{if}(culi!=\textcolor{stringliteral}{"1"} \&\& culi!=\textcolor{stringliteral}{"0"}) \{}
+\DoxyCodeLine{717             culinaria.push\_back(culi);}
+\DoxyCodeLine{718             r.\mbox{\hyperlink{class_restaurante_afb607c670cdb39fe83c391fc22537f02}{setTiposDeCulinaria}}(culinaria);}
+\DoxyCodeLine{719             \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.push\_back(r);}
+\DoxyCodeLine{720             cout << \textcolor{stringliteral}{"O restaurante "}<<r.\mbox{\hyperlink{class_restaurante_ab3b2e13ae530003d01a716536a238020}{getNome}}()<<\textcolor{stringliteral}{" foi adicionado com sucesso \(\backslash\)ne ja se encontra disponivel para receber emcomendas! "}<<endl;}
+\DoxyCodeLine{721             file.open(\mbox{\hyperlink{class_base_aaf43a3482c9ffbd3a0b60714b94e9478}{restaurantes\_filename}});}
+\DoxyCodeLine{722             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size() -\/ 1; i++) \{}
+\DoxyCodeLine{723                 file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[i].getNome() << endl;}
+\DoxyCodeLine{724                 file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[i].getMorada().getRua() + \textcolor{stringliteral}{", "} + \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[i].getMorada().getLocalidade() +}
+\DoxyCodeLine{725                         \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{726                         \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[i].getMorada().getNumero() << endl;}
+\DoxyCodeLine{727                 file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[i].getTiposDeCulinaria()[0] << endl;}
+\DoxyCodeLine{728                 file << \mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}} << endl;}
+\DoxyCodeLine{729                 file << \textcolor{stringliteral}{":::::"} << endl;}
+\DoxyCodeLine{730             \}}
+\DoxyCodeLine{731             file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size() -\/ 1].getNome() << endl;}
+\DoxyCodeLine{732             file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size() -\/ 1].getMorada().getRua() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{733                     \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size() -\/ 1].getMorada().getLocalidade() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{734                     \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size() -\/ 1].getMorada().getNumero() << endl;}
+\DoxyCodeLine{735             file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size() -\/ 1].getTiposDeCulinaria()[0] << endl;}
+\DoxyCodeLine{736             file << \mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}} << endl;}
+\DoxyCodeLine{737         \}}
+\DoxyCodeLine{738         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(culi==\textcolor{stringliteral}{"1"})\{}
+\DoxyCodeLine{739             cout<<\textcolor{stringliteral}{"Opcao Invalida"};}
+\DoxyCodeLine{740         \}}
+\DoxyCodeLine{741         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(culi==\textcolor{stringliteral}{"0"})\{}
+\DoxyCodeLine{742             cout<<\textcolor{stringliteral}{"Lamentamos, mas a Ugh Eats nao permite restaurantes com outros tipos de culinaria "}<<endl;}
+\DoxyCodeLine{743         \}}
+\DoxyCodeLine{744     \}}
+\DoxyCodeLine{745 }
+\DoxyCodeLine{746 }
+\DoxyCodeLine{747 }
+\DoxyCodeLine{748 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_af932bf79ff8b2a19ebfde91765b89531}\label{class_base_af932bf79ff8b2a19ebfde91765b89531}} 
+\index{Base@{Base}!clientes\_readfile@{clientes\_readfile}}
+\index{clientes\_readfile@{clientes\_readfile}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{clientes\_readfile()}{clientes\_readfile()}}
+{\footnotesize\ttfamily void Base\+::clientes\+\_\+readfile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lê o ficheiro clientes.\+txt, que contém a informacao ordenada de um conjunto de clientes (Classe \mbox{\hyperlink{class_cliente}{Cliente}}). 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{272                             \{}
+\DoxyCodeLine{273     \mbox{\hyperlink{class_cliente}{Cliente}} c;}
+\DoxyCodeLine{274     vector<string> cliente\_info;}
+\DoxyCodeLine{275     ifstream infile;}
+\DoxyCodeLine{276     \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{277     infile.open(\mbox{\hyperlink{class_base_a5fa6abe0029f4fc564295c003863f683}{clientes\_filename}});}
+\DoxyCodeLine{278     \textcolor{keywordflow}{while}(getline(infile,line))\{}
+\DoxyCodeLine{279         \textcolor{keywordflow}{if}(line==\textcolor{stringliteral}{":::::"})\{}
+\DoxyCodeLine{280             c.\mbox{\hyperlink{class_cliente_abc57bddb527d6b642a2a612b657812e4}{setName}}(cliente\_info[0]);}
+\DoxyCodeLine{281             c.\mbox{\hyperlink{class_cliente_a0b415e025af78425295b0d195b877577}{setNif}}(cliente\_info[1]);}
+\DoxyCodeLine{282             c.\mbox{\hyperlink{class_cliente_a078f39322e25b499a67cae7d21fa56c8}{setMorada}}(\mbox{\hyperlink{class_morada}{Morada}}(cliente\_info[2]));}
+\DoxyCodeLine{283             c.\mbox{\hyperlink{class_cliente_af0305b53cdc0071c179b409fe221317b}{setBase}}(\mbox{\hyperlink{class_base_a5ffe0568374d8b9b4c4ec32953fd6453}{Base}}(cliente\_info[3]+\textcolor{stringliteral}{".txt"}));}
+\DoxyCodeLine{284             \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.push\_back(c);}
+\DoxyCodeLine{285             cliente\_info.clear();}
+\DoxyCodeLine{286         \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{287             cliente\_info.push\_back(line);}
+\DoxyCodeLine{288         \}}
+\DoxyCodeLine{289     \}}
+\DoxyCodeLine{290     c.\mbox{\hyperlink{class_cliente_abc57bddb527d6b642a2a612b657812e4}{setName}}(cliente\_info[0]);}
+\DoxyCodeLine{291     c.\mbox{\hyperlink{class_cliente_a0b415e025af78425295b0d195b877577}{setNif}}(cliente\_info[1]);}
+\DoxyCodeLine{292     c.\mbox{\hyperlink{class_cliente_a078f39322e25b499a67cae7d21fa56c8}{setMorada}}(\mbox{\hyperlink{class_morada}{Morada}}(cliente\_info[2]));}
+\DoxyCodeLine{293     c.\mbox{\hyperlink{class_cliente_af0305b53cdc0071c179b409fe221317b}{setBase}}(\mbox{\hyperlink{class_base_a5ffe0568374d8b9b4c4ec32953fd6453}{Base}}(cliente\_info[3]+\textcolor{stringliteral}{".txt"}));}
+\DoxyCodeLine{294     \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.push\_back(c);}
+\DoxyCodeLine{295     cliente\_info.clear();}
+\DoxyCodeLine{296     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{297 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a4bcdcc88c06b0d36fed35f5b80ed7cc5}\label{class_base_a4bcdcc88c06b0d36fed35f5b80ed7cc5}} 
+\index{Base@{Base}!funcionarios\_readfile@{funcionarios\_readfile}}
+\index{funcionarios\_readfile@{funcionarios\_readfile}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{funcionarios\_readfile()}{funcionarios\_readfile()}}
+{\footnotesize\ttfamily void Base\+::funcionarios\+\_\+readfile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lê o ficheiro funcionarios$<$\+Base$>$.\+txt, que contém a informacão ordenada de um conjunto de funcionários (Classe Funcionário). 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{327                                 \{}
+\DoxyCodeLine{328     \mbox{\hyperlink{class_data}{Data}} d;}
+\DoxyCodeLine{329     \mbox{\hyperlink{class_veiculo}{Veiculo}} v;}
+\DoxyCodeLine{330     vector<string> funcionario\_info;}
+\DoxyCodeLine{331     ifstream infile;}
+\DoxyCodeLine{332     \textcolor{keywordtype}{string} line,veiculo;}
+\DoxyCodeLine{333     \textcolor{keywordtype}{string} temp=\textcolor{stringliteral}{""};}
+\DoxyCodeLine{334     infile.open(\mbox{\hyperlink{class_base_a0f9f9455cb0402ffc15be773e39f9956}{funcionarios\_filename}});}
+\DoxyCodeLine{335     \textcolor{keywordflow}{while}(getline(infile,line)) \{}
+\DoxyCodeLine{336         \textcolor{keywordflow}{if} (line == \textcolor{stringliteral}{":::::"}) \{}
+\DoxyCodeLine{337             \textcolor{keywordflow}{if}(funcionario\_info[0]==\textcolor{stringliteral}{"Entregador"}) \{}
+\DoxyCodeLine{338                 \mbox{\hyperlink{class_entregador}{Entregador}} *e = \textcolor{keyword}{new} \mbox{\hyperlink{class_entregador}{Entregador}}();}
+\DoxyCodeLine{339                 e-\/>\mbox{\hyperlink{class_funcionario_a294d48836cf3b2668b5ac6f12b71d099}{setTipoDeFuncionario}}(funcionario\_info[0]);}
+\DoxyCodeLine{340                 e-\/>\mbox{\hyperlink{class_funcionario_a3507c9da874d671d461e34bc2724e19b}{setNome}}(funcionario\_info[1]);}
+\DoxyCodeLine{341                 e-\/>\mbox{\hyperlink{class_funcionario_acafc61d9f2db940792f0b42cb08ed15b}{setNif}}(funcionario\_info[2]);}
+\DoxyCodeLine{342                 e-\/>\mbox{\hyperlink{class_funcionario_accd5c9ad5294a228c90f294475dac683}{setData}}(\mbox{\hyperlink{class_data}{Data}}(funcionario\_info[3]));}
+\DoxyCodeLine{343                 e-\/>\mbox{\hyperlink{class_funcionario_a6baaa4380cf279e221b190391108bfd2}{setSalario}}(stoi(funcionario\_info[4]));}
+\DoxyCodeLine{344                 e-\/>\mbox{\hyperlink{class_entregador_aca837dc54b7fed828e14fd704401c710}{setVeiculoAlocado}}(\mbox{\hyperlink{class_veiculo}{Veiculo}}(funcionario\_info[5]));}
+\DoxyCodeLine{345                 e-\/>\mbox{\hyperlink{class_entregador_a01fcf4f03c003d6bc33c68d5c34fc571}{setDisponivel}}(stoi(funcionario\_info[6]));}
+\DoxyCodeLine{346                 \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.push\_back(e);}
+\DoxyCodeLine{347                 funcionario\_info.clear();}
+\DoxyCodeLine{348             \}}
+\DoxyCodeLine{349             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(funcionario\_info[0]==\textcolor{stringliteral}{"Administrador"}) \{}
+\DoxyCodeLine{350                 \mbox{\hyperlink{class_administrador}{Administrador}} *a= \textcolor{keyword}{new} \mbox{\hyperlink{class_administrador}{Administrador}};}
+\DoxyCodeLine{351                 a-\/>\mbox{\hyperlink{class_funcionario_a294d48836cf3b2668b5ac6f12b71d099}{setTipoDeFuncionario}}(funcionario\_info[0]);}
+\DoxyCodeLine{352                 a-\/>\mbox{\hyperlink{class_funcionario_a3507c9da874d671d461e34bc2724e19b}{setNome}}(funcionario\_info[1]);}
+\DoxyCodeLine{353                 a-\/>\mbox{\hyperlink{class_funcionario_acafc61d9f2db940792f0b42cb08ed15b}{setNif}}(funcionario\_info[2]);}
+\DoxyCodeLine{354                 a-\/>\mbox{\hyperlink{class_funcionario_accd5c9ad5294a228c90f294475dac683}{setData}}(\mbox{\hyperlink{class_data}{Data}}(funcionario\_info[3]));}
+\DoxyCodeLine{355                 a-\/>\mbox{\hyperlink{class_funcionario_a6baaa4380cf279e221b190391108bfd2}{setSalario}}(stoi(funcionario\_info[4]));}
+\DoxyCodeLine{356                 a-\/>\mbox{\hyperlink{class_administrador_a89261675e876438dcc029d6a85420039}{setFuncao}}(funcionario\_info[5]);}
+\DoxyCodeLine{357                 \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.push\_back(a);}
+\DoxyCodeLine{358                 funcionario\_info.clear();}
+\DoxyCodeLine{359             \}}
+\DoxyCodeLine{360         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{361             funcionario\_info.push\_back(line);}
+\DoxyCodeLine{362         \}}
+\DoxyCodeLine{363     \}}
+\DoxyCodeLine{364     \textcolor{keywordflow}{if}(funcionario\_info[0]==\textcolor{stringliteral}{"Entregador"}) \{}
+\DoxyCodeLine{365         \mbox{\hyperlink{class_entregador}{Entregador}} *e = \textcolor{keyword}{new} \mbox{\hyperlink{class_entregador}{Entregador}}();}
+\DoxyCodeLine{366         e-\/>\mbox{\hyperlink{class_funcionario_a294d48836cf3b2668b5ac6f12b71d099}{setTipoDeFuncionario}}(funcionario\_info[0]);}
+\DoxyCodeLine{367         e-\/>\mbox{\hyperlink{class_funcionario_a3507c9da874d671d461e34bc2724e19b}{setNome}}(funcionario\_info[1]);}
+\DoxyCodeLine{368         e-\/>\mbox{\hyperlink{class_funcionario_acafc61d9f2db940792f0b42cb08ed15b}{setNif}}(funcionario\_info[2]);}
+\DoxyCodeLine{369         e-\/>\mbox{\hyperlink{class_funcionario_accd5c9ad5294a228c90f294475dac683}{setData}}(\mbox{\hyperlink{class_data}{Data}}(funcionario\_info[3]));}
+\DoxyCodeLine{370         e-\/>\mbox{\hyperlink{class_funcionario_a6baaa4380cf279e221b190391108bfd2}{setSalario}}(stoi(funcionario\_info[4]));}
+\DoxyCodeLine{371         e-\/>\mbox{\hyperlink{class_entregador_aca837dc54b7fed828e14fd704401c710}{setVeiculoAlocado}}(\mbox{\hyperlink{class_veiculo}{Veiculo}}(funcionario\_info[5]));}
+\DoxyCodeLine{372         e-\/>\mbox{\hyperlink{class_entregador_a01fcf4f03c003d6bc33c68d5c34fc571}{setDisponivel}}(stoi(funcionario\_info[6]));}
+\DoxyCodeLine{373         \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.push\_back(e);}
+\DoxyCodeLine{374         funcionario\_info.clear();}
+\DoxyCodeLine{375     \}}
+\DoxyCodeLine{376     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(funcionario\_info[0]==\textcolor{stringliteral}{"Administrador"}) \{}
+\DoxyCodeLine{377         \mbox{\hyperlink{class_administrador}{Administrador}} *a= \textcolor{keyword}{new} \mbox{\hyperlink{class_administrador}{Administrador}};}
+\DoxyCodeLine{378         a-\/>\mbox{\hyperlink{class_funcionario_a294d48836cf3b2668b5ac6f12b71d099}{setTipoDeFuncionario}}(funcionario\_info[0]);}
+\DoxyCodeLine{379         a-\/>\mbox{\hyperlink{class_funcionario_a3507c9da874d671d461e34bc2724e19b}{setNome}}(funcionario\_info[1]);}
+\DoxyCodeLine{380         a-\/>\mbox{\hyperlink{class_funcionario_acafc61d9f2db940792f0b42cb08ed15b}{setNif}}(funcionario\_info[2]);}
+\DoxyCodeLine{381         a-\/>\mbox{\hyperlink{class_funcionario_accd5c9ad5294a228c90f294475dac683}{setData}}(\mbox{\hyperlink{class_data}{Data}}(funcionario\_info[3]));}
+\DoxyCodeLine{382         a-\/>\mbox{\hyperlink{class_funcionario_a6baaa4380cf279e221b190391108bfd2}{setSalario}}(stoi(funcionario\_info[4]));}
+\DoxyCodeLine{383         a-\/>\mbox{\hyperlink{class_administrador_a89261675e876438dcc029d6a85420039}{setFuncao}}(funcionario\_info[5]);}
+\DoxyCodeLine{384         \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.push\_back(a);}
+\DoxyCodeLine{385         funcionario\_info.clear();}
+\DoxyCodeLine{386     \}}
+\DoxyCodeLine{387     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{388 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a6ab5c212469482d54d2a7e76e6add089}\label{class_base_a6ab5c212469482d54d2a7e76e6add089}} 
+\index{Base@{Base}!getClientes@{getClientes}}
+\index{getClientes@{getClientes}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getClientes()}{getClientes()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ Base\+::get\+Clientes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{216                                   \{}
+\DoxyCodeLine{217     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}};}
+\DoxyCodeLine{218 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a7c50d9bdd6ed356cafe0dca4311dda00}\label{class_base_a7c50d9bdd6ed356cafe0dca4311dda00}} 
+\index{Base@{Base}!getClientesFileName@{getClientesFileName}}
+\index{getClientesFileName@{getClientesFileName}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getClientesFileName()}{getClientesFileName()}}
+{\footnotesize\ttfamily string Base\+::get\+Clientes\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{262                                 \{}
+\DoxyCodeLine{263     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a5fa6abe0029f4fc564295c003863f683}{clientes\_filename}};}
+\DoxyCodeLine{264 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a1d2229edda57db240910fc564b4bf5c1}\label{class_base_a1d2229edda57db240910fc564b4bf5c1}} 
+\index{Base@{Base}!getConselho@{getConselho}}
+\index{getConselho@{getConselho}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getConselho()}{getConselho()}}
+{\footnotesize\ttfamily const string \& Base\+::get\+Conselho (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{204                                       \{}
+\DoxyCodeLine{205     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}};}
+\DoxyCodeLine{206 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a1ef52933775089723fbaf141479e734d}\label{class_base_a1ef52933775089723fbaf141479e734d}} 
+\index{Base@{Base}!getCoordenadaGps@{getCoordenadaGps}}
+\index{getCoordenadaGps@{getCoordenadaGps}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getCoordenadaGps()}{getCoordenadaGps()}}
+{\footnotesize\ttfamily const string \& Base\+::get\+Coordenada\+Gps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{208                                            \{}
+\DoxyCodeLine{209     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a894edf506603a4d46a06aee221b45692}{coordenadaGPS}};}
+\DoxyCodeLine{210 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a0e1ca05c36fcee861625baebe3756a02}\label{class_base_a0e1ca05c36fcee861625baebe3756a02}} 
+\index{Base@{Base}!getFuncionarios@{getFuncionarios}}
+\index{getFuncionarios@{getFuncionarios}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getFuncionarios()}{getFuncionarios()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$ $>$ Base\+::get\+Funcionarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{226                                             \{}
+\DoxyCodeLine{227     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}};}
+\DoxyCodeLine{228 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_ac937972e968000f2a270c48dc1b655cc}\label{class_base_ac937972e968000f2a270c48dc1b655cc}} 
+\index{Base@{Base}!getFuncionariosFileName@{getFuncionariosFileName}}
+\index{getFuncionariosFileName@{getFuncionariosFileName}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getFuncionariosFileName()}{getFuncionariosFileName()}}
+{\footnotesize\ttfamily string Base\+::get\+Funcionarios\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{259                                     \{}
+\DoxyCodeLine{260     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a0f9f9455cb0402ffc15be773e39f9956}{funcionarios\_filename}};}
+\DoxyCodeLine{261 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_abf70147231730026a41c9a01cc5f5e94}\label{class_base_abf70147231730026a41c9a01cc5f5e94}} 
+\index{Base@{Base}!getGerente@{getGerente}}
+\index{getGerente@{getGerente}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getGerente()}{getGerente()}}
+{\footnotesize\ttfamily const string \& Base\+::get\+Gerente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{212                                      \{}
+\DoxyCodeLine{213     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a05eccb6433822707e846a7ff70e1a946}{gerente}};}
+\DoxyCodeLine{214 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_ac98d0e6346feb951fa2672a1400309cd}\label{class_base_ac98d0e6346feb951fa2672a1400309cd}} 
+\index{Base@{Base}!getListaNegra@{getListaNegra}}
+\index{getListaNegra@{getListaNegra}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getListaNegra()}{getListaNegra()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ Base\+::get\+Lista\+Negra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{265                                     \{}
+\DoxyCodeLine{266     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}{listaNegra}};}
+\DoxyCodeLine{267 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a72ed0353793544e4ce14fe7925186374}\label{class_base_a72ed0353793544e4ce14fe7925186374}} 
+\index{Base@{Base}!getListaNegra@{getListaNegra}}
+\index{getListaNegra@{getListaNegra}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getListaNegra()}{getListaNegra()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Base\+::get\+Lista\+Negra (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$}]{l }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{268                                           \{}
+\DoxyCodeLine{269     \mbox{\hyperlink{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}{listaNegra}}=l;}
+\DoxyCodeLine{270 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_af0803226d0758c1854ae5b1c8251a822}\label{class_base_af0803226d0758c1854ae5b1c8251a822}} 
+\index{Base@{Base}!getMorada@{getMorada}}
+\index{getMorada@{getMorada}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getMorada()}{getMorada()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_morada}{Morada}} \& Base\+::get\+Morada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{200                                     \{}
+\DoxyCodeLine{201     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}};}
+\DoxyCodeLine{202 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a79bcb2da71dbf10bfef957dd03a4a6bd}\label{class_base_a79bcb2da71dbf10bfef957dd03a4a6bd}} 
+\index{Base@{Base}!getRestaurantes@{getRestaurantes}}
+\index{getRestaurantes@{getRestaurantes}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getRestaurantes()}{getRestaurantes()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ Base\+::get\+Restaurantes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{221                                          \{}
+\DoxyCodeLine{222 }
+\DoxyCodeLine{223     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}};}
+\DoxyCodeLine{224 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a714900778cfda0a00088fd36f541d99d}\label{class_base_a714900778cfda0a00088fd36f541d99d}} 
+\index{Base@{Base}!listaNegra\_readfile@{listaNegra\_readfile}}
+\index{listaNegra\_readfile@{listaNegra\_readfile}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{listaNegra\_readfile()}{listaNegra\_readfile()}}
+{\footnotesize\ttfamily void Base\+::lista\+Negra\+\_\+readfile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lê o ficheiro listanegra.\+txt, que contém a informacao ordenada de um conjunto de clientes (Classe \mbox{\hyperlink{class_cliente}{Cliente}}). 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{389                               \{}
+\DoxyCodeLine{390     \mbox{\hyperlink{class_cliente}{Cliente}} c;}
+\DoxyCodeLine{391     vector<string> cliente\_info;}
+\DoxyCodeLine{392     ifstream infile;}
+\DoxyCodeLine{393     \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{394     infile.open(\textcolor{stringliteral}{"listanegra.txt"});}
+\DoxyCodeLine{395     \textcolor{keywordflow}{while}(getline(infile,line))\{}
+\DoxyCodeLine{396         \textcolor{keywordflow}{if}(line==\textcolor{stringliteral}{":::::"})\{}
+\DoxyCodeLine{397             c.\mbox{\hyperlink{class_cliente_abc57bddb527d6b642a2a612b657812e4}{setName}}(cliente\_info[0]);}
+\DoxyCodeLine{398             c.\mbox{\hyperlink{class_cliente_a0b415e025af78425295b0d195b877577}{setNif}}(cliente\_info[1]);}
+\DoxyCodeLine{399             c.\mbox{\hyperlink{class_cliente_a078f39322e25b499a67cae7d21fa56c8}{setMorada}}(\mbox{\hyperlink{class_morada}{Morada}}(cliente\_info[2]));}
+\DoxyCodeLine{400             c.\mbox{\hyperlink{class_cliente_af0305b53cdc0071c179b409fe221317b}{setBase}}(\mbox{\hyperlink{class_base_a5ffe0568374d8b9b4c4ec32953fd6453}{Base}}(cliente\_info[3]+\textcolor{stringliteral}{".txt"}));}
+\DoxyCodeLine{401             \mbox{\hyperlink{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}{listaNegra}}.push\_back(c);}
+\DoxyCodeLine{402             cliente\_info.clear();}
+\DoxyCodeLine{403         \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{404             cliente\_info.push\_back(line);}
+\DoxyCodeLine{405         \}}
+\DoxyCodeLine{406     \}}
+\DoxyCodeLine{407     c.\mbox{\hyperlink{class_cliente_abc57bddb527d6b642a2a612b657812e4}{setName}}(cliente\_info[0]);}
+\DoxyCodeLine{408     c.\mbox{\hyperlink{class_cliente_a0b415e025af78425295b0d195b877577}{setNif}}(cliente\_info[1]);}
+\DoxyCodeLine{409     c.\mbox{\hyperlink{class_cliente_a078f39322e25b499a67cae7d21fa56c8}{setMorada}}(\mbox{\hyperlink{class_morada}{Morada}}(cliente\_info[2]));}
+\DoxyCodeLine{410     c.\mbox{\hyperlink{class_cliente_af0305b53cdc0071c179b409fe221317b}{setBase}}(\mbox{\hyperlink{class_base_a5ffe0568374d8b9b4c4ec32953fd6453}{Base}}(cliente\_info[3]+\textcolor{stringliteral}{".txt"}));}
+\DoxyCodeLine{411     \mbox{\hyperlink{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}{listaNegra}}.push\_back(c);}
+\DoxyCodeLine{412     cliente\_info.clear();}
+\DoxyCodeLine{413     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{414 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a146228c71d8ed3b8916baa86cbfa5116}\label{class_base_a146228c71d8ed3b8916baa86cbfa5116}} 
+\index{Base@{Base}!removeAdmin@{removeAdmin}}
+\index{removeAdmin@{removeAdmin}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{removeAdmin()}{removeAdmin()}}
+{\footnotesize\ttfamily void Base\+::remove\+Admin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_funcionario}{Funcionario}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Remove um funcionário do tipo \mbox{\hyperlink{class_administrador}{Administrador}} da \mbox{\hyperlink{class_base}{Base}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{918                                     \{}
+\DoxyCodeLine{919     \textcolor{keywordtype}{bool} a=\textcolor{keyword}{false};}
+\DoxyCodeLine{920     ofstream file;}
+\DoxyCodeLine{921     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size();i++)\{}
+\DoxyCodeLine{922         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNif()==f.\mbox{\hyperlink{class_funcionario_a56ac1aeeee003826beb8913808b45624}{getNif}}())\{}
+\DoxyCodeLine{923             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getTipoDeFuncionario()==\textcolor{stringliteral}{"Administrador"})\{}
+\DoxyCodeLine{924                 cout<<\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNome()<<endl;}
+\DoxyCodeLine{925                 \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.erase(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.begin()+i);}
+\DoxyCodeLine{926                 a=\textcolor{keyword}{true};}
+\DoxyCodeLine{927             \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{928                 a=\textcolor{keyword}{false};}
+\DoxyCodeLine{929             \}}
+\DoxyCodeLine{930         \}}
+\DoxyCodeLine{931     \}}
+\DoxyCodeLine{932     \textcolor{keywordflow}{if}(a==\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{933         file.open(\mbox{\hyperlink{class_base_a0f9f9455cb0402ffc15be773e39f9956}{funcionarios\_filename}});}
+\DoxyCodeLine{934         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1; i++) \{}
+\DoxyCodeLine{935             \textcolor{comment}{//cout<<funcionarios.size()<<endl;}}
+\DoxyCodeLine{936             \textcolor{comment}{//cout<<funcionarios[i]-\/>getNome()<<endl;}}
+\DoxyCodeLine{937             \textcolor{comment}{//cout<<funcionarios[i]-\/>getTipoDeFuncionario()<<endl;}}
+\DoxyCodeLine{938             \textcolor{comment}{// cout<<(funcionarios[i]-\/>getTipoDeFuncionario() == "Entregador")<<endl;}}
+\DoxyCodeLine{939             \textcolor{comment}{// cout<<funcionarios[i]-\/>getTipoDeFuncionario()<<"aaaaaaaa"<<endl;}}
+\DoxyCodeLine{940             \textcolor{comment}{// cout<<i<<endl;}}
+\DoxyCodeLine{941             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getTipoDeFuncionario() == \textcolor{stringliteral}{"Administrador"}) \{}
+\DoxyCodeLine{942                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getTipoDeFuncionario() << endl;}
+\DoxyCodeLine{943                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNome() << endl;}
+\DoxyCodeLine{944                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNif() << endl;}
+\DoxyCodeLine{945                 file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getDia()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{946                         to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getMes()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{947                         to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getAno()) << endl;}
+\DoxyCodeLine{948                 file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getSalario()) << endl;}
+\DoxyCodeLine{949                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getFuncao() << endl;}
+\DoxyCodeLine{950                 file << \textcolor{stringliteral}{":::::"} << endl;}
+\DoxyCodeLine{951             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getTipoDeFuncionario() ==\textcolor{stringliteral}{"Entregador"})\{}
+\DoxyCodeLine{952                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getTipoDeFuncionario() << endl;}
+\DoxyCodeLine{953                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNome() << endl;}
+\DoxyCodeLine{954                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNif() << endl;}
+\DoxyCodeLine{955                 file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getDia()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{956                         to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getMes()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{957                         to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getAno()) << endl;}
+\DoxyCodeLine{958                 file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getSalario()) << endl;}
+\DoxyCodeLine{959                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getVeiculoAlocado().getMarca() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{960                         \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getVeiculoAlocado().getTipo() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{961                         \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getVeiculoAlocado().getDataDeAquisicao() << endl;}
+\DoxyCodeLine{962                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>isDisponivel()) \{}
+\DoxyCodeLine{963                     file << \textcolor{stringliteral}{"1"} << endl;}
+\DoxyCodeLine{964                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{965                     file << \textcolor{stringliteral}{"0"} << endl;}
+\DoxyCodeLine{966                 \}}
+\DoxyCodeLine{967 }
+\DoxyCodeLine{968                 file << \textcolor{stringliteral}{":::::"} << endl;}
+\DoxyCodeLine{969             \}}
+\DoxyCodeLine{970         \}}
+\DoxyCodeLine{971         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getTipoDeFuncionario() == \textcolor{stringliteral}{"Administrador"}) \{}
+\DoxyCodeLine{972             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getTipoDeFuncionario() << endl;}
+\DoxyCodeLine{973             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getNome() << endl;}
+\DoxyCodeLine{974             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getNif() << endl;}
+\DoxyCodeLine{975             file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getDia()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{976                     to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getMes()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{977                     to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getAno()) << endl;}
+\DoxyCodeLine{978             file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getSalario()) << endl;}
+\DoxyCodeLine{979             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getFuncao() << endl;}
+\DoxyCodeLine{980         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getTipoDeFuncionario() ==\textcolor{stringliteral}{"Entregador"}) \{}
+\DoxyCodeLine{981             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getTipoDeFuncionario()<< endl;}
+\DoxyCodeLine{982             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getNome() << endl;}
+\DoxyCodeLine{983             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getNif() << endl;}
+\DoxyCodeLine{984             file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getDia()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{985                     to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getMes()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{986                     to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getAno()) << endl;}
+\DoxyCodeLine{987             file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getSalario()) << endl;}
+\DoxyCodeLine{988             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getVeiculoAlocado().getMarca() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{989                     \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getVeiculoAlocado().getTipo() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{990                     \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getVeiculoAlocado().getDataDeAquisicao() << endl;}
+\DoxyCodeLine{991             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>isDisponivel()) \{}
+\DoxyCodeLine{992                 file << \textcolor{stringliteral}{"1"} << endl;}
+\DoxyCodeLine{993             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{994                 file << \textcolor{stringliteral}{"0"} << endl;}
+\DoxyCodeLine{995             \}}
+\DoxyCodeLine{996 }
+\DoxyCodeLine{997         \}}
+\DoxyCodeLine{998         file.close();}
+\DoxyCodeLine{999         cout<<\textcolor{stringliteral}{"O funcionario "}<<f.\mbox{\hyperlink{class_funcionario_a3c4f155a4a074417e9362072b83f1487}{getNome}}()<<\textcolor{stringliteral}{" foi removido com sucesso!"}<<endl;}
+\DoxyCodeLine{1000     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{1001         cout<<\textcolor{stringliteral}{"O nif que selecionou nao pertence a nunhum administrador!"}<<endl;}
+\DoxyCodeLine{1002     \}}
+\DoxyCodeLine{1003 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_acc6172594c9dff6b4beba3ef26ac4ae4}\label{class_base_acc6172594c9dff6b4beba3ef26ac4ae4}} 
+\index{Base@{Base}!removeCliente@{removeCliente}}
+\index{removeCliente@{removeCliente}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{removeCliente()}{removeCliente()}}
+{\footnotesize\ttfamily void Base\+::remove\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cliente}{Cliente}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Remove um \mbox{\hyperlink{class_cliente}{Cliente}} da \mbox{\hyperlink{class_base}{Base}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{587                                  \{}
+\DoxyCodeLine{588     \mbox{\hyperlink{class_base}{Base}} b=c.\mbox{\hyperlink{class_cliente_af88df9bb37d0cd25475fda02e81b1bb1}{getBase}}();}
+\DoxyCodeLine{589     ofstream file;}
+\DoxyCodeLine{590     \mbox{\hyperlink{class_base_af932bf79ff8b2a19ebfde91765b89531}{clientes\_readfile}}();}
+\DoxyCodeLine{591     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size();i++)\{}
+\DoxyCodeLine{592         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getNif()==c.\mbox{\hyperlink{class_cliente_adefd386671d9dfa599c15e543e89494f}{getNif}}())\{}
+\DoxyCodeLine{593             \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.erase(\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.begin()+i);}
+\DoxyCodeLine{594         \}}
+\DoxyCodeLine{595     \}}
+\DoxyCodeLine{596     file.open(b.\mbox{\hyperlink{class_base_a5fa6abe0029f4fc564295c003863f683}{clientes\_filename}});}
+\DoxyCodeLine{597     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size()-\/1; i++) \{}
+\DoxyCodeLine{598 }
+\DoxyCodeLine{599         file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getName() << endl;}
+\DoxyCodeLine{600 }
+\DoxyCodeLine{601         file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getNif() << endl;}
+\DoxyCodeLine{602 }
+\DoxyCodeLine{603         file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getMorada().getRua() + \textcolor{stringliteral}{", "} + \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getMorada().getLocalidade() + \textcolor{stringliteral}{", "} +\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[i].getMorada().getNumero() << endl;}
+\DoxyCodeLine{604 }
+\DoxyCodeLine{605         file << \mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}} << endl;}
+\DoxyCodeLine{606 }
+\DoxyCodeLine{607         file << \textcolor{stringliteral}{":::::"} << endl;}
+\DoxyCodeLine{608     \}}
+\DoxyCodeLine{609     file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size()-\/1].getName() << endl;}
+\DoxyCodeLine{610 }
+\DoxyCodeLine{611     file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size()-\/1].getNif() << endl;}
+\DoxyCodeLine{612 }
+\DoxyCodeLine{613     file << \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size()-\/1].getMorada().getRua() + \textcolor{stringliteral}{", "} + \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size()-\/1].getMorada().getLocalidade() + \textcolor{stringliteral}{", "} +\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}[\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.size()-\/1].getMorada().getNumero() << endl;}
+\DoxyCodeLine{614 }
+\DoxyCodeLine{615     file << \mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}} << endl;}
+\DoxyCodeLine{616 }
+\DoxyCodeLine{617     file.close();}
+\DoxyCodeLine{618 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a1bc6fb7a86da708a8d21e11bf24a4ba0}\label{class_base_a1bc6fb7a86da708a8d21e11bf24a4ba0}} 
+\index{Base@{Base}!removeEntreg@{removeEntreg}}
+\index{removeEntreg@{removeEntreg}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{removeEntreg()}{removeEntreg()}}
+{\footnotesize\ttfamily void Base\+::remove\+Entreg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_funcionario}{Funcionario}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Remove um funcionário do tipo \mbox{\hyperlink{class_entregador}{Entregador}} da \mbox{\hyperlink{class_base}{Base}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1004                                      \{}
+\DoxyCodeLine{1005     \textcolor{keywordtype}{bool} a=\textcolor{keyword}{false};}
+\DoxyCodeLine{1006     ofstream file;}
+\DoxyCodeLine{1007     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size();i++)\{}
+\DoxyCodeLine{1008         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNif()==f.\mbox{\hyperlink{class_funcionario_a56ac1aeeee003826beb8913808b45624}{getNif}}())\{}
+\DoxyCodeLine{1009             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getTipoDeFuncionario()==\textcolor{stringliteral}{"Entregador"})\{}
+\DoxyCodeLine{1010                 cout<<\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNome()<<endl;}
+\DoxyCodeLine{1011                 \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.erase(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.begin()+i);}
+\DoxyCodeLine{1012 }
+\DoxyCodeLine{1013                 a=\textcolor{keyword}{true};}
+\DoxyCodeLine{1014             \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{1015                 a=\textcolor{keyword}{false};}
+\DoxyCodeLine{1016             \}}
+\DoxyCodeLine{1017         \}}
+\DoxyCodeLine{1018     \}}
+\DoxyCodeLine{1019     \textcolor{keywordflow}{if}(a==\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{1020         file.open(\mbox{\hyperlink{class_base_a0f9f9455cb0402ffc15be773e39f9956}{funcionarios\_filename}});}
+\DoxyCodeLine{1021         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1; i++) \{}
+\DoxyCodeLine{1022             cout<<\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size()<<endl;}
+\DoxyCodeLine{1023             \textcolor{comment}{//cout<<funcionarios[i]-\/>getNome()<<endl;}}
+\DoxyCodeLine{1024             \textcolor{comment}{//cout<<funcionarios[i]-\/>getTipoDeFuncionario()<<endl;}}
+\DoxyCodeLine{1025            \textcolor{comment}{// cout<<(funcionarios[i]-\/>getTipoDeFuncionario() == "Entregador")<<endl;}}
+\DoxyCodeLine{1026             \textcolor{comment}{// cout<<funcionarios[i]-\/>getTipoDeFuncionario()<<"aaaaaaaa"<<endl;}}
+\DoxyCodeLine{1027             \textcolor{comment}{// cout<<i<<endl;}}
+\DoxyCodeLine{1028             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getTipoDeFuncionario() == \textcolor{stringliteral}{"Administrador"}) \{}
+\DoxyCodeLine{1029                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getTipoDeFuncionario() << endl;}
+\DoxyCodeLine{1030                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNome() << endl;}
+\DoxyCodeLine{1031                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNif() << endl;}
+\DoxyCodeLine{1032                 file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getDia()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{1033                         to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getMes()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{1034                         to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getAno()) << endl;}
+\DoxyCodeLine{1035                 file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getSalario()) << endl;}
+\DoxyCodeLine{1036                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getFuncao() << endl;}
+\DoxyCodeLine{1037                 file << \textcolor{stringliteral}{":::::"} << endl;}
+\DoxyCodeLine{1038             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getTipoDeFuncionario() ==\textcolor{stringliteral}{"Entregador"})\{}
+\DoxyCodeLine{1039                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getTipoDeFuncionario() << endl;}
+\DoxyCodeLine{1040                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNome() << endl;}
+\DoxyCodeLine{1041                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getNif() << endl;}
+\DoxyCodeLine{1042                 file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getDia()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{1043                         to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getMes()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{1044                         to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getData().getAno()) << endl;}
+\DoxyCodeLine{1045                 file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getSalario()) << endl;}
+\DoxyCodeLine{1046                 file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getVeiculoAlocado().getMarca() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{1047                         \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getVeiculoAlocado().getTipo() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{1048                         \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>getVeiculoAlocado().getDataDeAquisicao() << endl;}
+\DoxyCodeLine{1049                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[i]-\/>isDisponivel()) \{}
+\DoxyCodeLine{1050                     file << \textcolor{stringliteral}{"1"} << endl;}
+\DoxyCodeLine{1051                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1052                     file << \textcolor{stringliteral}{"0"} << endl;}
+\DoxyCodeLine{1053                 \}}
+\DoxyCodeLine{1054 }
+\DoxyCodeLine{1055                 file << \textcolor{stringliteral}{":::::"} << endl;}
+\DoxyCodeLine{1056             \}}
+\DoxyCodeLine{1057         \}}
+\DoxyCodeLine{1058         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getTipoDeFuncionario() == \textcolor{stringliteral}{"Administrador"}) \{}
+\DoxyCodeLine{1059             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getTipoDeFuncionario() << endl;}
+\DoxyCodeLine{1060             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getNome() << endl;}
+\DoxyCodeLine{1061             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getNif() << endl;}
+\DoxyCodeLine{1062             file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getDia()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{1063                     to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getMes()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{1064                     to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getAno()) << endl;}
+\DoxyCodeLine{1065             file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getSalario()) << endl;}
+\DoxyCodeLine{1066             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getFuncao() << endl;}
+\DoxyCodeLine{1067         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getTipoDeFuncionario() ==\textcolor{stringliteral}{"Entregador"}) \{}
+\DoxyCodeLine{1068             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getTipoDeFuncionario()<< endl;}
+\DoxyCodeLine{1069             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getNome() << endl;}
+\DoxyCodeLine{1070             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getNif() << endl;}
+\DoxyCodeLine{1071             file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getDia()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{1072                     to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getMes()) + \textcolor{stringliteral}{"/"} +}
+\DoxyCodeLine{1073                     to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getData().getAno()) << endl;}
+\DoxyCodeLine{1074             file << to\_string(\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getSalario()) << endl;}
+\DoxyCodeLine{1075             file << \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getVeiculoAlocado().getMarca() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{1076                     \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getVeiculoAlocado().getTipo() + \textcolor{stringliteral}{", "} +}
+\DoxyCodeLine{1077                     \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>getVeiculoAlocado().getDataDeAquisicao() << endl;}
+\DoxyCodeLine{1078             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}[\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}.size() -\/ 1]-\/>isDisponivel()) \{}
+\DoxyCodeLine{1079                 file << \textcolor{stringliteral}{"1"} << endl;}
+\DoxyCodeLine{1080             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1081                 file << \textcolor{stringliteral}{"0"} << endl;}
+\DoxyCodeLine{1082             \}}
+\DoxyCodeLine{1083 }
+\DoxyCodeLine{1084         \}}
+\DoxyCodeLine{1085         file.close();}
+\DoxyCodeLine{1086         cout<<\textcolor{stringliteral}{"O funcionario "}<<f.\mbox{\hyperlink{class_funcionario_a3c4f155a4a074417e9362072b83f1487}{getNome}}()<<\textcolor{stringliteral}{" foi removido com sucesso!"}<<endl;}
+\DoxyCodeLine{1087     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{1088         cout<<\textcolor{stringliteral}{"O nif que selecionou nao pertence a nunhum entergador!"}<<endl;}
+\DoxyCodeLine{1089     \}}
+\DoxyCodeLine{1090 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_af26bcd33867ddb80452f3aaeac7b1040}\label{class_base_af26bcd33867ddb80452f3aaeac7b1040}} 
+\index{Base@{Base}!removeFuncionario@{removeFuncionario}}
+\index{removeFuncionario@{removeFuncionario}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{removeFuncionario()}{removeFuncionario()}}
+{\footnotesize\ttfamily void Base\+::remove\+Funcionario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_funcionario}{Funcionario}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Remove um Funcionário da \mbox{\hyperlink{class_base}{Base}}. 
+
+\mbox{\Hypertarget{class_base_a4ae2252cefffd65f429b9243b58731b3}\label{class_base_a4ae2252cefffd65f429b9243b58731b3}} 
+\index{Base@{Base}!removeRestaurante@{removeRestaurante}}
+\index{removeRestaurante@{removeRestaurante}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{removeRestaurante()}{removeRestaurante()}}
+{\footnotesize\ttfamily void Base\+::remove\+Restaurante (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_restaurante}{Restaurante}}}]{r }\end{DoxyParamCaption})}
+
+
+
+Remove um \mbox{\hyperlink{class_restaurante}{Restaurante}} da \mbox{\hyperlink{class_base}{Base}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{749                                           \{}
+\DoxyCodeLine{750     ofstream file;}
+\DoxyCodeLine{751     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size();i++)\{}
+\DoxyCodeLine{752         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[i].getNome()==r.\mbox{\hyperlink{class_restaurante_ab3b2e13ae530003d01a716536a238020}{getNome}}())\{}
+\DoxyCodeLine{753             \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.erase(\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.begin()+i);}
+\DoxyCodeLine{754         \}}
+\DoxyCodeLine{755     \}}
+\DoxyCodeLine{756     file.open(\mbox{\hyperlink{class_base_aaf43a3482c9ffbd3a0b60714b94e9478}{restaurantes\_filename}});}
+\DoxyCodeLine{757     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size()-\/1; i++) \{}
+\DoxyCodeLine{758         file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[i].getNome() << endl;}
+\DoxyCodeLine{759         file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[i].getMorada().getRua() + \textcolor{stringliteral}{", "} + \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[i].getMorada().getLocalidade() + \textcolor{stringliteral}{", "} +\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[i].getMorada().getNumero() << endl;}
+\DoxyCodeLine{760         file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[i].getTiposDeCulinaria()[0] << endl;}
+\DoxyCodeLine{761         file<<\textcolor{stringliteral}{"pratos.txt"}<<endl;}
+\DoxyCodeLine{762         file << \textcolor{stringliteral}{":::::"} << endl;}
+\DoxyCodeLine{763     \}}
+\DoxyCodeLine{764     file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size()-\/1].getNome() << endl;}
+\DoxyCodeLine{765     file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size()-\/1].getMorada().getRua() + \textcolor{stringliteral}{", "} +\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size()-\/1].getMorada().getLocalidade() + \textcolor{stringliteral}{", "} +\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size()-\/1].getMorada().getNumero() << endl;}
+\DoxyCodeLine{766     file << \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}[\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.size()-\/1].getTiposDeCulinaria()[0] << endl;}
+\DoxyCodeLine{767     file<<\textcolor{stringliteral}{"pratos.txt"}<<endl;}
+\DoxyCodeLine{768     file.close();}
+\DoxyCodeLine{769 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a4becd0991c08c6c13c6e18fe983e7743}\label{class_base_a4becd0991c08c6c13c6e18fe983e7743}} 
+\index{Base@{Base}!restaurantes\_readfile@{restaurantes\_readfile}}
+\index{restaurantes\_readfile@{restaurantes\_readfile}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{restaurantes\_readfile()}{restaurantes\_readfile()}}
+{\footnotesize\ttfamily void Base\+::restaurantes\+\_\+readfile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lê o ficheiro restaurante$<$\+Base$>$.\+txt, que contém a informacao ordenada de um conjunto de restaurantes (Classe \mbox{\hyperlink{class_restaurante}{Restaurante}}). 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{298                                 \{}
+\DoxyCodeLine{299     \mbox{\hyperlink{class_restaurante}{Restaurante}} r;}
+\DoxyCodeLine{300     vector<string> restaurante\_info;}
+\DoxyCodeLine{301     \textcolor{keywordtype}{string} culinaria, pratos;}
+\DoxyCodeLine{302     vector<string> c,p;}
+\DoxyCodeLine{303     \textcolor{keywordtype}{string} temp=\textcolor{stringliteral}{""};}
+\DoxyCodeLine{304     ifstream infile;}
+\DoxyCodeLine{305     \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{306     infile.open(\mbox{\hyperlink{class_base_aaf43a3482c9ffbd3a0b60714b94e9478}{restaurantes\_filename}});}
+\DoxyCodeLine{307     \textcolor{keywordflow}{while}(getline(infile,line))\{}
+\DoxyCodeLine{308         \textcolor{keywordflow}{if}(line==\textcolor{stringliteral}{":::::"})\{}
+\DoxyCodeLine{309             r.\mbox{\hyperlink{class_restaurante_a459ba2b7cdc0490029d82f6a330a5b6f}{setNome}}(restaurante\_info[0]);}
+\DoxyCodeLine{310             r.\mbox{\hyperlink{class_restaurante_ae906f291299f11a7eaf853156d112461}{setMorada}}(\mbox{\hyperlink{class_morada}{Morada}}(restaurante\_info[1]));}
+\DoxyCodeLine{311             r.\mbox{\hyperlink{class_restaurante_afb607c670cdb39fe83c391fc22537f02}{setTiposDeCulinaria}}(\mbox{\hyperlink{auxiliares_8cpp_a06dcd1f4ba29409ae3355a96ec55f09e}{tiposculinaria}}(restaurante\_info[2]));}
+\DoxyCodeLine{312             r.\mbox{\hyperlink{class_restaurante_abe3799fa10851a122d70c21909c46791}{pratos\_readfile}}();}
+\DoxyCodeLine{313             \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.push\_back(r);}
+\DoxyCodeLine{314             restaurante\_info.clear();}
+\DoxyCodeLine{315         \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{316             restaurante\_info.push\_back(line);}
+\DoxyCodeLine{317         \}}
+\DoxyCodeLine{318     \}}
+\DoxyCodeLine{319     r.\mbox{\hyperlink{class_restaurante_a459ba2b7cdc0490029d82f6a330a5b6f}{setNome}}(restaurante\_info[0]);}
+\DoxyCodeLine{320     r.\mbox{\hyperlink{class_restaurante_ae906f291299f11a7eaf853156d112461}{setMorada}}(\mbox{\hyperlink{class_morada}{Morada}}(restaurante\_info[1]));}
+\DoxyCodeLine{321     r.\mbox{\hyperlink{class_restaurante_afb607c670cdb39fe83c391fc22537f02}{setTiposDeCulinaria}}(\mbox{\hyperlink{auxiliares_8cpp_a06dcd1f4ba29409ae3355a96ec55f09e}{tiposculinaria}}(restaurante\_info[2]));}
+\DoxyCodeLine{322     r.\mbox{\hyperlink{class_restaurante_abe3799fa10851a122d70c21909c46791}{pratos\_readfile}}();}
+\DoxyCodeLine{323     \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}.push\_back(r);}
+\DoxyCodeLine{324     restaurante\_info.clear();}
+\DoxyCodeLine{325     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{326 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a7c4979bdcd1c7c046b33260a14cda887}\label{class_base_a7c4979bdcd1c7c046b33260a14cda887}} 
+\index{Base@{Base}!setClientes@{setClientes}}
+\index{setClientes@{setClientes}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{setClientes()}{setClientes()}}
+{\footnotesize\ttfamily void Base\+::set\+Clientes (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ \&}]{clientes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{246                                           \{}
+\DoxyCodeLine{247   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<cs.size(); i++)\{}
+\DoxyCodeLine{248       \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}.push\_back(cs[i]);}
+\DoxyCodeLine{249   \}}
+\DoxyCodeLine{250 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a9812f8612b2f12110f44918d702325be}\label{class_base_a9812f8612b2f12110f44918d702325be}} 
+\index{Base@{Base}!setConselho@{setConselho}}
+\index{setConselho@{setConselho}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{setConselho()}{setConselho()}}
+{\footnotesize\ttfamily void Base\+::set\+Conselho (\begin{DoxyParamCaption}\item[{const string \&}]{conselho }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{234                                              \{}
+\DoxyCodeLine{235     \mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{Base::conselho}} = \mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}};}
+\DoxyCodeLine{236 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a24596e046da1a5b4b3ca44d38393932d}\label{class_base_a24596e046da1a5b4b3ca44d38393932d}} 
+\index{Base@{Base}!setCoordenadaGps@{setCoordenadaGps}}
+\index{setCoordenadaGps@{setCoordenadaGps}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{setCoordenadaGps()}{setCoordenadaGps()}}
+{\footnotesize\ttfamily void Base\+::set\+Coordenada\+Gps (\begin{DoxyParamCaption}\item[{const string \&}]{coordenada\+Gps }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{238                                                        \{}
+\DoxyCodeLine{239     \mbox{\hyperlink{class_base_a894edf506603a4d46a06aee221b45692}{coordenadaGPS}} = coordenadaGps;}
+\DoxyCodeLine{240 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a58fc2377ca9aeb7ac6b2f4355a5f0973}\label{class_base_a58fc2377ca9aeb7ac6b2f4355a5f0973}} 
+\index{Base@{Base}!setFuncionarios@{setFuncionarios}}
+\index{setFuncionarios@{setFuncionarios}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{setFuncionarios()}{setFuncionarios()}}
+{\footnotesize\ttfamily void Base\+::set\+Funcionarios (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$ $>$ \&}]{funcionarios }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{256                                                                    \{}
+\DoxyCodeLine{257     \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{Base::funcionarios}} = \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}};}
+\DoxyCodeLine{258 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_abacceeb837dc6ac23007442ec20001cc}\label{class_base_abacceeb837dc6ac23007442ec20001cc}} 
+\index{Base@{Base}!setGerente@{setGerente}}
+\index{setGerente@{setGerente}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{setGerente()}{setGerente()}}
+{\footnotesize\ttfamily void Base\+::set\+Gerente (\begin{DoxyParamCaption}\item[{const string \&}]{gerente }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{242                                            \{}
+\DoxyCodeLine{243     \mbox{\hyperlink{class_base_a05eccb6433822707e846a7ff70e1a946}{Base::gerente}} = \mbox{\hyperlink{class_base_a05eccb6433822707e846a7ff70e1a946}{gerente}};}
+\DoxyCodeLine{244 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a7efca7c2fbc1261a0dfe522e4d6fa0c3}\label{class_base_a7efca7c2fbc1261a0dfe522e4d6fa0c3}} 
+\index{Base@{Base}!setMorada@{setMorada}}
+\index{setMorada@{setMorada}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{setMorada()}{setMorada()}}
+{\footnotesize\ttfamily void Base\+::set\+Morada (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_morada}{Morada}} \&}]{morada }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{230                                          \{}
+\DoxyCodeLine{231     \mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{Base::morada}} = \mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}};}
+\DoxyCodeLine{232 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a5624dca4fae15dd630e5c040cec0fe0a}\label{class_base_a5624dca4fae15dd630e5c040cec0fe0a}} 
+\index{Base@{Base}!setRestaurantes@{setRestaurantes}}
+\index{setRestaurantes@{setRestaurantes}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{setRestaurantes()}{setRestaurantes()}}
+{\footnotesize\ttfamily void Base\+::set\+Restaurantes (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ \&}]{restaurantes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{252                                                             \{}
+\DoxyCodeLine{253     \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{Base::restaurantes}} = \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}};}
+\DoxyCodeLine{254 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_base_a723797b61ba1e3365cf8d2eba4cee83c}\label{class_base_a723797b61ba1e3365cf8d2eba4cee83c}} 
+\index{Base@{Base}!clientes@{clientes}}
+\index{clientes@{clientes}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{clientes}{clientes}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_cliente}{Cliente}}$>$ Base\+::clientes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O conjunto dos clientes da \mbox{\hyperlink{class_base}{Base}}. 
+
+\mbox{\Hypertarget{class_base_a5fa6abe0029f4fc564295c003863f683}\label{class_base_a5fa6abe0029f4fc564295c003863f683}} 
+\index{Base@{Base}!clientes\_filename@{clientes\_filename}}
+\index{clientes\_filename@{clientes\_filename}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{clientes\_filename}{clientes\_filename}}
+{\footnotesize\ttfamily string Base\+::clientes\+\_\+filename\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O nome do ficheiro que contem todos os clientes da \mbox{\hyperlink{class_base}{Base}}. 
+
+\mbox{\Hypertarget{class_base_aae410cc8e3434beb888afaba02268a6b}\label{class_base_aae410cc8e3434beb888afaba02268a6b}} 
+\index{Base@{Base}!conselho@{conselho}}
+\index{conselho@{conselho}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{conselho}{conselho}}
+{\footnotesize\ttfamily string Base\+::conselho\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O conselho da \mbox{\hyperlink{class_base}{Base}}. 
+
+\mbox{\Hypertarget{class_base_a894edf506603a4d46a06aee221b45692}\label{class_base_a894edf506603a4d46a06aee221b45692}} 
+\index{Base@{Base}!coordenadaGPS@{coordenadaGPS}}
+\index{coordenadaGPS@{coordenadaGPS}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{coordenadaGPS}{coordenadaGPS}}
+{\footnotesize\ttfamily string Base\+::coordenada\+G\+PS\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+As coordenadas G\+PS da \mbox{\hyperlink{class_base}{Base}}. 
+
+\mbox{\Hypertarget{class_base_a9b39e24570970c60a28d312451592fb3}\label{class_base_a9b39e24570970c60a28d312451592fb3}} 
+\index{Base@{Base}!funcionarios@{funcionarios}}
+\index{funcionarios@{funcionarios}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{funcionarios}{funcionarios}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_funcionario}{Funcionario}}$\ast$$>$ Base\+::funcionarios\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O conjunto dos funcionários da \mbox{\hyperlink{class_base}{Base}}. 
+
+\mbox{\Hypertarget{class_base_a0f9f9455cb0402ffc15be773e39f9956}\label{class_base_a0f9f9455cb0402ffc15be773e39f9956}} 
+\index{Base@{Base}!funcionarios\_filename@{funcionarios\_filename}}
+\index{funcionarios\_filename@{funcionarios\_filename}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{funcionarios\_filename}{funcionarios\_filename}}
+{\footnotesize\ttfamily string Base\+::funcionarios\+\_\+filename\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O nome do ficheiro que contem todos os funcionários da \mbox{\hyperlink{class_base}{Base}}. 
+
+\mbox{\Hypertarget{class_base_a05eccb6433822707e846a7ff70e1a946}\label{class_base_a05eccb6433822707e846a7ff70e1a946}} 
+\index{Base@{Base}!gerente@{gerente}}
+\index{gerente@{gerente}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{gerente}{gerente}}
+{\footnotesize\ttfamily string Base\+::gerente\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O gerente da \mbox{\hyperlink{class_base}{Base}}. 
+
+\mbox{\Hypertarget{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}\label{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}} 
+\index{Base@{Base}!listaNegra@{listaNegra}}
+\index{listaNegra@{listaNegra}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{listaNegra}{listaNegra}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_cliente}{Cliente}}$>$ Base\+::lista\+Negra\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O conjunto dos clientes pertencentes à Lista Negra da \mbox{\hyperlink{class_empresa}{Empresa}}. 
+
+\mbox{\Hypertarget{class_base_a14188d5d5378008675e5e6564d5893ac}\label{class_base_a14188d5d5378008675e5e6564d5893ac}} 
+\index{Base@{Base}!morada@{morada}}
+\index{morada@{morada}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{morada}{morada}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_morada}{Morada}} Base\+::morada\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A morada da \mbox{\hyperlink{class_base}{Base}}. 
+
+\mbox{\Hypertarget{class_base_a1b81f01c593fd5b581991067f6cfc4ea}\label{class_base_a1b81f01c593fd5b581991067f6cfc4ea}} 
+\index{Base@{Base}!restaurantes@{restaurantes}}
+\index{restaurantes@{restaurantes}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{restaurantes}{restaurantes}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_restaurante}{Restaurante}}$>$ Base\+::restaurantes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O conjunto dos restaurantes da \mbox{\hyperlink{class_base}{Base}}. 
+
+\mbox{\Hypertarget{class_base_aaf43a3482c9ffbd3a0b60714b94e9478}\label{class_base_aaf43a3482c9ffbd3a0b60714b94e9478}} 
+\index{Base@{Base}!restaurantes\_filename@{restaurantes\_filename}}
+\index{restaurantes\_filename@{restaurantes\_filename}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{restaurantes\_filename}{restaurantes\_filename}}
+{\footnotesize\ttfamily string Base\+::restaurantes\+\_\+filename\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O nome do ficheiro que contem todos os restaurantes da \mbox{\hyperlink{class_base}{Base}}. 
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{empresa_8h}{empresa.\+h}}\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{empresa_8cpp}{empresa.\+cpp}}\end{DoxyCompactItemize}

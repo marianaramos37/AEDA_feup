@@ -1,0 +1,86 @@
+\hypertarget{class_cliente_na_lista_negra}{}\doxysection{Referência à classe Cliente\+Na\+Lista\+Negra}
+\label{class_cliente_na_lista_negra}\index{ClienteNaListaNegra@{ClienteNaListaNegra}}
+
+
+Classe \mbox{\hyperlink{class_cliente_na_lista_negra}{Cliente\+Na\+Lista\+Negra}} representa uma exceção que é lançada quando um cliente pertence à Lista Negra da empresa (listanegra.\+txt).  
+
+
+
+
+{\ttfamily \#include $<$empresa.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cliente_na_lista_negra_aa1e0d8772e8147c2117722d7b8aa8839}{Cliente\+Na\+Lista\+Negra}} (\mbox{\hyperlink{class_cliente}{Cliente}} \&c)
+\begin{DoxyCompactList}\small\item\em Construtor da Classe Lista Negra. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cliente}{Cliente}} $\ast$ \mbox{\hyperlink{class_cliente_na_lista_negra_a9a6bb44867d2b607964054df1aed940f}{cliente}}
+\begin{DoxyCompactList}\small\item\em O \mbox{\hyperlink{class_cliente}{Cliente}} pertencente à Lista Negra. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_cliente_na_lista_negra_a582d94de423e2ebb4f09d47c2f2c0935}{operator$<$$<$}} (ostream \&out, const \mbox{\hyperlink{class_cliente_na_lista_negra}{Cliente\+Na\+Lista\+Negra}} \&c)
+\begin{DoxyCompactList}\small\item\em Operador $<$$<$ para mensagem de erro que apanha o objeto lançado pela exceção. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe \mbox{\hyperlink{class_cliente_na_lista_negra}{Cliente\+Na\+Lista\+Negra}} representa uma exceção que é lançada quando um cliente pertence à Lista Negra da empresa (listanegra.\+txt). 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_cliente_na_lista_negra_aa1e0d8772e8147c2117722d7b8aa8839}\label{class_cliente_na_lista_negra_aa1e0d8772e8147c2117722d7b8aa8839}} 
+\index{ClienteNaListaNegra@{ClienteNaListaNegra}!ClienteNaListaNegra@{ClienteNaListaNegra}}
+\index{ClienteNaListaNegra@{ClienteNaListaNegra}!ClienteNaListaNegra@{ClienteNaListaNegra}}
+\doxysubsubsection{\texorpdfstring{ClienteNaListaNegra()}{ClienteNaListaNegra()}}
+{\footnotesize\ttfamily Cliente\+Na\+Lista\+Negra\+::\+Cliente\+Na\+Lista\+Negra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cliente}{Cliente}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor da Classe Lista Negra. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30 \{ \mbox{\hyperlink{class_cliente_na_lista_negra_a9a6bb44867d2b607964054df1aed940f}{cliente}}=\&c;\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação das classes amigas e funções relacionadas}
+\mbox{\Hypertarget{class_cliente_na_lista_negra_a582d94de423e2ebb4f09d47c2f2c0935}\label{class_cliente_na_lista_negra_a582d94de423e2ebb4f09d47c2f2c0935}} 
+\index{ClienteNaListaNegra@{ClienteNaListaNegra}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ClienteNaListaNegra@{ClienteNaListaNegra}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_cliente_na_lista_negra}{Cliente\+Na\+Lista\+Negra}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador $<$$<$ para mensagem de erro que apanha o objeto lançado pela exceção. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32                                                                            \{}
+\DoxyCodeLine{33         out << \textcolor{stringliteral}{"Devido a pagamentos em atraso nao se pode registar."}<<endl;}
+\DoxyCodeLine{34         \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{35     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_cliente_na_lista_negra_a9a6bb44867d2b607964054df1aed940f}\label{class_cliente_na_lista_negra_a9a6bb44867d2b607964054df1aed940f}} 
+\index{ClienteNaListaNegra@{ClienteNaListaNegra}!cliente@{cliente}}
+\index{cliente@{cliente}!ClienteNaListaNegra@{ClienteNaListaNegra}}
+\doxysubsubsection{\texorpdfstring{cliente}{cliente}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cliente}{Cliente}}$\ast$ Cliente\+Na\+Lista\+Negra\+::cliente}
+
+
+
+O \mbox{\hyperlink{class_cliente}{Cliente}} pertencente à Lista Negra. 
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{empresa_8h}{empresa.\+h}}\end{DoxyCompactItemize}

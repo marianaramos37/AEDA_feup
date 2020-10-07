@@ -1,0 +1,9 @@
+Rua Manuel Pacheco de Miranda
+Paranhos
+29
+Porto
+41.1724691 -8.6030043
+Manuel Pacheco
+clientesPorto.txt
+restaurantesPorto.txt
+funcionariosPorto.txt

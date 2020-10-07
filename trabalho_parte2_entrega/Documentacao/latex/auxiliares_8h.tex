@@ -1,0 +1,38 @@
+\hypertarget{auxiliares_8h}{}\doxysection{Referência ao ficheiro Ugn\+Eats\+Food\+Delivery\+Final3/auxiliares.h}
+\label{auxiliares_8h}\index{UgnEatsFoodDeliveryFinal3/auxiliares.h@{UgnEatsFoodDeliveryFinal3/auxiliares.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_morada}{Morada}}
+\begin{DoxyCompactList}\small\item\em Class \mbox{\hyperlink{class_morada}{Morada}} representa uma morada atraves da sua rua, localidade e numero. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_prato}{Prato}}
+\begin{DoxyCompactList}\small\item\em Class \mbox{\hyperlink{class_prato}{Prato}} representa um prato atraves do seu nome, tipo de culinária e o respetivo preço. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_data}{Data}}
+\begin{DoxyCompactList}\small\item\em Class \mbox{\hyperlink{class_data}{Data}} representa uma data atraves do dia, mes e ano. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_veiculo}{Veiculo}}
+\begin{DoxyCompactList}\small\item\em Class \mbox{\hyperlink{class_veiculo}{Veiculo}} representa um veículo atraves da sua marca, do seu tipo e a sua data de aquisição. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{auxiliares_8h_a06dcd1f4ba29409ae3355a96ec55f09e}{tiposculinaria}} (string tipos)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{auxiliares_8h_a06dcd1f4ba29409ae3355a96ec55f09e}\label{auxiliares_8h_a06dcd1f4ba29409ae3355a96ec55f09e}} 
+\index{auxiliares.h@{auxiliares.h}!tiposculinaria@{tiposculinaria}}
+\index{tiposculinaria@{tiposculinaria}!auxiliares.h@{auxiliares.h}}
+\doxysubsubsection{\texorpdfstring{tiposculinaria()}{tiposculinaria()}}
+{\footnotesize\ttfamily vector$<$string$>$ tiposculinaria (\begin{DoxyParamCaption}\item[{string}]{tipos }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                                            \{}
+\DoxyCodeLine{11     vector<string> tipos\_temp;}
+\DoxyCodeLine{12     tipos\_temp.push\_back(tipos);}
+\DoxyCodeLine{13     \textcolor{keywordflow}{return} tipos\_temp;}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}

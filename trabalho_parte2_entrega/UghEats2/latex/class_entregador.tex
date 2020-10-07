@@ -1,0 +1,65 @@
+\hypertarget{class_entregador}{}\doxysection{Entregador Class Reference}
+\label{class_entregador}\index{Entregador@{Entregador}}
+
+
+Classe \mbox{\hyperlink{class_entregador}{Entregador}} representa um funcionário \mbox{\hyperlink{class_entregador}{Entregador}} através das suas características enquanto Funcionário, mais o seu Veículo, um vetor de encomendas (classe \mbox{\hyperlink{class_encomenda}{Encomenda}}) feitas, e a sua disponibilidade.  
+
+
+
+
+{\ttfamily \#include $<$empresa.\+h$>$}
+
+Inheritance diagram for Entregador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entregador}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entregador_a64c1afe3991324f549758f24fca75c7f}\label{class_entregador_a64c1afe3991324f549758f24fca75c7f}} 
+\mbox{\hyperlink{class_entregador_a64c1afe3991324f549758f24fca75c7f}{Entregador}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_entregador}{Entregador}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entregador_afab1f1ed9d1d4b2adf1afdb0562cb877}\label{class_entregador_afab1f1ed9d1d4b2adf1afdb0562cb877}} 
+virtual \mbox{\hyperlink{class_entregador_afab1f1ed9d1d4b2adf1afdb0562cb877}{$\sim$\+Entregador}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_entregador}{Entregador}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entregador_a86119b2b51361bba85d96e857db2059d}\label{class_entregador_a86119b2b51361bba85d96e857db2059d}} 
+const \mbox{\hyperlink{class_veiculo}{Veiculo}} {\bfseries get\+Veiculo\+Alocado} () const
+\item 
+\mbox{\Hypertarget{class_entregador_aca837dc54b7fed828e14fd704401c710}\label{class_entregador_aca837dc54b7fed828e14fd704401c710}} 
+void {\bfseries set\+Veiculo\+Alocado} (const \mbox{\hyperlink{class_veiculo}{Veiculo}} \&veiculo\+Alocado)
+\item 
+\mbox{\Hypertarget{class_entregador_afeee107490be7bd835bffc760b59e29d}\label{class_entregador_afeee107490be7bd835bffc760b59e29d}} 
+vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ {\bfseries get\+Encom\+Feitas} ()
+\item 
+\mbox{\Hypertarget{class_entregador_a4a5b0b7543c5bf3ccb0be2d63801ff89}\label{class_entregador_a4a5b0b7543c5bf3ccb0be2d63801ff89}} 
+void {\bfseries set\+Encom\+Feitas} (const vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \&encom\+Feitas)
+\item 
+\mbox{\Hypertarget{class_entregador_a7d389deea7f15a515c9a45eb9cd77912}\label{class_entregador_a7d389deea7f15a515c9a45eb9cd77912}} 
+bool {\bfseries is\+Disponivel} () const
+\item 
+\mbox{\Hypertarget{class_entregador_a01fcf4f03c003d6bc33c68d5c34fc571}\label{class_entregador_a01fcf4f03c003d6bc33c68d5c34fc571}} 
+void {\bfseries set\+Disponivel} (bool \mbox{\hyperlink{class_entregador_aa2462d8e690c8fe35872f4c459556070}{disponivel}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entregador_a008a76e789c498c23e3ca1cdf3720e5d}\label{class_entregador_a008a76e789c498c23e3ca1cdf3720e5d}} 
+\mbox{\hyperlink{class_veiculo}{Veiculo}} \mbox{\hyperlink{class_entregador_a008a76e789c498c23e3ca1cdf3720e5d}{veiculo\+\_\+alocado}}
+\begin{DoxyCompactList}\small\item\em O veiculo do entregador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entregador_a65ac61e91a348b1b7f929023a16e93a9}\label{class_entregador_a65ac61e91a348b1b7f929023a16e93a9}} 
+vector$<$ \mbox{\hyperlink{class_encomenda}{Encomenda}} $>$ \mbox{\hyperlink{class_entregador_a65ac61e91a348b1b7f929023a16e93a9}{encom\+\_\+feitas}}
+\begin{DoxyCompactList}\small\item\em O vetor de encomendas (Classe \mbox{\hyperlink{class_encomenda}{Encomenda}}) feitas pelo entregador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entregador_aa2462d8e690c8fe35872f4c459556070}\label{class_entregador_aa2462d8e690c8fe35872f4c459556070}} 
+bool \mbox{\hyperlink{class_entregador_aa2462d8e690c8fe35872f4c459556070}{disponivel}}
+\begin{DoxyCompactList}\small\item\em A sua disponibilidade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_entregador}{Entregador}} representa um funcionário \mbox{\hyperlink{class_entregador}{Entregador}} através das suas características enquanto Funcionário, mais o seu Veículo, um vetor de encomendas (classe \mbox{\hyperlink{class_encomenda}{Encomenda}}) feitas, e a sua disponibilidade. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Mariana Ramos/\+Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.\+h\item 
+C\+:/\+Users/\+Mariana Ramos/\+Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.\+cpp\end{DoxyCompactItemize}

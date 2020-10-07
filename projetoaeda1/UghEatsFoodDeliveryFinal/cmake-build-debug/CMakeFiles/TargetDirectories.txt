@@ -1,0 +1,3 @@
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDeliveryFinal/cmake-build-debug/CMakeFiles/UghEats_Food_Delivery.dir
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDeliveryFinal/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Mariana Ramos/Desktop/2ano/1semestre/aeda/projetoaeda1/UghEatsFoodDeliveryFinal/cmake-build-debug/CMakeFiles/rebuild_cache.dir

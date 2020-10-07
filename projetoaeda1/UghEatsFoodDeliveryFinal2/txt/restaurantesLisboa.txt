@@ -1,0 +1,14 @@
+Il Faro
+Praca do Imperio, Loures, 32
+Italiana
+pratos.txt
+:::::
+Rigor
+Rua Dr. Nunes da Ponte, Lisboa, 156
+Portuguesa
+pratos.txt
+:::::
+Ming Yuan
+Rua de Diogo Botelho, Amadora, 823
+Chinesa
+pratos.txt

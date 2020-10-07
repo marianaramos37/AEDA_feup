@@ -1,0 +1,443 @@
+\hypertarget{class_restaurante}{}\doxysection{Referência à classe Restaurante}
+\label{class_restaurante}\index{Restaurante@{Restaurante}}
+
+
+Class \mbox{\hyperlink{class_restaurante}{Restaurante}} representa um restaurante atraves do seu nome, da sua \mbox{\hyperlink{class_morada}{Morada}}, do seu menu(vetor de pratos) e conjunto de tipos de culinária.  
+
+
+
+
+{\ttfamily \#include $<$restaurante.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_restaurante_ae96329273fb6568baa886d469a4b82f4}{Restaurante}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_restaurante}{Restaurante}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_restaurante_af115daf26147e0aeda0f1c10bc414c6e}{$\sim$\+Restaurante}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_restaurante}{Restaurante}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_morada}{Morada}} \& \mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{get\+Morada}} () const
+\item 
+const string \& \mbox{\hyperlink{class_restaurante_ab3b2e13ae530003d01a716536a238020}{get\+Nome}} () const
+\item 
+void \mbox{\hyperlink{class_restaurante_a459ba2b7cdc0490029d82f6a330a5b6f}{set\+Nome}} (const string \&\mbox{\hyperlink{class_restaurante_afea10d1a11d07a5f8a08a2f11b4d26e9}{nome}})
+\item 
+void \mbox{\hyperlink{class_restaurante_ae906f291299f11a7eaf853156d112461}{set\+Morada}} (const \mbox{\hyperlink{class_morada}{Morada}} \&\mbox{\hyperlink{class_restaurante_ac2b8f0f9e4b4346cc29e9ad76320e461}{morada}})
+\item 
+const vector$<$ string $>$ \& \mbox{\hyperlink{class_restaurante_a5285091cf80197625d91838a982d02c7}{get\+Tipos\+De\+Culinaria}} () const
+\item 
+void \mbox{\hyperlink{class_restaurante_afb607c670cdb39fe83c391fc22537f02}{set\+Tipos\+De\+Culinaria}} (const vector$<$ string $>$ \&tipos\+De\+Culinaria)
+\item 
+const vector$<$ \mbox{\hyperlink{class_prato}{Prato}} $>$ \& \mbox{\hyperlink{class_restaurante_a2d33129b5e9171e68df380d09a53361c}{get\+Pratos}} () const
+\item 
+void \mbox{\hyperlink{class_restaurante_a22a844cc2c7011efae3e5090663a413f}{set\+Pratos}} (const vector$<$ \mbox{\hyperlink{class_prato}{Prato}} $>$ \&\mbox{\hyperlink{class_restaurante_a604fca9c57419025d7dca5e6031be35c}{pratos}})
+\item 
+void \mbox{\hyperlink{class_restaurante_abe3799fa10851a122d70c21909c46791}{pratos\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro dos pratos.\+txt, que contem um conjunto de objetos da classe \mbox{\hyperlink{class_prato}{Prato}}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ \mbox{\hyperlink{class_restaurante_aa2f39ff3240bfd6a68be7b4429b86f5b}{sort\+Restaurantes\+Por\+Zona}} (vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ v)
+\begin{DoxyCompactList}\small\item\em Ordena um vetor de Restaurantes por Zona/\+Concelho a que pertence, organizando-\/o. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ \mbox{\hyperlink{class_restaurante_acac4ef46a30a661170433e63b22da982}{sort\+Restaurantes\+Por\+Comida}} (vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ v)
+\begin{DoxyCompactList}\small\item\em Ordena um vetor de Restaurantes por Tipo de Culinaria, organizando-\/o. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ \mbox{\hyperlink{class_restaurante_a665709a4013d0d2d7e02a407193a6be5}{sort\+Restaurantes\+Por\+Nome}} (vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ v)
+\item 
+bool \mbox{\hyperlink{class_restaurante_a186102f7864ffed2a826985af5bf9b10}{operator$<$}} (\mbox{\hyperlink{class_restaurante}{Restaurante}} a)
+\begin{DoxyCompactList}\small\item\em Operador menor usado para fazer sort(), ordenar, um vetor de Restaurantes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_restaurante_afea10d1a11d07a5f8a08a2f11b4d26e9}{nome}}
+\begin{DoxyCompactList}\small\item\em O nome do \mbox{\hyperlink{class_restaurante}{Restaurante}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_morada}{Morada}} \mbox{\hyperlink{class_restaurante_ac2b8f0f9e4b4346cc29e9ad76320e461}{morada}}
+\begin{DoxyCompactList}\small\item\em A morada do \mbox{\hyperlink{class_restaurante}{Restaurante}}. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_restaurante_a73528f32284c30f01775e45d7e005402}{tipos\+\_\+de\+\_\+culinaria}}
+\begin{DoxyCompactList}\small\item\em O conjunto de tipos de culinária do \mbox{\hyperlink{class_restaurante}{Restaurante}}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_prato}{Prato}} $>$ \mbox{\hyperlink{class_restaurante_a604fca9c57419025d7dca5e6031be35c}{pratos}}
+\begin{DoxyCompactList}\small\item\em O menu/conjunto de pratos do \mbox{\hyperlink{class_restaurante}{Restaurante}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Class \mbox{\hyperlink{class_restaurante}{Restaurante}} representa um restaurante atraves do seu nome, da sua \mbox{\hyperlink{class_morada}{Morada}}, do seu menu(vetor de pratos) e conjunto de tipos de culinária. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_restaurante_ae96329273fb6568baa886d469a4b82f4}\label{class_restaurante_ae96329273fb6568baa886d469a4b82f4}} 
+\index{Restaurante@{Restaurante}!Restaurante@{Restaurante}}
+\index{Restaurante@{Restaurante}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{Restaurante()}{Restaurante()}}
+{\footnotesize\ttfamily Restaurante\+::\+Restaurante (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_restaurante}{Restaurante}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_af115daf26147e0aeda0f1c10bc414c6e}\label{class_restaurante_af115daf26147e0aeda0f1c10bc414c6e}} 
+\index{Restaurante@{Restaurante}!````~Restaurante@{$\sim$Restaurante}}
+\index{````~Restaurante@{$\sim$Restaurante}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{$\sim$Restaurante()}{~Restaurante()}}
+{\footnotesize\ttfamily Restaurante\+::$\sim$\+Restaurante (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor da classe \mbox{\hyperlink{class_restaurante}{Restaurante}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                           \{}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_restaurante_a80230a9b9018d2a35402f60051e377b0}\label{class_restaurante_a80230a9b9018d2a35402f60051e377b0}} 
+\index{Restaurante@{Restaurante}!getMorada@{getMorada}}
+\index{getMorada@{getMorada}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{getMorada()}{getMorada()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_morada}{Morada}} \& Restaurante\+::get\+Morada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                                            \{}
+\DoxyCodeLine{23     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_restaurante_ac2b8f0f9e4b4346cc29e9ad76320e461}{morada}};}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_ab3b2e13ae530003d01a716536a238020}\label{class_restaurante_ab3b2e13ae530003d01a716536a238020}} 
+\index{Restaurante@{Restaurante}!getNome@{getNome}}
+\index{getNome@{getNome}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily const string \& Restaurante\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14                                          \{}
+\DoxyCodeLine{15     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_restaurante_afea10d1a11d07a5f8a08a2f11b4d26e9}{nome}};}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_a2d33129b5e9171e68df380d09a53361c}\label{class_restaurante_a2d33129b5e9171e68df380d09a53361c}} 
+\index{Restaurante@{Restaurante}!getPratos@{getPratos}}
+\index{getPratos@{getPratos}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{getPratos()}{getPratos()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_prato}{Prato}} $>$ \& Restaurante\+::get\+Pratos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                                                   \{}
+\DoxyCodeLine{39     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_restaurante_a604fca9c57419025d7dca5e6031be35c}{pratos}};}
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_a5285091cf80197625d91838a982d02c7}\label{class_restaurante_a5285091cf80197625d91838a982d02c7}} 
+\index{Restaurante@{Restaurante}!getTiposDeCulinaria@{getTiposDeCulinaria}}
+\index{getTiposDeCulinaria@{getTiposDeCulinaria}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{getTiposDeCulinaria()}{getTiposDeCulinaria()}}
+{\footnotesize\ttfamily const vector$<$ string $>$ \& Restaurante\+::get\+Tipos\+De\+Culinaria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30                                                              \{}
+\DoxyCodeLine{31     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_restaurante_a73528f32284c30f01775e45d7e005402}{tipos\_de\_culinaria}};}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_a186102f7864ffed2a826985af5bf9b10}\label{class_restaurante_a186102f7864ffed2a826985af5bf9b10}} 
+\index{Restaurante@{Restaurante}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Restaurante\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_restaurante}{Restaurante}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Operador menor usado para fazer sort(), ordenar, um vetor de Restaurantes. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em a} & Objeto da Classe \mbox{\hyperlink{class_restaurante}{Restaurante}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Verdadeiro ou falso consoante o operador. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                                          \{}
+\DoxyCodeLine{77     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_restaurante_afea10d1a11d07a5f8a08a2f11b4d26e9}{nome}}<a.\mbox{\hyperlink{class_restaurante_ab3b2e13ae530003d01a716536a238020}{getNome}}())}
+\DoxyCodeLine{78         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{79     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{80 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_abe3799fa10851a122d70c21909c46791}\label{class_restaurante_abe3799fa10851a122d70c21909c46791}} 
+\index{Restaurante@{Restaurante}!pratos\_readfile@{pratos\_readfile}}
+\index{pratos\_readfile@{pratos\_readfile}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{pratos\_readfile()}{pratos\_readfile()}}
+{\footnotesize\ttfamily void Restaurante\+::pratos\+\_\+readfile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lê o ficheiro dos pratos.\+txt, que contem um conjunto de objetos da classe \mbox{\hyperlink{class_prato}{Prato}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                                  \{}
+\DoxyCodeLine{47     \mbox{\hyperlink{class_prato}{Prato}} p;}
+\DoxyCodeLine{48     vector<string> prato\_info;}
+\DoxyCodeLine{49     ifstream infile;}
+\DoxyCodeLine{50     \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{51     infile.open(\textcolor{stringliteral}{"pratos.txt"});}
+\DoxyCodeLine{52     this-\/>\mbox{\hyperlink{class_restaurante_a604fca9c57419025d7dca5e6031be35c}{pratos}}.clear();}
+\DoxyCodeLine{53     \textcolor{keywordflow}{while}(getline(infile,line))\{}
+\DoxyCodeLine{54         \textcolor{keywordflow}{if}(line==\textcolor{stringliteral}{":::::"})\{}
+\DoxyCodeLine{55             p.\mbox{\hyperlink{class_prato_a94a5029932a4b6892fb65976ab05c31c}{setNome}}(prato\_info[0]);}
+\DoxyCodeLine{56             p.\mbox{\hyperlink{class_prato_abcf0190e4d754b4d60618fe43e645f9e}{setTipoDeCulinaria}}(prato\_info[1]);}
+\DoxyCodeLine{57             p.\mbox{\hyperlink{class_prato_a2e2990a82705d89829de5b878595d606}{setPreco}}(stod(prato\_info[2]));}
+\DoxyCodeLine{58             \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_prato_aed347ed8951e8f956795c70c7e5413ba}{getTipoDeCulinaria}}() == this-\/>\mbox{\hyperlink{class_restaurante_a73528f32284c30f01775e45d7e005402}{tipos\_de\_culinaria}}[0]) \{}
+\DoxyCodeLine{59                 this-\/>\mbox{\hyperlink{class_restaurante_a604fca9c57419025d7dca5e6031be35c}{pratos}}.push\_back(p);}
+\DoxyCodeLine{60             \}}
+\DoxyCodeLine{61             prato\_info.clear();}
+\DoxyCodeLine{62         \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{63             prato\_info.push\_back(line);}
+\DoxyCodeLine{64         \}}
+\DoxyCodeLine{65     \}}
+\DoxyCodeLine{66     p.\mbox{\hyperlink{class_prato_a94a5029932a4b6892fb65976ab05c31c}{setNome}}(prato\_info[0]);}
+\DoxyCodeLine{67     p.\mbox{\hyperlink{class_prato_abcf0190e4d754b4d60618fe43e645f9e}{setTipoDeCulinaria}}(prato\_info[1]);}
+\DoxyCodeLine{68     p.\mbox{\hyperlink{class_prato_a2e2990a82705d89829de5b878595d606}{setPreco}}(stod(prato\_info[2]));}
+\DoxyCodeLine{69     \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_prato_aed347ed8951e8f956795c70c7e5413ba}{getTipoDeCulinaria}}() == this-\/>\mbox{\hyperlink{class_restaurante_a73528f32284c30f01775e45d7e005402}{tipos\_de\_culinaria}}[0]) \{}
+\DoxyCodeLine{70         this-\/>\mbox{\hyperlink{class_restaurante_a604fca9c57419025d7dca5e6031be35c}{pratos}}.push\_back(p);}
+\DoxyCodeLine{71     \}}
+\DoxyCodeLine{72     prato\_info.clear();}
+\DoxyCodeLine{73     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{74 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_ae906f291299f11a7eaf853156d112461}\label{class_restaurante_ae906f291299f11a7eaf853156d112461}} 
+\index{Restaurante@{Restaurante}!setMorada@{setMorada}}
+\index{setMorada@{setMorada}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{setMorada()}{setMorada()}}
+{\footnotesize\ttfamily void Restaurante\+::set\+Morada (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_morada}{Morada}} \&}]{morada }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                                                 \{}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_restaurante_ac2b8f0f9e4b4346cc29e9ad76320e461}{Restaurante::morada}} = \mbox{\hyperlink{class_restaurante_ac2b8f0f9e4b4346cc29e9ad76320e461}{morada}};}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_a459ba2b7cdc0490029d82f6a330a5b6f}\label{class_restaurante_a459ba2b7cdc0490029d82f6a330a5b6f}} 
+\index{Restaurante@{Restaurante}!setNome@{setNome}}
+\index{setNome@{setNome}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Restaurante\+::set\+Nome (\begin{DoxyParamCaption}\item[{const string \&}]{nome }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                                             \{}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_restaurante_afea10d1a11d07a5f8a08a2f11b4d26e9}{Restaurante::nome}} = \mbox{\hyperlink{class_restaurante_afea10d1a11d07a5f8a08a2f11b4d26e9}{nome}};}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_a22a844cc2c7011efae3e5090663a413f}\label{class_restaurante_a22a844cc2c7011efae3e5090663a413f}} 
+\index{Restaurante@{Restaurante}!setPratos@{setPratos}}
+\index{setPratos@{setPratos}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{setPratos()}{setPratos()}}
+{\footnotesize\ttfamily void Restaurante\+::set\+Pratos (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_prato}{Prato}} $>$ \&}]{pratos }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                                        \{}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_restaurante_a604fca9c57419025d7dca5e6031be35c}{Restaurante::pratos}} = \mbox{\hyperlink{class_restaurante_a604fca9c57419025d7dca5e6031be35c}{pratos}};}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_afb607c670cdb39fe83c391fc22537f02}\label{class_restaurante_afb607c670cdb39fe83c391fc22537f02}} 
+\index{Restaurante@{Restaurante}!setTiposDeCulinaria@{setTiposDeCulinaria}}
+\index{setTiposDeCulinaria@{setTiposDeCulinaria}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{setTiposDeCulinaria()}{setTiposDeCulinaria()}}
+{\footnotesize\ttfamily void Restaurante\+::set\+Tipos\+De\+Culinaria (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{tipos\+De\+Culinaria }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34                                                                             \{}
+\DoxyCodeLine{35     \mbox{\hyperlink{class_restaurante_a73528f32284c30f01775e45d7e005402}{tipos\_de\_culinaria}} = tiposDeCulinaria;}
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_acac4ef46a30a661170433e63b22da982}\label{class_restaurante_acac4ef46a30a661170433e63b22da982}} 
+\index{Restaurante@{Restaurante}!sortRestaurantesPorComida@{sortRestaurantesPorComida}}
+\index{sortRestaurantesPorComida@{sortRestaurantesPorComida}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{sortRestaurantesPorComida()}{sortRestaurantesPorComida()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ Restaurante\+::sort\+Restaurantes\+Por\+Comida (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$}]{v }\end{DoxyParamCaption})}
+
+
+
+Ordena um vetor de Restaurantes por Tipo de Culinaria, organizando-\/o. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em v} & Vetor com objetos da Classe \mbox{\hyperlink{class_restaurante}{Restaurante}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna um vetor com objetos da classe \mbox{\hyperlink{class_restaurante}{Restaurante}}. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131                                                                                \{}
+\DoxyCodeLine{132     vector<Restaurante> res;}
+\DoxyCodeLine{133     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{134         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a5285091cf80197625d91838a982d02c7}{getTiposDeCulinaria}}()[0]==\textcolor{stringliteral}{"Portuguesa"})}
+\DoxyCodeLine{135             res.push\_back(v[i]);}
+\DoxyCodeLine{136     \}}
+\DoxyCodeLine{137     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{138         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a5285091cf80197625d91838a982d02c7}{getTiposDeCulinaria}}()[0]==\textcolor{stringliteral}{"Italiana"})}
+\DoxyCodeLine{139             res.push\_back(v[i]);}
+\DoxyCodeLine{140     \}}
+\DoxyCodeLine{141     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{142         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a5285091cf80197625d91838a982d02c7}{getTiposDeCulinaria}}()[0]==\textcolor{stringliteral}{"Chinesa"})}
+\DoxyCodeLine{143             res.push\_back(v[i]);}
+\DoxyCodeLine{144     \}}
+\DoxyCodeLine{145     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{146         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a5285091cf80197625d91838a982d02c7}{getTiposDeCulinaria}}()[0]==\textcolor{stringliteral}{"Japonesa"})}
+\DoxyCodeLine{147             res.push\_back(v[i]);}
+\DoxyCodeLine{148     \}}
+\DoxyCodeLine{149     \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{150 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_a665709a4013d0d2d7e02a407193a6be5}\label{class_restaurante_a665709a4013d0d2d7e02a407193a6be5}} 
+\index{Restaurante@{Restaurante}!sortRestaurantesPorNome@{sortRestaurantesPorNome}}
+\index{sortRestaurantesPorNome@{sortRestaurantesPorNome}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{sortRestaurantesPorNome()}{sortRestaurantesPorNome()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ Restaurante\+::sort\+Restaurantes\+Por\+Nome (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$}]{v }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{152                                                                               \{}
+\DoxyCodeLine{153 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_restaurante_aa2f39ff3240bfd6a68be7b4429b86f5b}\label{class_restaurante_aa2f39ff3240bfd6a68be7b4429b86f5b}} 
+\index{Restaurante@{Restaurante}!sortRestaurantesPorZona@{sortRestaurantesPorZona}}
+\index{sortRestaurantesPorZona@{sortRestaurantesPorZona}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{sortRestaurantesPorZona()}{sortRestaurantesPorZona()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ Restaurante\+::sort\+Restaurantes\+Por\+Zona (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$}]{v }\end{DoxyParamCaption})}
+
+
+
+Ordena um vetor de Restaurantes por Zona/\+Concelho a que pertence, organizando-\/o. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em v} & Vetor com objetos da Classe \mbox{\hyperlink{class_restaurante}{Restaurante}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna um vetor com objetos da classe \mbox{\hyperlink{class_restaurante}{Restaurante}}. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82                                                                              \{}
+\DoxyCodeLine{83     vector<Restaurante> res;}
+\DoxyCodeLine{84     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{85         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{getMorada}}().\mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{getLocalidade}}()==\textcolor{stringliteral}{"Porto"})}
+\DoxyCodeLine{86             res.push\_back(v[i]);}
+\DoxyCodeLine{87     \}}
+\DoxyCodeLine{88     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{89         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{getMorada}}().\mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{getLocalidade}}()==\textcolor{stringliteral}{"Matosinhos"})}
+\DoxyCodeLine{90             res.push\_back(v[i]);}
+\DoxyCodeLine{91     \}}
+\DoxyCodeLine{92     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{93         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{getMorada}}().\mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{getLocalidade}}()==\textcolor{stringliteral}{"Vila Nova de Gaia"})}
+\DoxyCodeLine{94             res.push\_back(v[i]);}
+\DoxyCodeLine{95     \}}
+\DoxyCodeLine{96     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{97         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{getMorada}}().\mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{getLocalidade}}()==\textcolor{stringliteral}{"Maia"})}
+\DoxyCodeLine{98             res.push\_back(v[i]);}
+\DoxyCodeLine{99     \}}
+\DoxyCodeLine{100     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{101         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{getMorada}}().\mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{getLocalidade}}()==\textcolor{stringliteral}{"Gondarem"})}
+\DoxyCodeLine{102             res.push\_back(v[i]);}
+\DoxyCodeLine{103     \}}
+\DoxyCodeLine{104     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{105         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{getMorada}}().\mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{getLocalidade}}()==\textcolor{stringliteral}{"Lisboa"})}
+\DoxyCodeLine{106             res.push\_back(v[i]);}
+\DoxyCodeLine{107     \}}
+\DoxyCodeLine{108     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{109         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{getMorada}}().\mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{getLocalidade}}()==\textcolor{stringliteral}{"Amadora"})}
+\DoxyCodeLine{110             res.push\_back(v[i]);}
+\DoxyCodeLine{111     \}}
+\DoxyCodeLine{112     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{113         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{getMorada}}().\mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{getLocalidade}}()==\textcolor{stringliteral}{"Loures"})}
+\DoxyCodeLine{114             res.push\_back(v[i]);}
+\DoxyCodeLine{115     \}}
+\DoxyCodeLine{116     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{117         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{getMorada}}().\mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{getLocalidade}}()==\textcolor{stringliteral}{"Faro"})}
+\DoxyCodeLine{118             res.push\_back(v[i]);}
+\DoxyCodeLine{119     \}}
+\DoxyCodeLine{120     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{121         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{getMorada}}().\mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{getLocalidade}}()==\textcolor{stringliteral}{"Loule"})}
+\DoxyCodeLine{122             res.push\_back(v[i]);}
+\DoxyCodeLine{123     \}}
+\DoxyCodeLine{124     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<v.size(); i++)\{}
+\DoxyCodeLine{125         \textcolor{keywordflow}{if}(v[i].\mbox{\hyperlink{class_restaurante_a80230a9b9018d2a35402f60051e377b0}{getMorada}}().\mbox{\hyperlink{class_morada_ab60cfc456793d9ea81bf5355ee67d309}{getLocalidade}}()==\textcolor{stringliteral}{"Sao Bras de Alportel"})}
+\DoxyCodeLine{126             res.push\_back(v[i]);}
+\DoxyCodeLine{127     \}}
+\DoxyCodeLine{128     \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{129 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_restaurante_ac2b8f0f9e4b4346cc29e9ad76320e461}\label{class_restaurante_ac2b8f0f9e4b4346cc29e9ad76320e461}} 
+\index{Restaurante@{Restaurante}!morada@{morada}}
+\index{morada@{morada}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{morada}{morada}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_morada}{Morada}} Restaurante\+::morada\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A morada do \mbox{\hyperlink{class_restaurante}{Restaurante}}. 
+
+\mbox{\Hypertarget{class_restaurante_afea10d1a11d07a5f8a08a2f11b4d26e9}\label{class_restaurante_afea10d1a11d07a5f8a08a2f11b4d26e9}} 
+\index{Restaurante@{Restaurante}!nome@{nome}}
+\index{nome@{nome}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily string Restaurante\+::nome\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O nome do \mbox{\hyperlink{class_restaurante}{Restaurante}}. 
+
+\mbox{\Hypertarget{class_restaurante_a604fca9c57419025d7dca5e6031be35c}\label{class_restaurante_a604fca9c57419025d7dca5e6031be35c}} 
+\index{Restaurante@{Restaurante}!pratos@{pratos}}
+\index{pratos@{pratos}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{pratos}{pratos}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_prato}{Prato}}$>$ Restaurante\+::pratos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O menu/conjunto de pratos do \mbox{\hyperlink{class_restaurante}{Restaurante}}. 
+
+\mbox{\Hypertarget{class_restaurante_a73528f32284c30f01775e45d7e005402}\label{class_restaurante_a73528f32284c30f01775e45d7e005402}} 
+\index{Restaurante@{Restaurante}!tipos\_de\_culinaria@{tipos\_de\_culinaria}}
+\index{tipos\_de\_culinaria@{tipos\_de\_culinaria}!Restaurante@{Restaurante}}
+\doxysubsubsection{\texorpdfstring{tipos\_de\_culinaria}{tipos\_de\_culinaria}}
+{\footnotesize\ttfamily vector$<$string$>$ Restaurante\+::tipos\+\_\+de\+\_\+culinaria\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O conjunto de tipos de culinária do \mbox{\hyperlink{class_restaurante}{Restaurante}}. 
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{restaurante_8h}{restaurante.\+h}}\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{restaurante_8cpp}{restaurante.\+cpp}}\end{DoxyCompactItemize}

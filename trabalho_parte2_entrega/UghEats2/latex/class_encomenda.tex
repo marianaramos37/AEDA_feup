@@ -1,0 +1,113 @@
+\hypertarget{class_encomenda}{}\doxysection{Encomenda Class Reference}
+\label{class_encomenda}\index{Encomenda@{Encomenda}}
+
+
+Classe \mbox{\hyperlink{class_encomenda}{Encomenda}} representa uma encomenda através do nome do Restauranre, \mbox{\hyperlink{class_data}{Data}} e hora da encomenda, nome do \mbox{\hyperlink{class_entregador}{Entregador}} e \mbox{\hyperlink{class_cliente}{Cliente}}, lista de pratos do menu encomendados, se a encomenda foi realizada com sucesso e se foi realizada dentro ou num concelho vizinho, e o preço total da encomenda.  
+
+
+
+
+{\ttfamily \#include $<$empresa.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_encomenda_a0287b590766f9ced8adb5d4e25a58db1}\label{class_encomenda_a0287b590766f9ced8adb5d4e25a58db1}} 
+\mbox{\hyperlink{class_encomenda_a0287b590766f9ced8adb5d4e25a58db1}{Encomenda}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_encomenda}{Encomenda}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_encomenda_a2139d9174c2888a59f871e63266398f1}\label{class_encomenda_a2139d9174c2888a59f871e63266398f1}} 
+virtual \mbox{\hyperlink{class_encomenda_a2139d9174c2888a59f871e63266398f1}{$\sim$\+Encomenda}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_encomenda}{Encomenda}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_encomenda_a46911b5ba795b159289da878f1042fbf}\label{class_encomenda_a46911b5ba795b159289da878f1042fbf}} 
+const string \& {\bfseries get\+Restaurante\+Nome} () const
+\item 
+\mbox{\Hypertarget{class_encomenda_a839faad4df09b891db498a5cf0bfcb5b}\label{class_encomenda_a839faad4df09b891db498a5cf0bfcb5b}} 
+void {\bfseries set\+Restaurante\+Nome} (const string \&restaurante)
+\item 
+\mbox{\Hypertarget{class_encomenda_a5b12b5b2c581b311693a67f894f521ab}\label{class_encomenda_a5b12b5b2c581b311693a67f894f521ab}} 
+const \mbox{\hyperlink{class_data}{Data}} \& {\bfseries get\+Data} () const
+\item 
+\mbox{\Hypertarget{class_encomenda_a5968e6f937adf04e4f671459c77890a0}\label{class_encomenda_a5968e6f937adf04e4f671459c77890a0}} 
+void {\bfseries set\+Data} (const \mbox{\hyperlink{class_data}{Data}} \&\mbox{\hyperlink{class_encomenda_a42a84b723169abbac9cab855f39c31c7}{data}})
+\item 
+\mbox{\Hypertarget{class_encomenda_a6848d3879076ddd64a67e9a83744e796}\label{class_encomenda_a6848d3879076ddd64a67e9a83744e796}} 
+string \& {\bfseries get\+Entregador\+Nome} ()
+\item 
+\mbox{\Hypertarget{class_encomenda_a39fa08b892a57216508abb73664d6eed}\label{class_encomenda_a39fa08b892a57216508abb73664d6eed}} 
+void {\bfseries set\+Entregador\+Nome} (const string entregador)
+\item 
+\mbox{\Hypertarget{class_encomenda_a29b00ae28bd50c28842c5ac6ca19d8b2}\label{class_encomenda_a29b00ae28bd50c28842c5ac6ca19d8b2}} 
+const string \& {\bfseries get\+Hora} () const
+\item 
+\mbox{\Hypertarget{class_encomenda_a9db83acb0c775265201043cb6c6da083}\label{class_encomenda_a9db83acb0c775265201043cb6c6da083}} 
+void {\bfseries set\+Hora} (const string \&\mbox{\hyperlink{class_encomenda_a620b412d34ba74176273677bf9fdd3e3}{hora}})
+\item 
+\mbox{\Hypertarget{class_encomenda_aa666e42fe6317de4e24c32ccaac5a0b7}\label{class_encomenda_aa666e42fe6317de4e24c32ccaac5a0b7}} 
+string \& {\bfseries get\+Pratos\+Nome} ()
+\item 
+\mbox{\Hypertarget{class_encomenda_aece38c6124ae2825a3cdd1ff8253299f}\label{class_encomenda_aece38c6124ae2825a3cdd1ff8253299f}} 
+void {\bfseries set\+Pratos\+Nome} (string \&pratos)
+\item 
+\mbox{\Hypertarget{class_encomenda_a4b5aba5c09e3503ab09763e4996bd15f}\label{class_encomenda_a4b5aba5c09e3503ab09763e4996bd15f}} 
+bool {\bfseries is\+Entrega} () const
+\item 
+\mbox{\Hypertarget{class_encomenda_a08b3460b2fc4935173f5e47dc5533d26}\label{class_encomenda_a08b3460b2fc4935173f5e47dc5533d26}} 
+void {\bfseries set\+Entrega} (bool \mbox{\hyperlink{class_encomenda_a68cfbd03f5ecccdf4fcf45e96d4e92b2}{entrega}})
+\item 
+\mbox{\Hypertarget{class_encomenda_a725bb4c7c9c206dcdc88e3a37f8baa06}\label{class_encomenda_a725bb4c7c9c206dcdc88e3a37f8baa06}} 
+bool {\bfseries is\+Sucesso} () const
+\item 
+\mbox{\Hypertarget{class_encomenda_a2bb6f818b2b4aff5a181216880337f76}\label{class_encomenda_a2bb6f818b2b4aff5a181216880337f76}} 
+void {\bfseries set\+Sucesso} (bool \mbox{\hyperlink{class_encomenda_acd6c399ecc73477e73b06737a31e9520}{sucesso}})
+\item 
+\mbox{\Hypertarget{class_encomenda_a62fe9d1010ecabad9301e45441f3aa58}\label{class_encomenda_a62fe9d1010ecabad9301e45441f3aa58}} 
+string {\bfseries get\+Cliente\+Nome} ()
+\item 
+\mbox{\Hypertarget{class_encomenda_a848055d679b66d9286f984504be67abb}\label{class_encomenda_a848055d679b66d9286f984504be67abb}} 
+void {\bfseries set\+Cliente\+Nome} (string c)
+\item 
+\mbox{\Hypertarget{class_encomenda_a7df8fb9b0e079f1348c8c35a727ba6eb}\label{class_encomenda_a7df8fb9b0e079f1348c8c35a727ba6eb}} 
+double {\bfseries get\+Preco} ()
+\item 
+\mbox{\Hypertarget{class_encomenda_a7e21df8d24aba3de6932325f8662b795}\label{class_encomenda_a7e21df8d24aba3de6932325f8662b795}} 
+void {\bfseries set\+Preco} (double p)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_encomenda_a70aaccc28ed3e84e19a05e9ac0619da7}\label{class_encomenda_a70aaccc28ed3e84e19a05e9ac0619da7}} 
+string \mbox{\hyperlink{class_encomenda_a70aaccc28ed3e84e19a05e9ac0619da7}{restaurante\+Nome}}
+\begin{DoxyCompactList}\small\item\em O nome do \mbox{\hyperlink{class_restaurante}{Restaurante}} da encomenda. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_encomenda_a42a84b723169abbac9cab855f39c31c7}\label{class_encomenda_a42a84b723169abbac9cab855f39c31c7}} 
+\mbox{\hyperlink{class_data}{Data}} \mbox{\hyperlink{class_encomenda_a42a84b723169abbac9cab855f39c31c7}{data}}
+\begin{DoxyCompactList}\small\item\em A data da encomenda. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_encomenda_aecf7a50f211f40bbfa254da15db1f703}\label{class_encomenda_aecf7a50f211f40bbfa254da15db1f703}} 
+string \mbox{\hyperlink{class_encomenda_aecf7a50f211f40bbfa254da15db1f703}{entregador\+Nome}}
+\begin{DoxyCompactList}\small\item\em O nome do entregador da encomenda. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_encomenda_a620b412d34ba74176273677bf9fdd3e3}\label{class_encomenda_a620b412d34ba74176273677bf9fdd3e3}} 
+string \mbox{\hyperlink{class_encomenda_a620b412d34ba74176273677bf9fdd3e3}{hora}}
+\begin{DoxyCompactList}\small\item\em A hora da encomenda. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_encomenda_ada5b8ae70579980f2b625fb7c78ce8db}\label{class_encomenda_ada5b8ae70579980f2b625fb7c78ce8db}} 
+string \mbox{\hyperlink{class_encomenda_ada5b8ae70579980f2b625fb7c78ce8db}{pratos\+Nome}}
+\begin{DoxyCompactList}\small\item\em Os pratos encomendados. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_encomenda_a68cfbd03f5ecccdf4fcf45e96d4e92b2}\label{class_encomenda_a68cfbd03f5ecccdf4fcf45e96d4e92b2}} 
+bool \mbox{\hyperlink{class_encomenda_a68cfbd03f5ecccdf4fcf45e96d4e92b2}{entrega}}
+\begin{DoxyCompactList}\small\item\em Booleano que representa se a encomenda foi realizada dentro ou fora. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_encomenda_acd6c399ecc73477e73b06737a31e9520}\label{class_encomenda_acd6c399ecc73477e73b06737a31e9520}} 
+bool \mbox{\hyperlink{class_encomenda_acd6c399ecc73477e73b06737a31e9520}{sucesso}}
+\begin{DoxyCompactList}\small\item\em Booleano que representa se a encomenda foi realizada com sucesso. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_encomenda_a3c96cf5aac62bea09ec916287d381ade}\label{class_encomenda_a3c96cf5aac62bea09ec916287d381ade}} 
+string \mbox{\hyperlink{class_encomenda_a3c96cf5aac62bea09ec916287d381ade}{cliente\+Nome}}
+\begin{DoxyCompactList}\small\item\em O nome do \mbox{\hyperlink{class_cliente}{Cliente}} que realizou a encomenda. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_encomenda_a60b87b760914a9981c7e39ae32e30329}\label{class_encomenda_a60b87b760914a9981c7e39ae32e30329}} 
+double \mbox{\hyperlink{class_encomenda_a60b87b760914a9981c7e39ae32e30329}{preco}}
+\begin{DoxyCompactList}\small\item\em O preço da encomenda. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_encomenda}{Encomenda}} representa uma encomenda através do nome do Restauranre, \mbox{\hyperlink{class_data}{Data}} e hora da encomenda, nome do \mbox{\hyperlink{class_entregador}{Entregador}} e \mbox{\hyperlink{class_cliente}{Cliente}}, lista de pratos do menu encomendados, se a encomenda foi realizada com sucesso e se foi realizada dentro ou num concelho vizinho, e o preço total da encomenda. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Mariana Ramos/\+Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.\+h\item 
+C\+:/\+Users/\+Mariana Ramos/\+Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.\+cpp\end{DoxyCompactItemize}

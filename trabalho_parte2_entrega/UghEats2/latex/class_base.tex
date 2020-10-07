@@ -1,0 +1,191 @@
+\hypertarget{class_base}{}\doxysection{Base Class Reference}
+\label{class_base}\index{Base@{Base}}
+
+
+Classe \mbox{\hyperlink{class_base}{Base}} representa uma \mbox{\hyperlink{class_base}{Base}} da \mbox{\hyperlink{class_empresa}{Empresa}} através da sua \mbox{\hyperlink{class_morada}{Morada}}, conselho, coordenadas G\+PS, gerente, conjunto de Clientes, conjunto de Restaurantes e o conjunto de funcionários dessa \mbox{\hyperlink{class_base}{Base}}.  
+
+
+
+
+{\ttfamily \#include $<$empresa.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_base_a5ffe0568374d8b9b4c4ec32953fd6453}\label{class_base_a5ffe0568374d8b9b4c4ec32953fd6453}} 
+\mbox{\hyperlink{class_base_a5ffe0568374d8b9b4c4ec32953fd6453}{Base}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_aab2cd6a6d3797cfe53311018db92d688}\label{class_base_aab2cd6a6d3797cfe53311018db92d688}} 
+\mbox{\hyperlink{class_base_aab2cd6a6d3797cfe53311018db92d688}{Base}} (string base)
+\begin{DoxyCompactList}\small\item\em Constroi uma instância de \mbox{\hyperlink{class_base}{Base}} recebendo uma string estruturada com o seu conteudo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a722da881b6c70cfcbde9243abcfbf334}\label{class_base_a722da881b6c70cfcbde9243abcfbf334}} 
+virtual \mbox{\hyperlink{class_base_a722da881b6c70cfcbde9243abcfbf334}{$\sim$\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_af0803226d0758c1854ae5b1c8251a822}\label{class_base_af0803226d0758c1854ae5b1c8251a822}} 
+const \mbox{\hyperlink{class_morada}{Morada}} \& {\bfseries get\+Morada} () const
+\item 
+\mbox{\Hypertarget{class_base_a7efca7c2fbc1261a0dfe522e4d6fa0c3}\label{class_base_a7efca7c2fbc1261a0dfe522e4d6fa0c3}} 
+void {\bfseries set\+Morada} (const \mbox{\hyperlink{class_morada}{Morada}} \&\mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}})
+\item 
+\mbox{\Hypertarget{class_base_a1d2229edda57db240910fc564b4bf5c1}\label{class_base_a1d2229edda57db240910fc564b4bf5c1}} 
+const string \& {\bfseries get\+Conselho} () const
+\item 
+\mbox{\Hypertarget{class_base_a9812f8612b2f12110f44918d702325be}\label{class_base_a9812f8612b2f12110f44918d702325be}} 
+void {\bfseries set\+Conselho} (const string \&\mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}})
+\item 
+\mbox{\Hypertarget{class_base_a1ef52933775089723fbaf141479e734d}\label{class_base_a1ef52933775089723fbaf141479e734d}} 
+const string \& {\bfseries get\+Coordenada\+Gps} () const
+\item 
+\mbox{\Hypertarget{class_base_a24596e046da1a5b4b3ca44d38393932d}\label{class_base_a24596e046da1a5b4b3ca44d38393932d}} 
+void {\bfseries set\+Coordenada\+Gps} (const string \&coordenada\+Gps)
+\item 
+\mbox{\Hypertarget{class_base_abf70147231730026a41c9a01cc5f5e94}\label{class_base_abf70147231730026a41c9a01cc5f5e94}} 
+const string \& {\bfseries get\+Gerente} () const
+\item 
+\mbox{\Hypertarget{class_base_abacceeb837dc6ac23007442ec20001cc}\label{class_base_abacceeb837dc6ac23007442ec20001cc}} 
+void {\bfseries set\+Gerente} (const string \&\mbox{\hyperlink{class_base_a05eccb6433822707e846a7ff70e1a946}{gerente}})
+\item 
+\mbox{\Hypertarget{class_base_a6ab5c212469482d54d2a7e76e6add089}\label{class_base_a6ab5c212469482d54d2a7e76e6add089}} 
+vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ {\bfseries get\+Clientes} ()
+\item 
+\mbox{\Hypertarget{class_base_a7c4979bdcd1c7c046b33260a14cda887}\label{class_base_a7c4979bdcd1c7c046b33260a14cda887}} 
+void {\bfseries set\+Clientes} (vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ \&\mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}})
+\item 
+\mbox{\Hypertarget{class_base_a79bcb2da71dbf10bfef957dd03a4a6bd}\label{class_base_a79bcb2da71dbf10bfef957dd03a4a6bd}} 
+vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ {\bfseries get\+Restaurantes} ()
+\item 
+\mbox{\Hypertarget{class_base_a5624dca4fae15dd630e5c040cec0fe0a}\label{class_base_a5624dca4fae15dd630e5c040cec0fe0a}} 
+void {\bfseries set\+Restaurantes} (vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ \&\mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}})
+\item 
+\mbox{\Hypertarget{class_base_a0e1ca05c36fcee861625baebe3756a02}\label{class_base_a0e1ca05c36fcee861625baebe3756a02}} 
+vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$ $>$ {\bfseries get\+Funcionarios} ()
+\item 
+\mbox{\Hypertarget{class_base_a58fc2377ca9aeb7ac6b2f4355a5f0973}\label{class_base_a58fc2377ca9aeb7ac6b2f4355a5f0973}} 
+void {\bfseries set\+Funcionarios} (const vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$ $>$ \&\mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}})
+\item 
+\mbox{\Hypertarget{class_base_ac937972e968000f2a270c48dc1b655cc}\label{class_base_ac937972e968000f2a270c48dc1b655cc}} 
+string {\bfseries get\+Funcionarios\+File\+Name} ()
+\item 
+\mbox{\Hypertarget{class_base_a7c50d9bdd6ed356cafe0dca4311dda00}\label{class_base_a7c50d9bdd6ed356cafe0dca4311dda00}} 
+string {\bfseries get\+Clientes\+File\+Name} ()
+\item 
+\mbox{\Hypertarget{class_base_ac98d0e6346feb951fa2672a1400309cd}\label{class_base_ac98d0e6346feb951fa2672a1400309cd}} 
+vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ {\bfseries get\+Lista\+Negra} ()
+\item 
+\mbox{\Hypertarget{class_base_a72ed0353793544e4ce14fe7925186374}\label{class_base_a72ed0353793544e4ce14fe7925186374}} 
+void {\bfseries get\+Lista\+Negra} (vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ l)
+\item 
+\mbox{\Hypertarget{class_base_af932bf79ff8b2a19ebfde91765b89531}\label{class_base_af932bf79ff8b2a19ebfde91765b89531}} 
+void \mbox{\hyperlink{class_base_af932bf79ff8b2a19ebfde91765b89531}{clientes\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro clientes.\+txt, que contém a informacao ordenada de um conjunto de clientes (Classe \mbox{\hyperlink{class_cliente}{Cliente}}). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a4bcdcc88c06b0d36fed35f5b80ed7cc5}\label{class_base_a4bcdcc88c06b0d36fed35f5b80ed7cc5}} 
+void \mbox{\hyperlink{class_base_a4bcdcc88c06b0d36fed35f5b80ed7cc5}{funcionarios\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro funcionarios$<$\+Base$>$.\+txt, que contém a informacão ordenada de um conjunto de funcionários (Classe Funcionário). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a4becd0991c08c6c13c6e18fe983e7743}\label{class_base_a4becd0991c08c6c13c6e18fe983e7743}} 
+void \mbox{\hyperlink{class_base_a4becd0991c08c6c13c6e18fe983e7743}{restaurantes\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro restaurante$<$\+Base$>$.\+txt, que contém a informacao ordenada de um conjunto de restaurantes (Classe \mbox{\hyperlink{class_restaurante}{Restaurante}}). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a714900778cfda0a00088fd36f541d99d}\label{class_base_a714900778cfda0a00088fd36f541d99d}} 
+void \mbox{\hyperlink{class_base_a714900778cfda0a00088fd36f541d99d}{lista\+Negra\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro listanegra.\+txt, que contém a informacao ordenada de um conjunto de clientes (Classe \mbox{\hyperlink{class_cliente}{Cliente}}). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a0e426234b116c238146aff9c085321e9}\label{class_base_a0e426234b116c238146aff9c085321e9}} 
+void \mbox{\hyperlink{class_base_a0e426234b116c238146aff9c085321e9}{funcionarios\+Antigos\+\_\+readfile}} ()
+\begin{DoxyCompactList}\small\item\em Lê o ficheiro funcionarios\+Antigos.\+txt, que contém a informacao ordenada funcionarios antigos. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a28850bfd675544d375db86c56c0195f1}\label{class_base_a28850bfd675544d375db86c56c0195f1}} 
+void \mbox{\hyperlink{class_base_a28850bfd675544d375db86c56c0195f1}{add\+Cliente}} ()
+\begin{DoxyCompactList}\small\item\em Adinciona um \mbox{\hyperlink{class_cliente}{Cliente}} à \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a592b29d7d5e6ff3ecd7a16d9f61abc99}\label{class_base_a592b29d7d5e6ff3ecd7a16d9f61abc99}} 
+void \mbox{\hyperlink{class_base_a592b29d7d5e6ff3ecd7a16d9f61abc99}{add\+Restaurante}} ()
+\begin{DoxyCompactList}\small\item\em Adinciona um \mbox{\hyperlink{class_restaurante}{Restaurante}} à \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_adaed88857f9eebdc428546799d4763c9}\label{class_base_adaed88857f9eebdc428546799d4763c9}} 
+void \mbox{\hyperlink{class_base_adaed88857f9eebdc428546799d4763c9}{add\+Admin}} ()
+\begin{DoxyCompactList}\small\item\em Adinciona um funcionário \mbox{\hyperlink{class_administrador}{Administrador}} à \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a2c299968679e35c06344ff1da05472cb}\label{class_base_a2c299968679e35c06344ff1da05472cb}} 
+void \mbox{\hyperlink{class_base_a2c299968679e35c06344ff1da05472cb}{add\+Entreg}} ()
+\begin{DoxyCompactList}\small\item\em Adinciona um funcionario \mbox{\hyperlink{class_entregador}{Entregador}} à \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a69805cd2889fa42feb5f576588af0566}\label{class_base_a69805cd2889fa42feb5f576588af0566}} 
+void \mbox{\hyperlink{class_base_a69805cd2889fa42feb5f576588af0566}{add\+Tecnico}} ()
+\begin{DoxyCompactList}\small\item\em Adinciona um funcionario \mbox{\hyperlink{class_tecnico}{Tecnico}} à \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_acc6172594c9dff6b4beba3ef26ac4ae4}\label{class_base_acc6172594c9dff6b4beba3ef26ac4ae4}} 
+void \mbox{\hyperlink{class_base_acc6172594c9dff6b4beba3ef26ac4ae4}{remove\+Cliente}} (\mbox{\hyperlink{class_cliente}{Cliente}} c)
+\begin{DoxyCompactList}\small\item\em Remove um \mbox{\hyperlink{class_cliente}{Cliente}} da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a4ae2252cefffd65f429b9243b58731b3}\label{class_base_a4ae2252cefffd65f429b9243b58731b3}} 
+void \mbox{\hyperlink{class_base_a4ae2252cefffd65f429b9243b58731b3}{remove\+Restaurante}} (\mbox{\hyperlink{class_restaurante}{Restaurante}} r)
+\begin{DoxyCompactList}\small\item\em Remove um \mbox{\hyperlink{class_restaurante}{Restaurante}} da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_af26bcd33867ddb80452f3aaeac7b1040}\label{class_base_af26bcd33867ddb80452f3aaeac7b1040}} 
+void \mbox{\hyperlink{class_base_af26bcd33867ddb80452f3aaeac7b1040}{remove\+Funcionario}} (\mbox{\hyperlink{class_funcionario}{Funcionario}} f)
+\begin{DoxyCompactList}\small\item\em Remove um Funcionário da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a146228c71d8ed3b8916baa86cbfa5116}\label{class_base_a146228c71d8ed3b8916baa86cbfa5116}} 
+void \mbox{\hyperlink{class_base_a146228c71d8ed3b8916baa86cbfa5116}{remove\+Admin}} (\mbox{\hyperlink{class_funcionario}{Funcionario}} f)
+\begin{DoxyCompactList}\small\item\em Remove um funcionário do tipo \mbox{\hyperlink{class_administrador}{Administrador}} da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a1bc6fb7a86da708a8d21e11bf24a4ba0}\label{class_base_a1bc6fb7a86da708a8d21e11bf24a4ba0}} 
+void \mbox{\hyperlink{class_base_a1bc6fb7a86da708a8d21e11bf24a4ba0}{remove\+Entreg}} (\mbox{\hyperlink{class_funcionario}{Funcionario}} f)
+\begin{DoxyCompactList}\small\item\em Remove um funcionário do tipo \mbox{\hyperlink{class_entregador}{Entregador}} da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_ac452de7cad0150fca1ca3cf54477420e}\label{class_base_ac452de7cad0150fca1ca3cf54477420e}} 
+void \mbox{\hyperlink{class_base_ac452de7cad0150fca1ca3cf54477420e}{remove\+Tecnico}} (\mbox{\hyperlink{class_funcionario}{Funcionario}} f)
+\begin{DoxyCompactList}\small\item\em Remove um funcionário do tipo \mbox{\hyperlink{class_tecnico}{Tecnico}} da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_ac17a0626604f939bf951e8032ac53f16}\label{class_base_ac17a0626604f939bf951e8032ac53f16}} 
+H\+E\+A\+P\+\_\+\+T\+E\+C\+N\+I\+CO {\bfseries get\+Tecnico\+Fila} () const
+\item 
+\mbox{\Hypertarget{class_base_aad6cb727834a8105f8e8288646d28e40}\label{class_base_aad6cb727834a8105f8e8288646d28e40}} 
+void \mbox{\hyperlink{class_base_aad6cb727834a8105f8e8288646d28e40}{add\+Tecnico\+To\+Fila}} (\mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$r)
+\begin{DoxyCompactList}\small\item\em Adiciona um funcionário do tipo \mbox{\hyperlink{class_tecnico}{Tecnico}} na Fila de prioridade. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_adbc2899197a9f0eb2bf789dd4aa60492}\label{class_base_adbc2899197a9f0eb2bf789dd4aa60492}} 
+void \mbox{\hyperlink{class_base_adbc2899197a9f0eb2bf789dd4aa60492}{remove\+Tecnico\+From\+Fila}} (string nif)
+\begin{DoxyCompactList}\small\item\em Remove um funcionário do tipo \mbox{\hyperlink{class_tecnico}{Tecnico}} na Fila de prioridade. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a35e3d257acf1c47d80445966c40ea8cc}\label{class_base_a35e3d257acf1c47d80445966c40ea8cc}} 
+vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$ $>$ {\bfseries get\+Funcionarios\+Todos} ()
+\item 
+\mbox{\Hypertarget{class_base_aa61e04e3219d0586c59f0504fd335d63}\label{class_base_aa61e04e3219d0586c59f0504fd335d63}} 
+void {\bfseries set\+Funcionarios\+Todos} (const vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$ $>$ \&funcionariosv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_base_a14188d5d5378008675e5e6564d5893ac}\label{class_base_a14188d5d5378008675e5e6564d5893ac}} 
+\mbox{\hyperlink{class_morada}{Morada}} \mbox{\hyperlink{class_base_a14188d5d5378008675e5e6564d5893ac}{morada}}
+\begin{DoxyCompactList}\small\item\em A morada da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_aae410cc8e3434beb888afaba02268a6b}\label{class_base_aae410cc8e3434beb888afaba02268a6b}} 
+string \mbox{\hyperlink{class_base_aae410cc8e3434beb888afaba02268a6b}{conselho}}
+\begin{DoxyCompactList}\small\item\em O conselho da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a894edf506603a4d46a06aee221b45692}\label{class_base_a894edf506603a4d46a06aee221b45692}} 
+string \mbox{\hyperlink{class_base_a894edf506603a4d46a06aee221b45692}{coordenada\+G\+PS}}
+\begin{DoxyCompactList}\small\item\em As coordenadas G\+PS da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a05eccb6433822707e846a7ff70e1a946}\label{class_base_a05eccb6433822707e846a7ff70e1a946}} 
+string \mbox{\hyperlink{class_base_a05eccb6433822707e846a7ff70e1a946}{gerente}}
+\begin{DoxyCompactList}\small\item\em O gerente da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a5fa6abe0029f4fc564295c003863f683}\label{class_base_a5fa6abe0029f4fc564295c003863f683}} 
+string \mbox{\hyperlink{class_base_a5fa6abe0029f4fc564295c003863f683}{clientes\+\_\+filename}}
+\begin{DoxyCompactList}\small\item\em O nome do ficheiro que contem todos os clientes da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_aaf43a3482c9ffbd3a0b60714b94e9478}\label{class_base_aaf43a3482c9ffbd3a0b60714b94e9478}} 
+string \mbox{\hyperlink{class_base_aaf43a3482c9ffbd3a0b60714b94e9478}{restaurantes\+\_\+filename}}
+\begin{DoxyCompactList}\small\item\em O nome do ficheiro que contem todos os restaurantes da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a0f9f9455cb0402ffc15be773e39f9956}\label{class_base_a0f9f9455cb0402ffc15be773e39f9956}} 
+string \mbox{\hyperlink{class_base_a0f9f9455cb0402ffc15be773e39f9956}{funcionarios\+\_\+filename}}
+\begin{DoxyCompactList}\small\item\em O nome do ficheiro que contem todos os funcionários da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a723797b61ba1e3365cf8d2eba4cee83c}\label{class_base_a723797b61ba1e3365cf8d2eba4cee83c}} 
+vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ \mbox{\hyperlink{class_base_a723797b61ba1e3365cf8d2eba4cee83c}{clientes}}
+\begin{DoxyCompactList}\small\item\em O conjunto dos clientes da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}\label{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}} 
+vector$<$ \mbox{\hyperlink{class_cliente}{Cliente}} $>$ \mbox{\hyperlink{class_base_a7a00416ba7dbb5b9768a2176a0fdb0ab}{lista\+Negra}}
+\begin{DoxyCompactList}\small\item\em O conjunto dos clientes pertencentes à Lista Negra da \mbox{\hyperlink{class_empresa}{Empresa}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a1b81f01c593fd5b581991067f6cfc4ea}\label{class_base_a1b81f01c593fd5b581991067f6cfc4ea}} 
+vector$<$ \mbox{\hyperlink{class_restaurante}{Restaurante}} $>$ \mbox{\hyperlink{class_base_a1b81f01c593fd5b581991067f6cfc4ea}{restaurantes}}
+\begin{DoxyCompactList}\small\item\em O conjunto dos restaurantes da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a9b39e24570970c60a28d312451592fb3}\label{class_base_a9b39e24570970c60a28d312451592fb3}} 
+vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $\ast$ $>$ \mbox{\hyperlink{class_base_a9b39e24570970c60a28d312451592fb3}{funcionarios}}
+\begin{DoxyCompactList}\small\item\em O conjunto dos funcionários da \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_a762e65c4de6054b8b4600d9c516f3c0b}\label{class_base_a762e65c4de6054b8b4600d9c516f3c0b}} 
+H\+E\+A\+P\+\_\+\+T\+E\+C\+N\+I\+CO \mbox{\hyperlink{class_base_a762e65c4de6054b8b4600d9c516f3c0b}{tecnicos\+\_\+fila}}
+\begin{DoxyCompactList}\small\item\em fila de prioridade de tecnicos de acordo com a sua disponibilidade. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_base_aa6878716b9d8bd0cbca27a7841faaab3}\label{class_base_aa6878716b9d8bd0cbca27a7841faaab3}} 
+tab\+H\+Funcionario \mbox{\hyperlink{class_base_aa6878716b9d8bd0cbca27a7841faaab3}{funcionarios\+\_\+tabH}}
+\begin{DoxyCompactList}\small\item\em tabela de disperção com os funcionários antigos e atuais da base. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_base}{Base}} representa uma \mbox{\hyperlink{class_base}{Base}} da \mbox{\hyperlink{class_empresa}{Empresa}} através da sua \mbox{\hyperlink{class_morada}{Morada}}, conselho, coordenadas G\+PS, gerente, conjunto de Clientes, conjunto de Restaurantes e o conjunto de funcionários dessa \mbox{\hyperlink{class_base}{Base}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Mariana Ramos/\+Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.\+h\item 
+C\+:/\+Users/\+Mariana Ramos/\+Desktop/2ano/1semestre/aeda/projetoaeda2/ugh02/empresa.\+cpp\end{DoxyCompactItemize}

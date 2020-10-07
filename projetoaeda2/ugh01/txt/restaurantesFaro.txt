@@ -1,0 +1,49 @@
+Le Moustache
+Rua de Bartolomeu Velho, Faro, 03
+Italiana
+pratos.txt
+:::::
+Lyi
+Av. do Mal. Gomes da Costa, Loule, 87
+Chinesa
+pratos.txt
+:::::
+Ze da Esquina
+Rua Joao de Lisboa, Sao Bras de Alportel, 567
+Portuguesa
+pratos.txt
+:::::
+Violeta
+Rua do Matias, Olhao, 21
+Japonesa
+pratos.txt
+:::::
+Igor Especial
+Av. do Cruzamento, Faro, 774
+Portugues
+pratos.txt
+:::::
+31 de Janeiro
+Rua de Cima, Loule, 42
+Italiana
+pratos.txt
+:::::
+Aqueduto
+Rua Manuel Pacheco, Sao Bras de Alportel, 880
+Chinesa
+pratos.txt
+:::::
+Chen
+Rua do Lado Esquerdo, Loule, 112
+Japonesa
+pratos.txt
+:::::
+Lencinho
+Rua dos Guardioes, Faro, 446
+Portuguesa
+pratos.txt
+:::::
+Asinhas de frango
+Rua D.Manuel III, Olhao, 175
+Italiana
+pratos.txt

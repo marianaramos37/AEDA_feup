@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Asus/Desktop/fac/2ano/aeda/c2_c3_anos_anteriores/aeda1415_ci3/Tests/Supermercado.cpp
+Supermercado.h
+C:/Users/Asus/Desktop/fac/2ano/aeda/c2_c3_anos_anteriores/aeda1415_ci3/Tests/Supermercado.h
+iostream
+-
+
+C:/Users/Asus/Desktop/fac/2ano/aeda/c2_c3_anos_anteriores/aeda1415_ci3/Tests/Supermercado.h
+stack
+-
+string
+-
+sstream
+-
+list
+-
+queue
+-
+algorithm
+-
+

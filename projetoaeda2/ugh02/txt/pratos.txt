@@ -1,0 +1,111 @@
+Massa a bolonhesa
+Italiana
+8.09
+:::::
+Ramen
+Japonesa
+8.25
+:::::
+Pizza Margueritta
+Italiana
+6.45
+:::::
+Bacalhau a Bras
+Portuguesa
+5.50
+:::::
+Francesinha
+Portuguesa
+6.39
+:::::
+Sushi
+Japonesa
+11.99
+:::::
+Bao
+Japonesa
+3.80
+:::::
+Arroz Xau Xau
+Chinesa
+4.35
+:::::
+Pizza 4 Queijos
+Italiana
+6.50
+:::::
+Pizza Carbonara
+Italiana
+7.50
+:::::
+Pizza Atum
+Italiana
+6.39
+:::::
+Pizza Vegetariana
+Italiana
+3.65
+:::::
+Massa Carbonara
+Italiana
+4.90
+:::::
+Risotto
+Italiana
+15.90
+:::::
+Lagosta
+Portuguesa
+25.00
+:::::
+Picanha
+Portuguesa
+22.99
+:::::
+Rosbife
+Portuguesa
+19.90
+:::::
+Rojoes
+Portuguesa
+2.50
+:::::
+Cosido a portuguesa
+Portuguesa
+11.45
+:::::
+Empadao
+Portuguesa
+9.76
+:::::
+Porco Agridoce
+Chinesa
+13.60
+:::::
+Chop Suey
+Chinesa
+7.80
+:::::
+Lamen
+Chinesa
+4.95
+:::::
+Yakisoba
+Chinesa
+9.25
+:::::
+Gyudon
+Japonesa
+6.82
+:::::
+Sukiyaki
+Japonesa
+9.94
+:::::
+Manju
+Japonesa
+3.10
+:::::
+Mochi
+Japonesa
+2.99

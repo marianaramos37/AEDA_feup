@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Asus/Desktop/fac/2ano/aeda/c2_anos_anteriores/aeda1718_ci2/Tests/Doctor.h
+string
+-
+queue
+-
+
+C:/Users/Asus/Desktop/fac/2ano/aeda/c2_anos_anteriores/aeda1718_ci2/Tests/Hospital.cpp
+Hospital.h
+C:/Users/Asus/Desktop/fac/2ano/aeda/c2_anos_anteriores/aeda1718_ci2/Tests/Hospital.h
+algorithm
+-
+iostream
+-
+
+C:/Users/Asus/Desktop/fac/2ano/aeda/c2_anos_anteriores/aeda1718_ci2/Tests/Hospital.h
+list
+-
+stack
+-
+Doctor.h
+C:/Users/Asus/Desktop/fac/2ano/aeda/c2_anos_anteriores/aeda1718_ci2/Tests/Doctor.h
+

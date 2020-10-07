@@ -1,0 +1,5 @@
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Asus\Desktop\fac\2ano\aeda\c2_anos_anteriores\aeda1617_ci2
+-- Found PythonInterp: C:/Users/Asus/Anaconda3/python.exe (found version "3.7.1") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Asus/Desktop/fac/2ano/aeda/c2_anos_anteriores/aeda1617_ci2/cmake-build-debug

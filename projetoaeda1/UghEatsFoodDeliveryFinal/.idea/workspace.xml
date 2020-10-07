@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="UghEats_Food_Delivery" targetName="UghEats_Food_Delivery" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc7277b0-8f7f-423f-a2cf-8de21760fa74" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1TNeja5l0IqZZ3ZviHkIyL0cFN3" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="UghEats_Food_Delivery" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$/txt" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UghEats_Food_Delivery" TARGET_NAME="UghEats_Food_Delivery" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="UghEats_Food_Delivery" RUN_TARGET_NAME="UghEats_Food_Delivery">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc7277b0-8f7f-423f-a2cf-8de21760fa74" name="Default Changelist" comment="" />
+      <created>1573305528267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573305528267</updated>
+      <workItem from="1573305529740" duration="16518000" />
+      <workItem from="1573468045925" duration="87000" />
+      <workItem from="1573468158023" duration="5000" />
+      <workItem from="1573468185843" duration="7000" />
+      <workItem from="1573468219181" duration="1029000" />
+      <workItem from="1573487134715" duration="3422000" />
+      <workItem from="1573501094861" duration="7248000" />
+      <workItem from="1573508697309" duration="12955000" />
+      <workItem from="1573563251474" duration="3235000" />
+      <workItem from="1573569676338" duration="3330000" />
+      <workItem from="1573573164828" duration="24295000" />
+      <workItem from="1573607754991" duration="2215000" />
+      <workItem from="1573644047641" duration="2379000" />
+      <workItem from="1573653989945" duration="17444000" />
+      <workItem from="1573733489841" duration="1223000" />
+      <workItem from="1573749175471" duration="11428000" />
+      <workItem from="1573765900286" duration="14966000" />
+      <workItem from="1573830471540" duration="2302000" />
+      <workItem from="1573833654976" duration="9373000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

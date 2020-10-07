@@ -1,0 +1,25 @@
+\hypertarget{empresa_8h}{}\doxysection{Referência ao ficheiro Ugn\+Eats\+Food\+Delivery\+Final3/empresa.h}
+\label{empresa_8h}\index{UgnEatsFoodDeliveryFinal3/empresa.h@{UgnEatsFoodDeliveryFinal3/empresa.h}}
+{\ttfamily \#include \char`\"{}restaurante.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_cliente_na_lista_negra}{Cliente\+Na\+Lista\+Negra}}
+\begin{DoxyCompactList}\small\item\em Classe \mbox{\hyperlink{class_cliente_na_lista_negra}{Cliente\+Na\+Lista\+Negra}} representa uma exceção que é lançada quando um cliente pertence à Lista Negra da empresa (listanegra.\+txt). \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_funcionario_inexistente}{Funcionario\+Inexistente}}
+\begin{DoxyCompactList}\small\item\em Classe \mbox{\hyperlink{class_funcionario_inexistente}{Funcionario\+Inexistente}} representa uma exceção que é lançada se tenta aceder a um funcionario que não pertence à lista de funcionarios da base. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_restaurante_inexistente}{Restaurante\+Inexistente}}
+\begin{DoxyCompactList}\small\item\em Classe \mbox{\hyperlink{class_restaurante_inexistente}{Restaurante\+Inexistente}} representa uma exceção que é lançada quando tenta aceder a um \mbox{\hyperlink{class_restaurante}{Restaurante}} que não pertence à lista de restaurantes da base. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_encomenda}{Encomenda}}
+\begin{DoxyCompactList}\small\item\em Classe \mbox{\hyperlink{class_encomenda}{Encomenda}} representa uma encomenda através do nome do Restauranre, \mbox{\hyperlink{class_data}{Data}} e hora da encomenda, nome do \mbox{\hyperlink{class_entregador}{Entregador}} e \mbox{\hyperlink{class_cliente}{Cliente}}, lista de pratos do menu encomendados, se a encomenda foi realizada com sucesso e se foi realizada dentro ou num concelho vizinho, e o preço total da encomenda. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_funcionario}{Funcionario}}
+\begin{DoxyCompactList}\small\item\em Classe \mbox{\hyperlink{class_funcionario}{Funcionario}} representa um funcionário através do seu nome e nif, da sua \mbox{\hyperlink{class_data}{Data}} de nascimento, do seu Salario e do seu tipo(Entregador/\+Administrador). \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_administrador}{Administrador}}
+\begin{DoxyCompactList}\small\item\em Classe \mbox{\hyperlink{class_administrador}{Administrador}} representa um funcionário \mbox{\hyperlink{class_administrador}{Administrador}} através das suas caracteristicas enquanto Funcionário, mais a sua função. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_entregador}{Entregador}}
+\begin{DoxyCompactList}\small\item\em Classe \mbox{\hyperlink{class_entregador}{Entregador}} representa um funcionário \mbox{\hyperlink{class_entregador}{Entregador}} através das suas características enquanto Funcionário, mais o seu Veículo, um vetor de encomendas (classe \mbox{\hyperlink{class_encomenda}{Encomenda}}) feitas, e a sua disponibilidade. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_base}{Base}}
+\begin{DoxyCompactList}\small\item\em Classe \mbox{\hyperlink{class_base}{Base}} representa uma \mbox{\hyperlink{class_base}{Base}} da \mbox{\hyperlink{class_empresa}{Empresa}} através da sua \mbox{\hyperlink{class_morada}{Morada}}, conselho, coordenadas G\+PS, gerente, conjunto de Clientes, conjunto de Restaurantes e o conjunto de funcionários dessa \mbox{\hyperlink{class_base}{Base}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_empresa}{Empresa}}
+\begin{DoxyCompactList}\small\item\em Classe \mbox{\hyperlink{class_empresa}{Empresa}} representa a \mbox{\hyperlink{class_empresa}{Empresa}} através do conjunto de Bases (classe \mbox{\hyperlink{class_base}{Base}}) que tem e um conjunto de encomendas feitas à empresa desde sempre. \end{DoxyCompactList}\end{DoxyCompactItemize}

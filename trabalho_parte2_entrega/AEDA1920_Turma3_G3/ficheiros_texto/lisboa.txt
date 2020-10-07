@@ -1,0 +1,9 @@
+Rua Dom Francisco de Almeida
+Belem
+32
+Lisboa
+38.6986403 -9.2101402
+Teresa Ribeiro
+clientesLisboa.txt
+restaurantesLisboa.txt
+funcionariosLisboa.txt

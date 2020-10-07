@@ -1,0 +1,14 @@
+Fortaleza
+Rua Faial, Porto, 13
+Portuguesa
+pratos.txt
+:::::
+Limoncello
+Rua Dr. Nunes da Ponte, Matosinhos, 54
+Italiana
+pratos.txt
+:::::
+Kurys
+Rua de Diu, Gaia, 210
+Chinesa
+pratos.txt

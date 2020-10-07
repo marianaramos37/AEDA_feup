@@ -1,0 +1,240 @@
+\hypertarget{class_veiculo}{}\doxysection{Referência à classe Veiculo}
+\label{class_veiculo}\index{Veiculo@{Veiculo}}
+
+
+Class \mbox{\hyperlink{class_veiculo}{Veiculo}} representa um veículo atraves da sua marca, do seu tipo e a sua data de aquisição.  
+
+
+
+
+{\ttfamily \#include $<$auxiliares.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_veiculo_aafab27708a2639bc83a4c3721e57d196}{Veiculo}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da Classe \mbox{\hyperlink{class_veiculo}{Veiculo}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_veiculo_a5691b7638f9780fdd17860140329d9a8}{Veiculo}} (string v)
+\begin{DoxyCompactList}\small\item\em Constroi uma instância da classe \mbox{\hyperlink{class_veiculo}{Veiculo}} recebendo uma string estruturada com o seu conteudo. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_veiculo_ae9d7f6ae66be1f74f7e456ef18949431}{$\sim$\+Veiculo}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da Classe \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{class_veiculo_adbc8e892bffd97efd7be03a9d2028263}{get\+Marca}} () const
+\item 
+void \mbox{\hyperlink{class_veiculo_a7f75f8432e86a680d5110f6a5ce2e672}{set\+Marca}} (const string \&\mbox{\hyperlink{class_veiculo_ab20b89442a0ddaedd074bb0de75838c8}{marca}})
+\item 
+const string \& \mbox{\hyperlink{class_veiculo_a9f5aeb8276b8d935e870b20c8f5fd3e8}{get\+Tipo}} () const
+\item 
+void \mbox{\hyperlink{class_veiculo_a3a6de0c719e5f4a9c638ca75cfcf1308}{set\+Tipo}} (const string \&\mbox{\hyperlink{class_veiculo_af37b714b030f66ce584b808a4eb8d9e1}{tipo}})
+\item 
+const string \& \mbox{\hyperlink{class_veiculo_abb25b90dec08d6ddde6873addfa3ce8f}{get\+Data\+De\+Aquisicao}} () const
+\item 
+void \mbox{\hyperlink{class_veiculo_a7a7f85440618c5a879ddd2c76e67370d}{set\+Data\+De\+Aquisicao}} (const string \&data\+De\+Aquisicao)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_veiculo_ab20b89442a0ddaedd074bb0de75838c8}{marca}}
+\begin{DoxyCompactList}\small\item\em A marca do Veículo. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_veiculo_af37b714b030f66ce584b808a4eb8d9e1}{tipo}}
+\begin{DoxyCompactList}\small\item\em O tipo do Veículo. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_veiculo_ab8720495521db77f996d074572fa7313}{data\+\_\+de\+\_\+aquisicao}}
+\begin{DoxyCompactList}\small\item\em A data de aquisição em string do Veículo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Class \mbox{\hyperlink{class_veiculo}{Veiculo}} representa um veículo atraves da sua marca, do seu tipo e a sua data de aquisição. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_veiculo_aafab27708a2639bc83a4c3721e57d196}\label{class_veiculo_aafab27708a2639bc83a4c3721e57d196}} 
+\index{Veiculo@{Veiculo}!Veiculo@{Veiculo}}
+\index{Veiculo@{Veiculo}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{Veiculo()}{Veiculo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Veiculo\+::\+Veiculo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da Classe \mbox{\hyperlink{class_veiculo}{Veiculo}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{184 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_veiculo_a5691b7638f9780fdd17860140329d9a8}\label{class_veiculo_a5691b7638f9780fdd17860140329d9a8}} 
+\index{Veiculo@{Veiculo}!Veiculo@{Veiculo}}
+\index{Veiculo@{Veiculo}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{Veiculo()}{Veiculo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Veiculo\+::\+Veiculo (\begin{DoxyParamCaption}\item[{string}]{v }\end{DoxyParamCaption})}
+
+
+
+Constroi uma instância da classe \mbox{\hyperlink{class_veiculo}{Veiculo}} recebendo uma string estruturada com o seu conteudo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em d} & A string estruturada com o conteudo do Veículo. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{185                          \{}
+\DoxyCodeLine{186     \mbox{\hyperlink{class_data}{Data}} d;}
+\DoxyCodeLine{187     \textcolor{keywordtype}{string} temp=  \textcolor{stringliteral}{""};}
+\DoxyCodeLine{188     vector<string> veiculo\_temp;}
+\DoxyCodeLine{189     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i <= v.length(); i++)}
+\DoxyCodeLine{190     \{}
+\DoxyCodeLine{191         \textcolor{keywordflow}{if} (v[i] == \textcolor{charliteral}{','} )}
+\DoxyCodeLine{192         \{}
+\DoxyCodeLine{193             i += 1;}
+\DoxyCodeLine{194             veiculo\_temp.push\_back(temp);}
+\DoxyCodeLine{195             temp = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{196         \}}
+\DoxyCodeLine{197         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{198             temp += v[i];}
+\DoxyCodeLine{199     \}}
+\DoxyCodeLine{200     veiculo\_temp.push\_back(temp);}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202     this-\/>\mbox{\hyperlink{class_veiculo_ab20b89442a0ddaedd074bb0de75838c8}{marca}} = veiculo\_temp[0];}
+\DoxyCodeLine{203     this-\/>\mbox{\hyperlink{class_veiculo_af37b714b030f66ce584b808a4eb8d9e1}{tipo}}= veiculo\_temp[1];}
+\DoxyCodeLine{204     this-\/>\mbox{\hyperlink{class_veiculo_ab8720495521db77f996d074572fa7313}{data\_de\_aquisicao}} = veiculo\_temp[2];}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{206 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_veiculo_ae9d7f6ae66be1f74f7e456ef18949431}\label{class_veiculo_ae9d7f6ae66be1f74f7e456ef18949431}} 
+\index{Veiculo@{Veiculo}!````~Veiculo@{$\sim$Veiculo}}
+\index{````~Veiculo@{$\sim$Veiculo}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{$\sim$Veiculo()}{~Veiculo()}}
+{\footnotesize\ttfamily Veiculo\+::$\sim$\+Veiculo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor da Classe \mbox{\hyperlink{class_data}{Data}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{208                   \{}
+\DoxyCodeLine{209 }
+\DoxyCodeLine{210 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_veiculo_abb25b90dec08d6ddde6873addfa3ce8f}\label{class_veiculo_abb25b90dec08d6ddde6873addfa3ce8f}} 
+\index{Veiculo@{Veiculo}!getDataDeAquisicao@{getDataDeAquisicao}}
+\index{getDataDeAquisicao@{getDataDeAquisicao}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{getDataDeAquisicao()}{getDataDeAquisicao()}}
+{\footnotesize\ttfamily const string \& Veiculo\+::get\+Data\+De\+Aquisicao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{228                                                 \{}
+\DoxyCodeLine{229     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_veiculo_ab8720495521db77f996d074572fa7313}{data\_de\_aquisicao}};}
+\DoxyCodeLine{230 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_veiculo_adbc8e892bffd97efd7be03a9d2028263}\label{class_veiculo_adbc8e892bffd97efd7be03a9d2028263}} 
+\index{Veiculo@{Veiculo}!getMarca@{getMarca}}
+\index{getMarca@{getMarca}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{getMarca()}{getMarca()}}
+{\footnotesize\ttfamily const string \& Veiculo\+::get\+Marca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{212                                       \{}
+\DoxyCodeLine{213     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_veiculo_ab20b89442a0ddaedd074bb0de75838c8}{marca}};}
+\DoxyCodeLine{214 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_veiculo_a9f5aeb8276b8d935e870b20c8f5fd3e8}\label{class_veiculo_a9f5aeb8276b8d935e870b20c8f5fd3e8}} 
+\index{Veiculo@{Veiculo}!getTipo@{getTipo}}
+\index{getTipo@{getTipo}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{getTipo()}{getTipo()}}
+{\footnotesize\ttfamily const string \& Veiculo\+::get\+Tipo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{220                                      \{}
+\DoxyCodeLine{221     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_veiculo_af37b714b030f66ce584b808a4eb8d9e1}{tipo}};}
+\DoxyCodeLine{222 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_veiculo_a7a7f85440618c5a879ddd2c76e67370d}\label{class_veiculo_a7a7f85440618c5a879ddd2c76e67370d}} 
+\index{Veiculo@{Veiculo}!setDataDeAquisicao@{setDataDeAquisicao}}
+\index{setDataDeAquisicao@{setDataDeAquisicao}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{setDataDeAquisicao()}{setDataDeAquisicao()}}
+{\footnotesize\ttfamily void Veiculo\+::set\+Data\+De\+Aquisicao (\begin{DoxyParamCaption}\item[{const string \&}]{data\+De\+Aquisicao }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{232                                                               \{}
+\DoxyCodeLine{233     \mbox{\hyperlink{class_veiculo_ab8720495521db77f996d074572fa7313}{data\_de\_aquisicao}} = dataDeAquisicao;}
+\DoxyCodeLine{234 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_veiculo_a7f75f8432e86a680d5110f6a5ce2e672}\label{class_veiculo_a7f75f8432e86a680d5110f6a5ce2e672}} 
+\index{Veiculo@{Veiculo}!setMarca@{setMarca}}
+\index{setMarca@{setMarca}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{setMarca()}{setMarca()}}
+{\footnotesize\ttfamily void Veiculo\+::set\+Marca (\begin{DoxyParamCaption}\item[{const string \&}]{marca }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{216                                           \{}
+\DoxyCodeLine{217     \mbox{\hyperlink{class_veiculo_ab20b89442a0ddaedd074bb0de75838c8}{Veiculo::marca}} = \mbox{\hyperlink{class_veiculo_ab20b89442a0ddaedd074bb0de75838c8}{marca}};}
+\DoxyCodeLine{218 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_veiculo_a3a6de0c719e5f4a9c638ca75cfcf1308}\label{class_veiculo_a3a6de0c719e5f4a9c638ca75cfcf1308}} 
+\index{Veiculo@{Veiculo}!setTipo@{setTipo}}
+\index{setTipo@{setTipo}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{setTipo()}{setTipo()}}
+{\footnotesize\ttfamily void Veiculo\+::set\+Tipo (\begin{DoxyParamCaption}\item[{const string \&}]{tipo }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{224                                         \{}
+\DoxyCodeLine{225     \mbox{\hyperlink{class_veiculo_af37b714b030f66ce584b808a4eb8d9e1}{Veiculo::tipo}} = \mbox{\hyperlink{class_veiculo_af37b714b030f66ce584b808a4eb8d9e1}{tipo}};}
+\DoxyCodeLine{226 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_veiculo_ab8720495521db77f996d074572fa7313}\label{class_veiculo_ab8720495521db77f996d074572fa7313}} 
+\index{Veiculo@{Veiculo}!data\_de\_aquisicao@{data\_de\_aquisicao}}
+\index{data\_de\_aquisicao@{data\_de\_aquisicao}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{data\_de\_aquisicao}{data\_de\_aquisicao}}
+{\footnotesize\ttfamily string Veiculo\+::data\+\_\+de\+\_\+aquisicao\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A data de aquisição em string do Veículo. 
+
+\mbox{\Hypertarget{class_veiculo_ab20b89442a0ddaedd074bb0de75838c8}\label{class_veiculo_ab20b89442a0ddaedd074bb0de75838c8}} 
+\index{Veiculo@{Veiculo}!marca@{marca}}
+\index{marca@{marca}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{marca}{marca}}
+{\footnotesize\ttfamily string Veiculo\+::marca\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A marca do Veículo. 
+
+\mbox{\Hypertarget{class_veiculo_af37b714b030f66ce584b808a4eb8d9e1}\label{class_veiculo_af37b714b030f66ce584b808a4eb8d9e1}} 
+\index{Veiculo@{Veiculo}!tipo@{tipo}}
+\index{tipo@{tipo}!Veiculo@{Veiculo}}
+\doxysubsubsection{\texorpdfstring{tipo}{tipo}}
+{\footnotesize\ttfamily string Veiculo\+::tipo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+O tipo do Veículo. 
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{auxiliares_8h}{auxiliares.\+h}}\item 
+Ugn\+Eats\+Food\+Delivery\+Final3/\mbox{\hyperlink{auxiliares_8cpp}{auxiliares.\+cpp}}\end{DoxyCompactItemize}
